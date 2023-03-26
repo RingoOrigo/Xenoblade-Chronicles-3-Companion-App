@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:id="@+id/xenoblade_chronicles_3_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_neue_condensed"
+        android:text="Xenoblade Chronicles 3"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companion_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_neue_condensed"
+        android:text="Companion"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xenoblade_chronicles_3_text_view" />
+
+    <Button
+        android:id="@+id/monsters_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Monsters"
+        app:layout_constraintBottom_toTopOf="@+id/unique_monsters_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companion_text_view"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/unique_monsters_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Unique Monsters"
+        app:layout_constraintBottom_toTopOf="@+id/side_quests_button"
+        app:layout_constraintEnd_toEndOf="@+id/monsters_button"
+        app:layout_constraintStart_toStartOf="@+id/monsters_button"
+        app:layout_constraintTop_toBottomOf="@+id/monsters_button" />
+
+    <Button
+        android:id="@+id/side_quests_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Side Quests"
+        app:layout_constraintBottom_toTopOf="@+id/hero_quests_button"
+        app:layout_constraintEnd_toEndOf="@+id/unique_monsters_button"
+        app:layout_constraintStart_toStartOf="@+id/unique_monsters_button"
+        app:layout_constraintTop_toBottomOf="@+id/unique_monsters_button" />
+
+    <Button
+        android:id="@+id/hero_quests_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Hero Quests"
+        app:layout_constraintBottom_toTopOf="@+id/characters_button"
+        app:layout_constraintEnd_toEndOf="@+id/side_quests_button"
+        app:layout_constraintStart_toStartOf="@+id/side_quests_button"
+        app:layout_constraintTop_toBottomOf="@+id/side_quests_button" />
+
+    <Button
+        android:id="@+id/characters_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Characters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hero_quests_button"
+        app:layout_constraintStart_toStartOf="@+id/hero_quests_button"
+        app:layout_constraintTop_toBottomOf="@+id/hero_quests_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
