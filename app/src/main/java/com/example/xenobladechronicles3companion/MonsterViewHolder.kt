@@ -6,10 +6,6 @@ import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBi
 class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
 
-    init {
-        TODO("Make tapping on a monster's portion of the layout open the FANDOM wiki page with said monster.")
-    }
-
     fun bindMonster(monster : Monster) {
         currentMonster = monster
 
