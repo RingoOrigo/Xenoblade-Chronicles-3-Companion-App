@@ -300,6 +300,12 @@
     "region" : "Swordmarch",
     "level" : 90,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Heavenrazor_Egreet"
+  }, {
+    "name" : "Hedonist Tirkin",
+    "location" : "Tirkin Headquarters (Ribbi Flats)",
+    "region" : "Fornis",
+    "level" : 23,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Hedonist_Tirkin"
   }
   ]
 }
