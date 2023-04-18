@@ -1,0 +1,305 @@
+{
+  "monsters" : [ {
+    "name" : "Abysmal Rakshmi",
+    "location" : "Lavi Sandbar (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 64,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Abysmal_Rakshmi"
+  }, {
+    "name" : "Altruistic Maribel",
+    "location" : "Murmur Rise (Millick Meadows)",
+    "region" : "Aetia",
+    "level" : 29,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Altruistic_Maribel"
+  }, {
+    "name" : "Ambusher Tirion",
+    "location" : "Ether Mine (Syra Hovering Reefs)",
+    "region" : "Keves Castle",
+    "level" : 39,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Ambusher_Tirion"
+  }, {
+    "name" : "Artificial Optho",
+    "location" : "Hangar, Upper Level (Origin Interior)",
+    "region" : "Origin",
+    "level" : 69,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Artificial_Optho"
+  }, {
+    "name" : "Barbed Merod",
+    "location" : "Colony Mu (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 51,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Barbed_Merod"
+  }, {
+    "name" : "Besieger Sheritt",
+    "location" : "Mountain Front: Keves (Urayan Trail)",
+    "region" : "Pentelas",
+    "level" : 48,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Beseiger_Sheritt"
+  }, {
+    "name" : "Blazing Karlos",
+    "location" : "Hovering Reef 4 (Syra Hovering Reefs)",
+    "region" : "Keves Castle",
+    "level" : 40,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Blazing_Karlos"
+  }, {
+    "name" : "Bloodsucking Elvis",
+    "location" : "Loska's Cavern (Urayan Trail)",
+    "region" : "Pentelas",
+    "level" : 53,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Bloodsucking_Elvis"
+  }, {
+    "name" : "Budding Francis",
+    "location" : "Titan Rock (Great Cotte Falls)",
+    "region" : "Pentelas",
+    "level" : 32,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Budding_Francis"
+  }, {
+    "name" : "Bushwhacker Farrit",
+    "location" : "Mountain Front: Agnus (Urayan Trail)",
+    "region" : "Pentelas",
+    "level" : 48,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Bushwhacker_Farrit"
+  }, {
+    "name" : "Clinging Azreel",
+    "location" : "Central Defense (Origin Interior)",
+    "region" : "Origin",
+    "level" : 69,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Clinging_Azreel"
+  }, {
+    "name" : "Conqueror Deepwan",
+    "location" : "Demihuman Gutter (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 102,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Conqueror_Deepwan",
+    "superboss" : true
+  }, {
+    "name" : "Covetous Gerondon",
+    "location" : "Cape Arcaphor (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 60,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Covetous_Gerondon"
+  }, {
+    "name" : "Crafty Anskey",
+    "location" : "Elaice Highway (Colony Iota)",
+    "region" : "Fornis",
+    "level" : 54,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Crafty_Anskey"
+  }, {
+    "name" : "Craven Piggard",
+    "location" : "Hovering Reef 3 (Syra Hovering Reefs)",
+    "region" : "Keves Castle",
+    "level" : 38,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Craven_Piggard"
+  }, {
+    "name" : "Creeping Hameel",
+    "location" : "Amplifier No. 2 (Origin Interior)",
+    "region" : "Origin",
+    "level" : 66,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Creeping_Hameel"
+  }, {
+    "name" : "Cruelfist Rojou",
+    "location" : "Amplifier Control Room (Origin Interior)",
+    "region" : "Origin",
+    "level" : 66,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Cruelfist_Rojou"
+  }, {
+    "name" : "Crystalline Dugarre",
+    "location" : "Alefa Skysphere (Dannagh Desert)",
+    "region" : "Fornis",
+    "level" : 27,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Crystalline_Dugarre"
+  }, {
+    "name" : "Dapper Sepiar",
+    "location" : "The Lace Subterranean (Rae-Bel Tableland)",
+    "region" : "Fornis",
+    "level" : 22,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Dapper_Sepiar"
+  }, {
+    "name" : "Darkening Asha",
+    "location" : "Colony 15 (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 65,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Darkening_Asha"
+  }, {
+    "name" : "Defiled Ishtar",
+    "location" : "Ferronis Arsenal #3 (Origin Interior)",
+    "region" : "Origin",
+    "level" : 65,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Defiled_Ishtar"
+  }, {
+    "name" : "Demonic Krenolur",
+    "location" : "Daedal Isle (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 75,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Demonic_Krenolur"
+  }, {
+    "name" : "Desired Oruria",
+    "location" : "Hangar, Lower: Main Gate (Origin Interior)",
+    "region" : "Origin",
+    "level" : 86,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Desired_Oruria"
+  }, {
+    "name" : "Determined Vatslav",
+    "location" : "Troop Reserve Station (Keves Castle)",
+    "region" : "Keves Castle",
+    "level" : 43,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Determined_Vatslav"
+  }, {
+    "name" : "Diabolical Rindolph",
+    "location" : "Hovering Reef 7 (Syra Hovering Reefs)",
+    "region" : "Keves Castle",
+    "level" : 49,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Diabolical_Rindolph"
+  }, {
+    "name" : "Dimwitted Tirkin",
+    "location" : "The Tirkinhold (High Maktha Wildwood)",
+    "region" : "Pentelas",
+    "level" : 45,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Dimwitted_Tirkin"
+  }, {
+    "name" : "Dishonest Karom",
+    "location" : "Hangar, Upper Level (Origin Interior)",
+    "region" : "Origin",
+    "level" : 69,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Dishonest_Karom"
+  }, {
+    "name" : "Doomfang Caum",
+    "location" : "Pinasa Highland (Rae-Bel Tableland)",
+    "region" : "Fornis",
+    "level" : 50,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Doomfang_Caum"
+  }, {
+    "name" : "Dunesea Marcellus",
+    "location" : "Devil's Skillet (Dannagh Desert)",
+    "region" : "Fornis",
+    "level" : 87,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Dunesea_Marcellus"
+  }, {
+    "name" : "Fairscale Marina",
+    "location" : "Oshia's Reef Ravine (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 66,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Fairscale_Marina"
+  }, {
+    "name" : "Fang-King Clavein",
+    "location" : "Elgares Depths (Millick Meadows)",
+    "region" : "Aetia",
+    "level" : 80,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Fang-King_Clavein"
+  }, {
+    "name" : "Farsser Pirtett",
+    "location" : "Zem's Crossway (Eagus Wilderness)",
+    "region" : "Fornis",
+    "level" : 40,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Farseer_Pirtett"
+  }, {
+    "name" : "Fineblade Faltaar",
+    "location" : "Material Storage Wearhouse (Great Sword's Hilt)",
+    "region" : "Swordmarch",
+    "level" : 0,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Fineblade_Faltaar"
+  }, {
+    "name" : "Fleeting Shikino",
+    "location" : "Colony 15 (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 65,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Fleeting_Shikino"
+  }, {
+    "name" : "Flyswatter Kamado",
+    "location" : "Daedal Isle (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 77,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Flyswatter_Kamado"
+  }, {
+    "name" : "Foolhardy Saide",
+    "location" : "Pedesto Valley Floor (Great Sword's Base)",
+    "region" : "Swordmarch",
+    "level" : 58,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Foolhady_Saide"
+  }, {
+    "name" : "Forsaken Arbiter",
+    "location" : "Hangar, Lower Level (Keves Castle)",
+    "region" : "Keves Castle",
+    "level" : 42,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Forsaken_Arbiter"
+  }, {
+    "name" : "Frolicking Parker",
+    "location" : "Cotte Trick Ruins (Great Cotte Falls)",
+    "region" : "Pentelas",
+    "level" : 31,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Frolicking_Parker"
+  }, {
+    "name" : "Gallivanter Buckley",
+    "location" : "Titan Rock (Great Cotte Falls)",
+    "region" : "Pentelas",
+    "level" : 30,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Gallivanter_Buckley"
+  }, {
+    "name" : "Galloping Ghuldan",
+    "location" : "Fairlaine Underpass (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 56,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Galloping Ghuldan"
+  }, {
+    "name" : "Ghostfist Róisín",
+    "location" : "Amplifier Control Room (Origin Interior)",
+    "region" : "Origin",
+    "level" : 66,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Ghostfist_R%C3%B3is%C3%ADn"
+  }, {
+    "name" : "Ghosting Lulika",
+    "location" : "Colony 15 (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 65,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Ghosting_Lulika"
+  }, {
+    "name" : "Godlike Krastor",
+    "location" : "Ruins of Seebu (Urayan Tunnel)",
+    "region" : "Pentelas",
+    "level" : 82,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Godlike_Krastor"
+  }, {
+    "name" : "Gorgeous Mandora",
+    "location" : "Cavern of Oblivion (Low Maktha Wildwood)",
+    "region" : "Pentelas",
+    "level" : 96,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Gorgeous_Mandora"
+  }, {
+    "name" : "Gracious Titania",
+    "location" : "Urayan Tunnels",
+    "region" : "Pentelas",
+    "level" : 50,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Gracious_Titania"
+  }, {
+    "name" : "Gushing Masquin",
+    "location" : "Colony 9 (Yzana Plains)",
+    "region" : "Aetia",
+    "level" : 29,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Gushing_Maquin"
+  }, {
+    "name" : "Hardscale Gouran",
+    "location" : "Oisha's Reef Ravine (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 66,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Hardscale_Gouran"
+  }, {
+    "name" : "Hardshelled Admory",
+    "location" : "Krezen Cliffs (Erythia Sea)",
+    "region" : "Cadensia",
+    "level" : 57,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Hardshelled_Admory"
+  }, {
+    "name" : "Hazardous Jarrahed",
+    "location" : "Racine's Platter (Eagus Wilderness)",
+    "region" : "Fornis",
+    "level" : 16,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Hazardous_Jarrahed"
+  }, {
+    "name" : "Heavenrazor Egreet",
+    "location" : "The Cavity",
+    "region" : "Swordmarch",
+    "level" : 90,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Heavenrazor_Egreet"
+  }
+  ]
+}
