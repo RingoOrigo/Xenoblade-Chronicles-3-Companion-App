@@ -21,11 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/helvetica_neue_condensed"
-        android:textSize="20sp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/area_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/separation_dot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@+id/monster_image_view"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         tools:text="Leone Telethia" />
 
     <TextView
@@ -33,9 +38,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/separation_dot"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/level_label_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/monster_name_text_view"
         app:layout_constraintTop_toTopOf="@+id/monster_name_text_view" />
 
@@ -43,44 +51,54 @@
         android:id="@+id/level_label_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/helvetica_neue_condensed"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/helvetica_neue"
         android:text="@string/level"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/separation_dot"
-        app:layout_constraintTop_toTopOf="@+id/monster_name_text_view" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/monster_name_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/level_numeric_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/separation_dot" />
 
     <TextView
         android:id="@+id/level_numeric_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica_neue_condensed"
-        android:textSize="20sp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/level_label_text_view"
         app:layout_constraintTop_toTopOf="@+id/level_label_text_view"
         tools:text="200" />
 
     <TextView
         android:id="@+id/area_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica_neue_condensed"
-        tools:text="Placeholder Area"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/helvetica_neue"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/monster_name_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/monster_name_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/monster_name_text_view"
+        tools:text="Placeholder Area" />
 
     <TextView
         android:id="@+id/location_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica_neue_condensed"
-        tools:text="Placeholder Location"
-        android:textSize="20sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/monster_image_view"
+        app:layout_constraintEnd_toStartOf="@+id/unique_monster_warning_image"
         app:layout_constraintStart_toStartOf="@+id/area_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/area_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/area_text_view"
+        tools:text="Placeholder Location" />
 
     <ImageView
         android:id="@+id/unique_monster_warning_image"

@@ -9,5 +9,14 @@
         android:id="@+id/mainFragment"
         android:name="com.example.xenobladechronicles3companion.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_monsterFragment"
+            app:destination="@id/monsterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monsterFragment"
+        android:name="com.example.xenobladechronicles3companion.MonsterFragment"
+        android:label="fragment_monster"
+        tools:layout="@layout/fragment_monster" />
 </navigation>
