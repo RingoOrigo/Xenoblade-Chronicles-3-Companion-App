@@ -5,6 +5,12 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <!--Colours to be used for the general app's theme. Agnian colours for light theme, Kevesi colours for dark theme.-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name = "kevesi_gold">#AE8300</color>
+    <color name = "agnian_gold">#F3AE00</color>
+    <color name="flute_red">#cc0020</color>
+
 </resources>

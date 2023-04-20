@@ -13,9 +13,9 @@ class MonsterFragment : Fragment() {
     private val binding get() = _binding!!
 
     val monsters = listOf(
-        Monster("Aeing Moramora", "Aeing_Moramora", 26, "Pentelas Region", "Urayan Tunnels", false, false),
-        Monster("Budding Francis", "Budding_Francis", 32, "Pentelas Region", "Great Cotte Falls", true, false),
-        Monster("Migratory Circe", "Migratory_Circe", 34, "Aetia Region", "Millick Meadows", true, false),
+        Monster("Aeing Moramora", 26, "Pentelas Region", "Urayan Tunnels", false),
+        Monster("Budding Francis",  32, "Pentelas Region", "Great Cotte Falls", true),
+        Monster("Migratory Circe",  34, "Aetia Region", "Millick Meadows", true),
         )
 
     override fun onCreateView(

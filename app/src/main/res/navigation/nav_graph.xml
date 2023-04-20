@@ -19,4 +19,14 @@
         android:name="com.example.xenobladechronicles3companion.MonsterFragment"
         android:label="fragment_monster"
         tools:layout="@layout/fragment_monster" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.xenobladechronicles3companion.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/accoladesFragment"
+        android:name="com.example.xenobladechronicles3companion.AccoladesFragment"
+        android:label="fragment_accolades"
+        tools:layout="@layout/fragment_accolades" />
 </navigation>

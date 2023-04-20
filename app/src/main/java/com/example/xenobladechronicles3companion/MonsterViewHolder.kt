@@ -11,9 +11,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
 
         binding.monsterNameTextView.text = monster.name
         binding.levelNumericTextView.text = monster.level.toString()
-        binding.areaTextView.text = monster.area
+        binding.areaTextView.text = monster.region
         binding.locationTextView.text = monster.location
-
-        if (monster.unique) binding.uniqueMonsterWarningImage.setImageResource(R.drawable.unique_monster_icon)
     }
 }
