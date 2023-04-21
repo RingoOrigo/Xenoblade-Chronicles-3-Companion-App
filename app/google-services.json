@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801744638194",
+    "project_id": "xc3c-4231c",
+    "storage_bucket": "xc3c-4231c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801744638194:android:dd87537920b13916edc06b",
+        "android_client_info": {
+          "package_name": "com.example.xenobladechronicles3companion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801744638194-qeo21kkp9flf0rdmgpe21sn949pfmp8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAairRYd4pw07mcbWCR9liHCEWOKIh58ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801744638194-qeo21kkp9flf0rdmgpe21sn949pfmp8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

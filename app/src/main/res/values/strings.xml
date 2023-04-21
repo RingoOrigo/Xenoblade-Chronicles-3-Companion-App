@@ -7,4 +7,8 @@
     <string name="small_art_of_monster">Small art of monster</string>
     <string name="about">About</string>
     <string name="accolades">Accolades</string>
+    <string name="about_intro">Xenoblade Chronicles 3 is a role-playing video game developed by Monolith Soft and published by Nintendo on July 29, 2022 for the Nintendo Switch.\n\nThis app is meant to help you keep track of what you have and have not done in the vast world of Aionios!\n\nBelow is some information that may help you navigate and understand your new companion.</string>
+    <string name="logo_description">The logo of Xenoblade Chronicles 3</string>
+    <string name="unique_monsters_header">About Unique Monsters</string>
+    <string name="about_unique_monsters">Unique Monsters are everywhere throughout Xenoblade Chronicles 3. They are strong foes with higher stats than other enemies of their level. Some Unique Monsters are even higher level than your party\'s maximum level. These are called Superbosses.\n\nAs for your companion, within the Unique Monsters Menu, every one of the game's 141 Unique Monsters will be listed, along with their levels, locations, and a picture to help you with your search. Superbosses have their names in red and another noticeable indicator on their entries!</string>
 </resources>
