@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,9 +26,12 @@
             <ImageView
                 android:id="@+id/xenoblade_3_logo_view"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
                 android:contentDescription="@string/logo_description"
-                android:src="@drawable/xenoblade_3_logo"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -59,6 +63,7 @@
                 android:id="@+id/about_unique_monsters_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="@string/about_unique_monsters"
                 android:textAlignment="center"
                 android:textSize="24sp"
@@ -66,6 +71,61 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/unique_monsters_header" />
+
+            <TextView
+                android:id="@+id/side_quests_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/side_quests_header"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/about_unique_monsters_view" />
+
+            <TextView
+                android:id="@+id/about_side_quests_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/about_side_quests"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:fontFamily="@font/helvetica_neue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/side_quests_header" />
+
+            <TextView
+                android:id="@+id/characters_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/characters_header"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/about_side_quests_view" />
+
+            <TextView
+                android:id="@+id/about_characters_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/about_characters"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:fontFamily="@font/helvetica_neue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/characters_header" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".12" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
