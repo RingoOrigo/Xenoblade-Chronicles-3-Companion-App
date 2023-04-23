@@ -3,24 +3,13 @@ package com.example.xenobladechronicles3companion
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-@JsonClass(generateAdapter = true)
+
 data class Monster (
-    val name : String,
-    val level : Int,
-    val location : String,
-    val region : String,
-    val superboss : Boolean?,
-    val articleURL : String,
-    val imageURL : String,
-    var defeated : Boolean){}
-
-data class MonsterJson (
-    val name : String,
-    val level : Int,
-    val location : String,
-    val region : String,
-    val superboss : Boolean?,
-    val articleURL: String,
-    val imageURL: String
-        )
-
+    @Json(name = "name") val name : String,
+    @Json(name = "level") val level : Long,
+    @Json(name = "location") val location : String,
+    @Json(name = "region") val region : String,
+    @Json(name = "superboss") val superboss : Boolean?,
+    @Json(name = "articleurl") val articleurl : String,
+    @Json(name = "imageurl") val imageurl : String,
+    var defeated : Boolean = false){}
