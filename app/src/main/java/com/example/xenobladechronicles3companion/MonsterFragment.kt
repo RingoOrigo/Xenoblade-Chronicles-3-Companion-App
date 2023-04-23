@@ -1,5 +1,6 @@
 package com.example.xenobladechronicles3companion
 
+import android.content.res.AssetManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,9 @@ import com.example.xenobladechronicles3companion.databinding.FragmentMonsterBind
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.squareup.moshi.JsonAdapter
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 
 class MonsterFragment : Fragment() {
 
@@ -18,9 +22,9 @@ class MonsterFragment : Fragment() {
     lateinit var dbref : DatabaseReference
 
     val monsters = listOf(
-        Monster("Aeing Moramora", 26, "Pentelas Region", "Urayan Tunnels", false, false),
-        Monster("Budding Francis",  32, "Pentelas Region", "Great Cotte Falls", true, false),
-        Monster("Migratory Circe",  34, "Aetia Region", "Millick Meadows", true, true),
+        Monster("Aeing Moramora", 26, "Pentelas Region", "Urayan Tunnels", false, "false", "what", false),
+        Monster("Budding Francis",  32, "Pentelas Region", "Great Cotte Falls", true, "false", "what", false),
+        Monster("Migratory Circe",  34, "Aetia Region", "Millick Meadows", true, "true", "what", false),
         )
 
     override fun onCreateView(

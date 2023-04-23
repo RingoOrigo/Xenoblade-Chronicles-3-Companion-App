@@ -21,3 +21,18 @@ class MonsterAdapter (val monsterList : List<Monster>) : RecyclerView.Adapter<Mo
         holder.bindMonster(currentMonster)
     }
 }
+
+class MonsterJsonAdapter {
+    @FromJson
+    fun monsterFromJson(monsterJson : MonsterJson) : Monster {
+        return Monster (name = monsterJson.name,
+            level = monsterJson.level,
+            location = monsterJson.location,
+            region = monsterJson.region,
+            superboss = monsterJson.superboss ?: false,
+            articleURL = monsterJson.articleURL,
+            imageURL = monsterJson.imageURL,
+            defeated = false
+                )
+    }
+}

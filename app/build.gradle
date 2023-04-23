@@ -4,6 +4,7 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'com.google.gms.google-services'
 }
+apply plugin: 'kotlin-kapt'
 
 android {
     namespace 'com.example.xenobladechronicles3companion'
@@ -39,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    annotationProcessor 'com.squareup.moshi:moshi-kotlin-codegen:1.6.0'
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
