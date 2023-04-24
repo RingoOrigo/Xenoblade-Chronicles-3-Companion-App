@@ -3,6 +3,11 @@
     <string name="app_name_short">XC3C</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="xenoblade_chronicles_3">Xenoblade Chronicles 3</string>
+    <string name="companion">Companion</string>
+    <string name="unique_monsters">Unique Monsters</string>
+    <string name="side_quests">Side Quests</string>
+    <string name="characters">Characters</string>
     <string name="separation_dot">•</string>
     <string name="level">Level</string>
     <string name="small_art_of_monster">Small art of monster</string>
