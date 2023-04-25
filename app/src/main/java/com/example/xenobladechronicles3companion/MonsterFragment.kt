@@ -41,8 +41,4 @@ class MonsterFragment : Fragment() {
 
         return binding.root
     }
-
-    fun getMonsterList() {
-        TODO("Have moshi process everything here and return a list of Monster s to be used in the RecyclerView")
-    }
 }
