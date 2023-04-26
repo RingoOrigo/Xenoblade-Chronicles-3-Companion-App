@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import com.example.xenobladechronicles3companion.databinding.FragmentMonsterBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
@@ -22,12 +25,8 @@ class MonsterFragment : Fragment() {
     private val binding get() = _binding!!
 
     lateinit var dbref : DatabaseReference
+    private val viewModel : MonsterViewModel by activityViewModels()
 
-    val monsters = listOf(
-        Monster("Aeing Moramora", 26, "Pentelas Region", "Urayan Tunnels", false, "false", "what", false),
-        Monster("Budding Francis",  32, "Pentelas Region", "Great Cotte Falls", true, "false", "what", false),
-        Monster("Migratory Circe",  34, "Aetia Region", "Millick Meadows", true, "true", "what", false),
-        )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,9 +34,15 @@ class MonsterFragment : Fragment() {
     ): View? {
         _binding = FragmentMonsterBinding.inflate(inflater, container, false)
 
-        dbref = Firebase.database.reference
+        viewModel.response.observe(viewLifecycleOwner, Observer {
+            monsterList : List<Monster> ->
+            val mAdapter = MonsterRecyclerViewAdapter(monsterList)
+            binding.monsterRecyclerView.adapter = mAdapter
+        })
 
-        binding.monsterRecyclerView.adapter = MonsterRecyclerViewAdapter(monsters)
+        viewModel.getMonsters()
+
+        dbref = Firebase.database.reference
 
         return binding.root
     }
