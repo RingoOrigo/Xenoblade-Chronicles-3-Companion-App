@@ -4,6 +4,7 @@
     "location" : "Lavi Sandbar (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 64,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Abysmal_Rakshmi",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/11/XC3_Abysmal_Rakshmi.png/revision/latest/scale-to-width-down/350?cb=20221021165451"
   }, {
@@ -11,6 +12,7 @@
     "location" : "Murmur Rise (Millick Meadows)",
     "region" : "Aetia",
     "level" : 29,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Altruistic_Maribel",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a0/Altruistic_Maribel.png/revision/latest/scale-to-width-down/350?cb=20220812204537"
   }, {
@@ -18,6 +20,7 @@
     "location" : "Ether Mine (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 39,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ambusher_Tirion",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/c9/XC3_Ambusher_Tirion.png/revision/latest/scale-to-width-down/350?cb=20220816193826"
   }, {
@@ -25,6 +28,7 @@
     "location" : "Hangar, Upper Level (Origin Interior)",
     "region" : "Origin",
     "level" : 69,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Artificial_Optho",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/32/XC3_Hollow_Ones.png/revision/latest/scale-to-width-down/350?cb=20221021171807"
   }, {
@@ -32,6 +36,7 @@
     "location" : "Colony Mu (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 51,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Barbed_Merod",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/78/XC3_Barbed_Merod.png/revision/latest/scale-to-width-down/350?cb=20221021163515"
   }, {
@@ -39,6 +44,7 @@
     "location" : "Mountain Front: Keves (Urayan Trail)",
     "region" : "Pentelas",
     "level" : 48,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Beseiger_Sheritt",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/47/XC3_Besieger_Sheritt.png/revision/latest/scale-to-width-down/350?cb=20220816033648"
   }, {
@@ -46,6 +52,7 @@
     "location" : "Hovering Reef 4 (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 40,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Blazing_Karlos",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6d/XC3_Blazing_Karlos.png/revision/latest/scale-to-width-down/350?cb=20220816193658"
   }, {
@@ -53,6 +60,7 @@
     "location" : "Loska's Cavern (Urayan Trail)",
     "region" : "Pentelas",
     "level" : 53,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Bloodsucking_Elvis",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/10/XC3_Bloodsucking_Elvis.png/revision/latest/scale-to-width-down/350?cb=20221018005843"
   }, {
@@ -60,6 +68,7 @@
     "location" : "Titan Rock (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 32,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Budding_Francis",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/73/XC3_Budding_Francis.png/revision/latest/scale-to-width-down/350?cb=20220814184828"
   }, {
@@ -67,6 +76,7 @@
     "location" : "Mountain Front: Agnus (Urayan Trail)",
     "region" : "Pentelas",
     "level" : 48,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Bushwhacker_Farrit",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/89/XC3_Bushwhacker_Farritt.png/revision/latest/scale-to-width-down/350?cb=20220816033849"
   }, {
@@ -74,6 +84,7 @@
     "location" : "Central Defense (Origin Interior)",
     "region" : "Origin",
     "level" : 69,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Clinging_Azreel",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3e/XC3_Clinging_Azreel.png/revision/latest/scale-to-width-down/350?cb=20220901215633"
   }, {
@@ -90,6 +101,7 @@
     "location" : "Cape Arcaphor (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 60,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Covetous_Gerondon",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5f/XC3_Covetous_Gerondon.png/revision/latest/scale-to-width-down/350?cb=20221021163931"
   }, {
@@ -97,6 +109,7 @@
     "location" : "Elaice Highway (Colony Iota)",
     "region" : "Fornis",
     "level" : 54,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Crafty_Anskey",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/8a/XC3_Crafty_Anskey.png/revision/latest/scale-to-width-down/350?cb=20221018004745"
   }, {
@@ -104,6 +117,7 @@
     "location" : "Hovering Reef 3 (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 38,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Craven_Piggard",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/e0/XC3_Craven_Piggard.png/revision/latest/scale-to-width-down/350?cb=20220816193557"
   }, {
@@ -111,6 +125,7 @@
     "location" : "Amplifier No. 2 (Origin Interior)",
     "region" : "Origin",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Creeping_Hameel",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/ce/XC3_Creeping_Hameel.png/revision/latest/scale-to-width-down/350?cb=20220909224214"
   }, {
@@ -118,6 +133,7 @@
     "location" : "Amplifier Control Room (Origin Interior)",
     "region" : "Origin",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Cruelfist_Rojou",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/0f/XC3_Armbenders.png/revision/latest/scale-to-width-down/350?cb=20221021172607"
   }, {
@@ -125,6 +141,7 @@
     "location" : "Alefa Skysphere (Dannagh Desert)",
     "region" : "Fornis",
     "level" : 27,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Crystalline_Dugarre",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/65/XC3_Crystalline_DuGarre.png/revision/latest/scale-to-width-down/350?cb=20220814041822"
   }, {
@@ -132,6 +149,7 @@
     "location" : "The Lace Subterranean (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 22,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Dapper_Sepiar",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/95/XC3_Dapper_Sepiar.png/revision/latest/scale-to-width-down/350?cb=20220814032912"
   }, {
@@ -139,6 +157,7 @@
     "location" : "Colony 15 (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Darkening_Asha",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d2/XC3_4_Blades_in_the_Dark.png/revision/latest/scale-to-width-down/350?cb=20221021171231"
   }, {
@@ -146,6 +165,7 @@
     "location" : "Ferronis Arsenal #3 (Origin Interior)",
     "region" : "Origin",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Defiled_Ishtar",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/05/XC3_Defiled_Ishtar.png/revision/latest/scale-to-width-down/350?cb=20220901215940"
   }, {
@@ -153,6 +173,7 @@
     "location" : "Daedal Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 75,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Demonic_Krenolur",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/36/XC3_Demonic_Krenolur.jpeg/revision/latest/scale-to-width-down/350?cb=20220718112958"
   }, {
@@ -160,6 +181,7 @@
     "location" : "Hangar, Lower: Main Gate (Origin Interior)",
     "region" : "Origin",
     "level" : 86,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Desired_Oruria",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/7a/XC3_Desired_Oruria.png/revision/latest/scale-to-width-down/350?cb=20220901214846"
   }, {
@@ -167,6 +189,7 @@
     "location" : "Troop Reserve Station (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 43,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Determined_Vatslav",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f4/XC3_Black_Triad.png/revision/latest/scale-to-width-down/350?cb=20221016022055"
   }, {
@@ -174,6 +197,7 @@
     "location" : "Hovering Reef 7 (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 49,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Diabolical_Rindolph",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9e/XC3_Diabolical_Rindolph.png/revision/latest/scale-to-width-down/350?cb=20220816033607"
   }, {
@@ -181,6 +205,7 @@
     "location" : "The Tirkinhold (High Maktha Wildwood)",
     "region" : "Pentelas",
     "level" : 45,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Dimwitted_Tirkin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/55/XC3_Dimwitted_Tirkin.png/revision/latest/scale-to-width-down/350?cb=20220815030401"
   }, {
@@ -188,6 +213,7 @@
     "location" : "Hangar, Upper Level (Origin Interior)",
     "region" : "Origin",
     "level" : 69,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Dishonest_Karom",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/32/XC3_Hollow_Ones.png/revision/latest/scale-to-width-down/350?cb=20221021171807"
   }, {
@@ -195,6 +221,7 @@
     "location" : "Pinasa Highland (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 50,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Doomfang_Caum",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f0/Doomfang_Caum.png/revision/latest/scale-to-width-down/350?cb=20220812202007"
   }, {
@@ -210,6 +237,7 @@
     "location" : "Devil's Skillet (Dannagh Desert)",
     "region" : "Fornis",
     "level" : 87,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Dunesea_Marcellus",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/54/Dunesea_Marcellus.png/revision/latest/scale-to-width-down/350?cb=20220811210003"
   }, {
@@ -217,6 +245,7 @@
     "location" : "Oshia's Reef Ravine (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Fairscale_Marina",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/18/XC3_Fairscale_Marina.png/revision/latest/scale-to-width-down/350?cb=20221021170623"
   }, {
@@ -224,6 +253,7 @@
     "location" : "Elgares Depths (Millick Meadows)",
     "region" : "Aetia",
     "level" : 80,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Fang-King_Clavein",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/90/XC3_Fang-King_Clavein.png/revision/latest/scale-to-width-down/350?cb=20220827023148"
   }, {
@@ -231,6 +261,7 @@
     "location" : "Zem's Crossway (Eagus Wilderness)",
     "region" : "Fornis",
     "level" : 40,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Farseer_Pirtett",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/b0/Farseer_Pirtett.png/revision/latest/scale-to-width-down/350?cb=20220811204628"
   }, {
@@ -238,6 +269,7 @@
     "location" : "Material Storage Wearhouse (Great Sword's Hilt)",
     "region" : "Swordmarch",
     "level" : 47,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Fineblade_Faltaar",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/4e/XC3_Fineblade_Faltaar.png/revision/latest/scale-to-width-down/350?cb=20221018004302"
   }, {
@@ -245,6 +277,7 @@
     "location" : "Colony 15 (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Fleeting_Shikino",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d2/XC3_4_Blades_in_the_Dark.png/revision/latest/scale-to-width-down/350?cb=20221021171231"
   }, {
@@ -252,6 +285,7 @@
     "location" : "Daedal Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 77,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Flyswatter_Kamado",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/19/XC3_Flyswatter_Kamado.png/revision/latest/scale-to-width-down/350?cb=20221021165822"
   }, {
@@ -259,6 +293,7 @@
     "location" : "Pedesto Valley Floor (Great Sword's Base)",
     "region" : "Cadensia",
     "level" : 58,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Foolhady_Saide",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a1/XC3_Foolhardy_Saide.png/revision/latest/scale-to-width-down/350?cb=20221021162814"
   }, {
@@ -266,6 +301,7 @@
     "location" : "Hangar, Lower Level (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 42,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Forsaken_Arbiter",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/da/XC3_Forsaken_Arbiter.png/revision/latest/scale-to-width-down/350?cb=20221016021515"
   }, {
@@ -273,6 +309,7 @@
     "location" : "Cotte Trick Ruins (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 31,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Frolicking_Parker",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9f/XC3_Frolicking_Parker.png/revision/latest/scale-to-width-down/350?cb=20220815030556"
   }, {
@@ -280,6 +317,7 @@
     "location" : "Titan Rock (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 30,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Gallivanter_Buckley",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/76/XC3_Gallivanter_Buckley.png/revision/latest/scale-to-width-down/350?cb=20220815030921"
   }, {
@@ -287,6 +325,7 @@
     "location" : "Fairlaine Underpass (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 56,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Galloping Ghuldan",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/95/XC3_Galloping_Ghuldan.png/revision/latest/scale-to-width-down/350?cb=20221018010106"
   }, {
@@ -294,6 +333,7 @@
     "location" : "Amplifier Control Room (Origin Interior)",
     "region" : "Origin",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ghostfist_R%C3%B3is%C3%ADn",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/0f/XC3_Armbenders.png/revision/latest/scale-to-width-down/350?cb=20221021172607"
   }, {
@@ -301,6 +341,7 @@
     "location" : "Colony 15 (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ghosting_Lulika",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d2/XC3_4_Blades_in_the_Dark.png/revision/latest/scale-to-width-down/350?cb=20221021171231"
   }, {
@@ -308,6 +349,7 @@
     "location" : "Ruins of Seebu (Urayan Tunnel)",
     "region" : "Pentelas",
     "level" : 82,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Godlike_Krastor",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/2e/XC3_Agnian_Assassins.png/revision/latest/scale-to-width-down/350?cb=20220829033145"
   }, {
@@ -315,6 +357,7 @@
     "location" : "Cavern of Oblivion (Low Maktha Wildwood)",
     "region" : "Pentelas",
     "level" : 96,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Gorgeous_Mandora",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6f/XC3_Gorgeous_Mandora.png/revision/latest/scale-to-width-down/350?cb=20220829033528"
   }, {
@@ -322,6 +365,7 @@
     "location" : "Urayan Tunnels",
     "region" : "Pentelas",
     "level" : 50,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Gracious_Titania",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/47/XC3_Gracious_Titania.png/revision/latest/scale-to-width-down/350?cb=20221018005114"
   }, {
@@ -329,6 +373,7 @@
     "location" : "Colony 9 (Yzana Plains)",
     "region" : "Aetia",
     "level" : 29,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Gushing_Maquin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/02/XC3_Gushing_Masquin.png/revision/latest?cb=20220813230430"
   }, {
@@ -336,6 +381,7 @@
     "location" : "Oisha's Reef Ravine (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Hardscale_Gouran",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6e/XC3_Hardscale_Gouran.png/revision/latest/scale-to-width-down/350?cb=20221021170940"
   }, {
@@ -343,6 +389,7 @@
     "location" : "Krezen Cliffs (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 57,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Hardshelled_Admory",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5c/XC3_Hardshelled_Admory.png/revision/latest/scale-to-width-down/350?cb=20221021163034"
   }, {
@@ -350,6 +397,7 @@
     "location" : "Racine's Platter (Eagus Wilderness)",
     "region" : "Fornis",
     "level" : 16,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Hazardous_Jarrahed",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ea/Hazardous_Jarrahed.png/revision/latest/scale-to-width-down/350?cb=20220811202026"
   }, {
@@ -357,6 +405,7 @@
     "location" : "The Cavity",
     "region" : "Swordmarch",
     "level" : 90,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Heavenrazor_Egreet",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5a/XC3_Heavenrazor_Egreet.png/revision/latest/scale-to-width-down/350?cb=20221021163733"
   }, {
@@ -364,6 +413,7 @@
     "location" : "Tirkin Headquarters (Ribbi Flats)",
     "region" : "Fornis",
     "level" : 23,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Hedonist_Tirkin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/42/XC3_Hedonist_Tirkin.png/revision/latest?cb=20220814032827"
   }, {
@@ -371,6 +421,7 @@
     "location" : "Old Kana Battlefield (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 25,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Heretical_Saurow",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1b/Heretical_Saurow.png/revision/latest/scale-to-width-down/350?cb=20220812201703"
   }, {
@@ -378,6 +429,7 @@
     "location" : "Place of Heroes Past (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 76,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Heroic_Gulkin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1b/XC3_Heroic_Gulkin.png/revision/latest/scale-to-width-down/350?cb=20220827024205"
   }, {
@@ -385,6 +437,7 @@
     "location" : "Eksado Verge (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 55,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Hornbow_Dante",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/35/XC3_Hornbow_Dante.png/revision/latest/scale-to-width-down/350?cb=20221016020537"
   }, {
@@ -392,6 +445,7 @@
     "location" : "Forward Post Camp (Alfeto Valley)",
     "region" : "Aetia",
     "level" : 21,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Househunter_Carly",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/b9/XC3_Househunter_Carly.png/revision/latest/scale-to-width-down/350?cb=20220813230348"
   }, {
@@ -399,6 +453,7 @@
     "location" : "Gogol's Tree (High Maktha Wildwood)",
     "region" : "Pentelas",
     "level" : 88,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Immovable_Gonzalez",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9b/XC3-Gonzales.png/revision/latest/scale-to-width-down/350?cb=20220622150759"
   }, {
@@ -406,6 +461,7 @@
     "location" : "Great Liente Shelf (Elaice Highway)",
     "region" : "Fornis",
     "level" : 74,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Impish_Langobard",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ef/XC3_Impish_Langobard.png/revision/latest/scale-to-width-down/350?cb=20221018004935"
   }, {
@@ -413,6 +469,7 @@
     "location" : "Ruins of Seebu (Urayan Tunnels)",
     "region" : "Pentelas",
     "level" : 82,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Impregnable_Sandhu",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/2e/XC3_Agnian_Assassins.png/revision/latest/scale-to-width-down/350?cb=20220829033145"
   }, {
@@ -420,6 +477,7 @@
     "location" : "Millick Ravine Way (Millick Meadows)",
     "region" : "Aetia",
     "level" : 12,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Indiscreet_Gombaba",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/88/XC3_Indiscreet_Gombaba.jpg/revision/latest/scale-to-width-down/350?cb=20220719131939"
   }, {
@@ -427,6 +485,7 @@
     "location" : "Fourth Ixia Bridge (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 64,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Infiltrator_Garnach",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/8d/XC3_Infiltrator_Garnach.png/revision/latest/scale-to-width-down/350?cb=20221016020808"
   }, {
@@ -434,6 +493,7 @@
     "location" : "Migrow's Rosary (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 49,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ec/XC3_Intrusive_Neville.png/revision/latest/scale-to-width-down/350?cb=20221021170238"
   }, {
@@ -441,6 +501,7 @@
     "location" : "Lavi Sandbar (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 72,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Jealous_Mizraile",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/67/XC3_Jealous_Mizraile.png/revision/latest/scale-to-width-down/350?cb=20221021170423"
   }, {
@@ -448,6 +509,7 @@
     "location" : "Viliera Hill (Millick Meadows)",
     "region" : "Aetia",
     "level" : 80,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Jingoistic_Gigantus",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d8/XC3_Territorial_Rotbart.jpg/revision/latest/scale-to-width-down/350?cb=20220613120745"
   }, {
@@ -455,6 +517,7 @@
     "location" : "Valley of Anguish (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 68,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/74/XC3_Joyful_Nimroog.png/revision/latest/scale-to-width-down/350?cb=20220815025820"
   }, {
@@ -462,6 +525,7 @@
     "location" : "Captocorn Peak (Nocclia Mire)",
     "region" : "Upper Aetia",
     "level" : 59,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/43/XC3_Keen_Chicky-Chicky.png/revision/latest/scale-to-width-down/350?cb=20220831021036"
   }, {
@@ -469,6 +533,7 @@
     "location" : "Vinisog Holm (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 79,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Killhappy_Brijaidor",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/90/XC3_Killhappy_Brijaidor.png/revision/latest/scale-to-width-down/350?cb=20220827015709"
   }, {
@@ -476,6 +541,7 @@
     "location" : "Dumas' Jaw (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 95,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Kilcorn_Grandeps",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/8e/XC3_Kilocorn_Grandeps.png/revision/latest/scale-to-width-down/350?cb=20220827020013"
   }, {
@@ -491,6 +557,7 @@
     "location" : "Volf Lair (Alfeto Valley)",
     "region" : "Aetia",
     "level" : 9,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Lapdog_Veece",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a8/XC3_Lapdog_Veece.png/revision/latest/scale-to-width-down/350?cb=20220813231634"
   }, {
@@ -506,6 +573,7 @@
     "location" : "Needle Reef Beach (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 46,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Littlefort_Morley",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/36/XC3_Littlefort_Morley.png/revision/latest/scale-to-width-down/350?cb=20221021163317"
   }, {
@@ -513,6 +581,7 @@
     "location" : "Hidden Freshwater Inlet (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 37,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Massive_Georges",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/40/XC3_Massive_Georges.png/revision/latest/scale-to-width-down/350?cb=20220813230200"
   }, {
@@ -520,6 +589,7 @@
     "location" : "Hillside Ferronis Hulk (Millick Meadows)",
     "region" : "Aetia",
     "level" : 14,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Migratory_Circe",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/26/XC3_Migratory_Circe.png/revision/latest/scale-to-width-down/350?cb=20230417235914"
   }, {
@@ -527,6 +597,7 @@
     "location" : "Colony 15 (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Miraging_Yuri",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d2/XC3_4_Blades_in_the_Dark.png/revision/latest/scale-to-width-down/350?cb=20221021171231"
   }, {
@@ -534,6 +605,7 @@
     "location" : "Hangar, Lower Level (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 41,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Mobile_Vespa",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d1/XC3_Mobile_Vespa.png/revision/latest/scale-to-width-down/350?cb=20221016021137"
   }, {
@@ -541,6 +613,7 @@
     "location" : "Irma's Secret Base (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 75,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Naval_Gyrus",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/7b/XC3_Naval_Gyrus.png/revision/latest/scale-to-width-down/350?cb=20221021170031"
   }, {
@@ -548,6 +621,7 @@
     "location" : "Erythia Relay Base (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 48,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Navigator_Helios",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1a/XC3_Navigator_Helios.png/revision/latest/scale-to-width-down/350?cb=20220902022451"
   }, {
@@ -555,6 +629,7 @@
     "location" : "Torus Hollow (Elaice Highway)",
     "region" : "Fornis",
     "level" : 43,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Night-Stalker_Volodya",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3f/XC3_Night-Stalker_Volodya.png/revision/latest/scale-to-width-down/350?cb=20221021162600"
   }, {
@@ -562,6 +637,7 @@
     "location" : "Levnis Workward (Agnus Castle Barbican)",
     "region" : "Cadensia",
     "level" : 91,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Obliterator_Centaurio",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/30/Obliterator_Centaurio.jpg/revision/latest/scale-to-width-down/350?cb=20220721192143"
   }, {
@@ -569,6 +645,7 @@
     "location" : "Anu Shoals (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 73,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Oceanic_Lucera",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d2/XC3_Oceanic_Lucera.png/revision/latest/scale-to-width-down/350?cb=20220826211048"
   }, {
@@ -576,6 +653,7 @@
     "location" : "Welkin Falls (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 60,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Otherworldly_Rodsin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/2c/XC3_Otherworldy_Rodsin.png/revision/latest/scale-to-width-down/350?cb=20221019001255"
   }, {
@@ -591,6 +669,7 @@
     "location" : "Sparres Barr (Ribbi Flats)",
     "region" : "Aetia",
     "level" : 20,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Perspicacious_Oldar",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/fb/Perspicacious_Oldar.png/revision/latest/scale-to-width-down/350?cb=20220811203411"
   }, {
@@ -598,6 +677,7 @@
     "location" : "Viliera Hill (Millick Meadows)",
     "region" : "Aetia",
     "level" : 13,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Perturbed_Bilkin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/54/Perturbed_Bilkin.png/revision/latest/scale-to-width-down/350?cb=20220811210711"
   }, {
@@ -605,6 +685,7 @@
     "location" : "Melnath's Pass, Upper (Melnath's Shoulder)",
     "region" : "Aetia",
     "level" : 31,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Petrivore_Judomar",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5f/Petrivore_Judomar.png/revision/latest/scale-to-width-down/350?cb=20220811201237"
   }, {
@@ -612,6 +693,7 @@
     "location" : "cotte Trick Ruins (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 35,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Phantasmagorical_Rist",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ec/XC3_Phantasmagorical_Rist.png/revision/latest/scale-to-width-down/350?cb=20220815030222"
   }, {
@@ -619,6 +701,7 @@
     "location" : "Elgares Depth Entrance (Millick Meadows)",
     "region" : "Aetia",
     "level" : 51,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Phantom_Streya",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/7c/XC3_Phantom_Streya.png/revision/latest/scale-to-width-down/350?cb=20221018003844"
   }, {
@@ -626,6 +709,7 @@
     "location" : "Hangar, Upper Level (Origin Interior)",
     "region" : "Origin",
     "level" : 69,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Phony_Temnos",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/32/XC3_Hollow_Ones.png/revision/latest/scale-to-width-down/350?cb=20221021171807"
   }, {
@@ -633,6 +717,7 @@
     "location" : "Hangar, Lower Level (Origin Interior)",
     "region" : "Origin",
     "level" : 69,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Pressing_Rafeel",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f8/XC3_Pressing_Rafeel.png/revision/latest/scale-to-width-down/350?cb=20220901215030"
   }, {
@@ -640,6 +725,7 @@
     "location" : "Visura Parkland (Elaice Highway)",
     "region" : "Fornis",
     "level" : 44,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Profound_Hodzuki",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/53/Profound_Hodzuki.png/revision/latest/scale-to-width-down/350?cb=20220811202424"
   }, {
@@ -647,6 +733,7 @@
     "location" : "Hovering Reef 1 (Syra Hovering Reefs)",
     "region" : "Keves Castle",
     "level" : 64,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Protector_Revelta",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5e/XC3_Protector_Revelta.png/revision/latest/scale-to-width-down/350?cb=20221016020957"
   }, {
@@ -654,6 +741,7 @@
     "location" : "Elsayer Cape (Rae-Bel Tableland)",
     "region" : "Fornis",
     "level" : 45,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Puzzled_Raquinu",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/41/XC3_Puzzled_Raquinu.png/revision/latest/scale-to-width-down/350?cb=20220815031439"
   }, {
@@ -661,6 +749,7 @@
     "location" : "Daedal Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 78,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ragemaw_Tempeldo",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/cb/XC3_Ragemaw_Tempeldo.png/revision/latest/scale-to-width-down/350?cb=20220901220854"
   }, {
@@ -668,6 +757,7 @@
     "location" : "Bennel Cave (Eagus Wilderness)",
     "region" : "Fornis",
     "level" : 17,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Rambler_Curalie",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/07/Rambler_Curalie.png/revision/latest/scale-to-width-down/350?cb=20220811202927"
   }, {
@@ -675,6 +765,7 @@
     "location" : "Roaring Spring (Urayan Tunnels)",
     "region" : "Pentelas",
     "level" : 27,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Raucous_Ron",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9a/XC3_Raucous_Ron.png/revision/latest/scale-to-width-down/350?cb=20220813230059"
   }, {
@@ -682,6 +773,7 @@
     "location" : "Patulia Bay (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 84,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ravenous_Babayaga",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/06/XC3_Ravenous_Babayaga.png/revision/latest/scale-to-width-down/350?cb=20220901220639"
   }, {
@@ -689,6 +781,7 @@
     "location" : "Ferronis Arsenal #2 (Origin Interior)",
     "region" : "Origin",
     "level" : 72,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Reaping_Anteel",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/18/XC3_Reaping_Anteel.png/revision/latest/scale-to-width-down/350?cb=20220901215808"
   }, {
@@ -696,6 +789,7 @@
     "location" : "Tzana Plains (Sonata Saddleback)",
     "region" : "Aetia",
     "level" : 24,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Repulsive_Deepus",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6c/XC3_Repulsive_Deepus.png/revision/latest/scale-to-width-down/350?cb=20220815213225"
   }, {
@@ -703,6 +797,7 @@
     "location" : "Tonic Waters (Ribbi Flats)",
     "region" : "Fornis",
     "level" : 81,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Ruthless_Grokken",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/86/XC3_Ruthless_Grokken.png/revision/latest/scale-to-width-down/350?cb=20220827015417"
   }, {
@@ -710,6 +805,7 @@
     "location" : "Cotte Fountainhead (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 65,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Saberly_Dorampé",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5a/XC3_Aquatic_Beasts.png/revision/latest/scale-to-width-down/350?cb=20221018005605"
   }, {
@@ -717,6 +813,7 @@
     "location" : "Great Idalla Ravine (Dannagh Desert)",
     "region" : "Fornis",
     "level" : 22,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Scornful_Daria",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a7/Scornful_Daria.png/revision/latest/scale-to-width-down/350?cb=20220811205417"
   }, {
@@ -724,6 +821,7 @@
     "location" : "Twinpalm Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 85,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Seadragoon_Melchior",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/98/XC3_Seadragoon_Melchior.png/revision/latest/scale-to-width-down/350?cb=20220901214647"
   }, {
@@ -731,6 +829,7 @@
     "location" : "Patulia Bay (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 77,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Seatiger_Tridence",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f4/XC3_Seatiger_Tridence.png/revision/latest/scale-to-width-down/350?cb=20221021165226"
   }, {
@@ -738,6 +837,7 @@
     "location" : "Seplchral Cliffpath (Alfeto Valley)",
     "region" : "Aetia",
     "level" : 26,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sensitive_Catullus",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/7d/XC3_Sensitive_Catullus.jpeg/revision/latest/scale-to-width-down/350?cb=20220717175854"
   }, {
@@ -745,6 +845,7 @@
     "location" : "The Cavity",
     "region" : "Swordmarch",
     "level" : 120,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Seraphic_Ceratinia",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f5/XC3_Seraphic_Ceratinia.png/revision/latest/scale-to-width-down/350?cb=20220910183632"
   }, {
@@ -752,6 +853,7 @@
     "location" : "Daedal Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 67,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sharkblade_Nedd",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/12/Sharkblade_Nedd.jpg/revision/latest/scale-to-width-down/350?cb=20220809223149"
   }, {
@@ -759,6 +861,7 @@
     "location" : "Oshia's Reef Ravine (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sharpscale_Ragoon",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/05/XC3_Sharpscale_Ragoon.png/revision/latest/scale-to-width-down/350?cb=20221021170826"
   }, {
@@ -766,6 +869,7 @@
     "location" : "Reith Valley (Eagus Wilderness)",
     "region" : "Fornis",
     "level" : 15,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sharpwitted_Tracy",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/79/Sharpwitted_Tracy.png/revision/latest/scale-to-width-down/350?cb=20220811195434"
   }, {
@@ -773,6 +877,7 @@
     "location" : "Kachurichu Cavern (Urayan Tunnels)",
     "region" : "Pentelas",
     "level" : 28,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Shimmering_Marcko",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/89/XC3_Shimmering_Marcko.png/revision/latest/scale-to-width-down/350?cb=20221018005344"
   }, {
@@ -780,6 +885,7 @@
     "location" : "Daedal Isle (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 80,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Slack-Jawed_Zephal",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/08/XC3_Slack-Jawed_Zephal.png/revision/latest/scale-to-width-down/350?cb=20220826211145"
   }, {
@@ -787,6 +893,7 @@
     "location" : "Amoney's Hallows (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 36,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Soaring_Virion",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/50/XC3_Soaring_Virion.png/revision/latest/scale-to-width-down/350?cb=20220814185246"
   }, {
@@ -794,6 +901,7 @@
     "location" : "Gingin's Treehouse (Low Maktha Wildwood)",
     "region" : "Pentelas",
     "level" : 78,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Spartan_Fennick",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/b1/XC3_Spartan_Fennick.png/revision/latest/scale-to-width-down/350?cb=20220827015248"
   }, {
@@ -801,6 +909,7 @@
     "location" : "Bannis Path (Great Sword's Base)",
     "region" : "Cadensia",
     "level" : 42,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Spectral_Rémy",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/8f/XC3_Spectral_R%C3%A9my.png/revision/latest/scale-to-width-down/350?cb=20221021165032"
   }, {
@@ -808,6 +917,7 @@
     "location" : "Antol Pit (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 63,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Spiky_Aurelia",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ee/XC3_Spiky_Aurelia.png/revision/latest/scale-to-width-down/350?cb=20220831021224"
   }, {
@@ -815,6 +925,7 @@
     "location" : "Tsang Road (Captocorn Peak)",
     "region" : "Upper Aetia",
     "level" : 56,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Spiralhorn_Baccro",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1a/XC3_Spiralhorn_Baccro.png/revision/latest/scale-to-width-down/350?cb=20220831020825"
   }, {
@@ -822,6 +933,7 @@
     "location" : "Cotte Fountainhead (Great Cotte Falls)",
     "region" : "Pentelas",
     "level" : 64,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Stately_Doramma",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5a/XC3_Aquatic_Beasts.png/revision/latest/scale-to-width-down/350?cb=20221018005605"
   }, {
@@ -829,6 +941,7 @@
     "location" : "Bulik Brae (Dannagh Desert)",
     "region" : "Fornis",
     "level" : 25,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Stoneclipper_Gorse",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f9/XC3_Stoneclipper_Gorse.png/revision/latest/scale-to-width-down/350?cb=20220814041636"
   }, {
@@ -836,6 +949,7 @@
     "location" : "Piula Path (Captocorn Peak)",
     "region" : "Upper Aetia",
     "level" : 57,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Stonehoof_Torphan",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/20/XC3_Stonehoof_Torphan.png/revision/latest/scale-to-width-down/350?cb=20220831020631"
   }, {
@@ -843,6 +957,7 @@
     "location" : "N'ohm Wetlands (Great Sword's Base)",
     "region" : "Cadensia",
     "level" : 71,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sundappled_Floria",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/89/XC3_Sundappled_Floria.png/revision/latest/scale-to-width-down/350?cb=20221021164759"
   }, {
@@ -850,6 +965,7 @@
     "location" : "Colony 9 Front Gate (Yzana Plains)",
     "region" : "Aetia",
     "level" : 5,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Sycophantic_Lilith",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/c5/XC3_Syncophantic_Lilith.png/revision/latest/scale-to-width-down/350?cb=20220813231707"
   }, {
@@ -857,6 +973,7 @@
     "location" : "Welkin Falls (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 63,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Talkative_Dirakha",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/be/XC3_Talkative_Dirakha.png/revision/latest/scale-to-width-down/350?cb=20221021164206"
   }, {
@@ -864,6 +981,7 @@
     "location" : "Erythia Relay Base (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 49,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Taskmaster_Imperion",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/ee/XC3_Taskmaster_Imperion.png/revision/latest/scale-to-width-down/350?cb=20220902022134"
   }, {
@@ -871,6 +989,7 @@
     "location" : "Lisza Garden (Ribbi Flats)",
     "region" : "Fornis",
     "level" : 23,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Tenderling_Rumi",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d7/XC3_Tenderling_Rumi.png/revision/latest/scale-to-width-down/350?cb=20220814033004"
   }, {
@@ -878,6 +997,7 @@
     "location" : "Glam Rock (Dannagh Desert)",
     "region" : "Fornis",
     "level" : 37,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Terrorbird_Zieger",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/c9/XC3_Terrorbird_Zieger.png/revision/latest/scale-to-width-down/350?cb=20220814184433"
   }, {
@@ -885,6 +1005,7 @@
     "location" : "Central Defense (Origin Interior)",
     "region" : "Origin",
     "level" : 71,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Thaumawolf_Bajeek",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a2/XC3_Thaumawolf_Bajeek.png/revision/latest/scale-to-width-down/350?cb=20220901215218"
   }, {
@@ -892,6 +1013,7 @@
     "location" : "Troop Reserve Section (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 43,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Thunderclap_Dalton",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f4/XC3_Black_Triad.png/revision/latest/scale-to-width-down/350?cb=20221016022055"
   }, {
@@ -899,6 +1021,7 @@
     "location" : "Ladras Way (Captocorn Peak)",
     "region" : "Upper Aetia",
     "level" : 61,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Timbercorn_Cthinos",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5d/XC3_Timbercorn_Cthinos.jpeg/revision/latest/scale-to-width-down/350?cb=20220714132608"
   }, {
@@ -906,6 +1029,7 @@
     "location" : "Amplifier Control Room (Origin Interior)",
     "region" : "Origin",
     "level" : 66,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Trickfist_Tuano",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/0f/XC3_Armbenders.png/revision/latest/scale-to-width-down/350?cb=20221021172607"
   }, {
@@ -913,6 +1037,7 @@
     "location" : "Troop Reserve Section (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 43,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Turbulent_Martinez",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f4/XC3_Black_Triad.png/revision/latest/scale-to-width-down/350?cb=20221016022055"
   }, {
@@ -920,6 +1045,7 @@
     "location" : "Three Heroes Peak (Elaice Highway)",
     "region" : "Fornis",
     "level" : 43,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Unobtrusive_Liggy",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/16/XC3_Unobtrusive_Liggy.png/revision/latest/scale-to-width-down/350?cb=20220816033530"
   }, {
@@ -927,6 +1053,7 @@
     "location" : "Shikashaka Mesa (Ribbi Flats)",
     "region" : "Fornis",
     "level" : 19,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Unruffled_Narrah",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1b/Unruffled_Narrah.png/revision/latest/scale-to-width-down/350?cb=20220811203901"
   }, {
@@ -934,6 +1061,7 @@
     "location" : "Hangar, Upper Level (Origin Interior)",
     "region" : "Origin",
     "level" : 70,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Vapid_Roger",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/32/XC3_Hollow_Ones.png/revision/latest/scale-to-width-down/350?cb=20221021171807"
   }, {
@@ -941,6 +1069,7 @@
     "location" : "Hangar, Lower Level (Keves Castle)",
     "region" : "Keves Castle",
     "level" : 42,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Vengeful_Dominator",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a1/XC3_Vengeful_Dominator.png/revision/latest/scale-to-width-down/350?cb=20221016021805"
   }, {
@@ -948,6 +1077,7 @@
     "location" : "Igna Conglomerate (Elaice Highway)",
     "region" : "Fornis",
     "level" : 46,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Villainous_Igna",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6b/XC3_Villainous_Igna.png/revision/latest/scale-to-width-down/350?cb=20221018004531"
   }, {
@@ -955,6 +1085,7 @@
     "location" : "Daedal Crustip (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 52,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Virtuous_Gulkin",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/cb/Virtuous_Gulkin.jpg/revision/latest?cb=20220805163500"
   }, {
@@ -962,6 +1093,7 @@
     "location" : "Svinne Cavity (Yzana Plains)",
     "region" : "Aetia",
     "level" : 53,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Well-Plated_Zelinka",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1c/XC3_Well-Plated_Zelinka.png/revision/latest/scale-to-width-down/350?cb=20221018003503"
   }, {
@@ -969,6 +1101,7 @@
     "location" : "Fuschian Fields (Millick Meadows)",
     "region" : "Aetia",
     "level" : 70,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Wicked_Wolf_Aranqui",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9f/XC3_Wicked_Wolf_Aranqui.png/revision/latest?cb=20220829033718"
   }, {
@@ -976,6 +1109,7 @@
     "location" : "Anu Shoals (Erythia Sea)",
     "region" : "Cadensia",
     "level" : 48,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Widdershins_Radler",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/e6/XC3_Widdershins_Radler.png/revision/latest/scale-to-width-down/350?cb=20221021164440"
   }, {
@@ -983,6 +1117,7 @@
     "location" : "Battlescar Ferronis Hulk (Everblight Plain)",
     "region" : "Aetia",
     "level" : 59,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Witchwind_Kujjat",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/10/XC3_Witchwind_Kujjat.png/revision/latest/scale-to-width-down/350?cb=20221021161939"
   }, {
@@ -990,6 +1125,7 @@
     "location" : "Riez Tarn (Rae-Bel Tableland)",
     "region" : "Pentelas",
     "level" : 24,
+    "superboss" : false,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Wraithfin_Segna",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/e8/XC3_Wraithfin_Segna.png/revision/latest/scale-to-width-down/350?cb=20220814033112"
   }

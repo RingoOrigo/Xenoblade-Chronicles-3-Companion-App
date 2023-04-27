@@ -17,6 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <ImageView
+        android:id="@+id/defeated_x"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/monster_image_view"
+        app:layout_constraintEnd_toEndOf="@+id/monster_image_view"
+        app:layout_constraintStart_toStartOf="@+id/monster_image_view"
+        app:layout_constraintTop_toTopOf="@+id/monster_image_view"
+        app:srcCompat="@drawable/x"
+        android:scaleType="centerCrop"/>
+
     <TextView
         android:id="@+id/monster_name_text_view"
         android:layout_width="0dp"

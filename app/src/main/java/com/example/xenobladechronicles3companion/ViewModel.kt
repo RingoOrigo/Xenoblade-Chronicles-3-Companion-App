@@ -9,7 +9,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class MonsterViewModel : ViewModel() {
+class ViewModel : ViewModel() {
     private val _response = MutableLiveData<List<Monster>>()
     val response : LiveData<List<Monster>>
         get() = _response
