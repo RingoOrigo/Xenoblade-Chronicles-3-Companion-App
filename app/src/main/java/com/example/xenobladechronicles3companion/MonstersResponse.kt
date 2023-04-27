@@ -21,7 +21,7 @@ class MonsterProperties {
     var level : Long = 0
 
     @Json (name = "superboss")
-    var superboss : Boolean? = false
+    var superboss : Boolean = false
 
     @Json (name = "articleurl")
     var articleurl : String = ""

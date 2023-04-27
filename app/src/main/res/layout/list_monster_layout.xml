@@ -52,9 +52,9 @@
         android:layout_marginStart="8dp"
         android:text="@string/separation_dot"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
+        app:layout_constraintBottom_toBottomOf="@+id/level_numeric_text_view"
         app:layout_constraintStart_toEndOf="@+id/monster_name_text_view"
-        app:layout_constraintTop_toTopOf="@+id/monster_name_text_view" />
+        app:layout_constraintTop_toTopOf="@+id/level_numeric_text_view" />
 
     <TextView
         android:id="@+id/level_numeric_text_view"
@@ -64,6 +64,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/helvetica_neue"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/separation_dot"
         app:layout_constraintTop_toTopOf="@+id/monster_name_text_view"
@@ -92,6 +93,7 @@
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/monster_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/area_text_view"
         app:layout_constraintTop_toBottomOf="@+id/area_text_view"
         tools:text="Placeholder Location" />

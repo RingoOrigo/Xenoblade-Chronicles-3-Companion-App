@@ -28,8 +28,13 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         binding.areaTextView.text = monster.region
         binding.locationTextView.text = monster.location
 
-        if (currentMonster.superboss == true) {
+        if (currentMonster.superboss) {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
+        }
+        else {
+            //For some reason this HAS to be here or a slew of visual glitches will display a vast majority of like level 3 enemies
+            //as superbosses lmao
+            binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.not_quote_black_but_dark))
         }
 
         if (!(monster.defeated)) {

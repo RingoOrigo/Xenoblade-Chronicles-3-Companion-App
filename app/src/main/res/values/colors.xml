@@ -8,6 +8,7 @@
 
     <!--Colours to be used for the general app's theme. Agnian colours for light theme, Kevesi colours for dark theme.-->
     <color name="black">#FF000000</color>
+    <color name="not_quote_black_but_dark">#272727</color>
     <color name="white">#FFFFFFFF</color>
     <color name = "kevesi_gold">#AE8300</color>
     <color name = "agnian_gold">#F3AE00</color>

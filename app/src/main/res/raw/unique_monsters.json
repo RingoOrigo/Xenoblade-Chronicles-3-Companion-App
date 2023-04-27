@@ -845,7 +845,7 @@
     "location" : "The Cavity",
     "region" : "Swordmarch",
     "level" : 120,
-    "superboss" : false,
+    "superboss" : true,
     "articleurl" : "https://xenoblade.fandom.com/wiki/Seraphic_Ceratinia",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f5/XC3_Seraphic_Ceratinia.png/revision/latest/scale-to-width-down/350?cb=20220910183632"
   }, {
