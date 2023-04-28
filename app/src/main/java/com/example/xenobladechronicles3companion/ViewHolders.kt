@@ -18,6 +18,11 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
             val intent = Intent(Intent.ACTION_VIEW, monsterURI)
             itemView.context.startActivity(intent)
         }
+
+        binding.defeatedCheckbox.setOnClickListener {
+            currentMonster.defeated = binding.defeatedCheckbox.isChecked
+        }
+
     }
 
     fun bindMonster(monster : Monster) {
@@ -30,18 +35,21 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
 
         if (currentMonster.superboss) {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
-        }
-        else {
-            //For some reason this HAS to be here or a slew of visual glitches will display a vast majority of like level 3 enemies
-            //as superbosses lmao
+        } else {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.not_quote_black_but_dark))
         }
 
-        if (!(monster.defeated)) {
+        if (currentMonster.defeated) {
+            binding.defeatedX.isVisible = true
+            binding.defeatedCheckbox.isChecked = true
+        } else {
             binding.defeatedX.isVisible = false
+            binding.defeatedCheckbox.isChecked = false
         }
 
         val imageURI = currentMonster.imageurl.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
     }
 }
+
+//Make class SideQuestViewHolder

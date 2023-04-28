@@ -1,0 +1,33 @@
+{
+  "quests" : [ {
+      "quest_name" : "Preparing for Battle",
+      "location" : "Yzana Plains (Colony 9)",
+      "region" : "Aetia",
+      "recommended_level" : 3,
+      "articleurl" : "https://xenoblade.fandom.com/wiki/Preparing_for_Battle",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/85/XC3_Preparing_for_Battle.jpg/revision/latest?cb=20221208000301"
+
+    }, {
+    "quest_name" : "Supplies in the Wind",
+    "location" : "Yzana Plains (Colony 9)",
+    "region" : "Aetia",
+    "recommended_level" : 4,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Supplies_in_the_Wind",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5d/Supplies_in_the_Wind.png/revision/latest/scale-to-width-down/350?cb=20220708042524"
+  }, {
+    "quest_name" : "Friendly Support",
+    "location" : "Yzana Plains",
+    "region" : "Aetia",
+    "recommended_level" : 5,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Friendly_Support",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/69/XC3_Friendly_Support.jpg/revision/latest?cb=20230225112331"
+  }, {
+    "quest_name" : "Farewell Melody",
+    "location" : "Yzana Plains",
+    "region" : "Aetia",
+    "recommended_level" : 5,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Farewell_Melody",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/52/XC3_Farewell_Melody.jpg/revision/latest?cb=20230225112030"
+  }
+  ]
+}

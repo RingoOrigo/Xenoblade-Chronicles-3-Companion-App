@@ -41,8 +41,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toEndOf="@+id/monster_image_view"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@+id/monster_image_view"
+        app:layout_constraintVertical_chainStyle="spread"
         tools:text="Leone Telethia" />
 
     <TextView
@@ -51,8 +51,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/separation_dot"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        app:fontFamily="@font/helvetica_neue"
         app:layout_constraintBottom_toBottomOf="@+id/level_numeric_text_view"
+        app:layout_constraintEnd_toStartOf="@id/level_numeric_text_view"
         app:layout_constraintStart_toEndOf="@+id/monster_name_text_view"
         app:layout_constraintTop_toTopOf="@+id/level_numeric_text_view" />
 
@@ -60,8 +62,7 @@
         android:id="@+id/level_numeric_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
         android:fontFamily="@font/helvetica_neue"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
@@ -79,6 +80,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/defeated_checkbox"
         app:layout_constraintStart_toStartOf="@+id/monster_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/monster_name_text_view"
         tools:text="Placeholder Area" />
@@ -87,7 +89,6 @@
         android:id="@+id/location_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/helvetica_neue"
         android:textSize="16sp"
@@ -97,5 +98,15 @@
         app:layout_constraintStart_toStartOf="@+id/area_text_view"
         app:layout_constraintTop_toBottomOf="@+id/area_text_view"
         tools:text="Placeholder Location" />
+
+    <CheckBox
+        android:id="@+id/defeated_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defeated"
+        android:fontFamily = "@font/helvetica_neue"
+        app:layout_constraintBottom_toTopOf="@+id/location_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level_numeric_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
