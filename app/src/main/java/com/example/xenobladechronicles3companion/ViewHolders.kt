@@ -20,7 +20,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         }
 
         binding.defeatedCheckbox.setOnClickListener {
-            currentMonster.defeated = binding.defeatedCheckbox.isChecked
+            setDefeated(binding.defeatedCheckbox.isChecked)
         }
 
     }
@@ -36,19 +36,23 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         if (currentMonster.superboss) {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
         } else {
-            binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.not_quote_black_but_dark))
+            binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
         }
 
-        if (currentMonster.defeated) {
+        setDefeated(currentMonster.defeated)
+
+        val imageURI = currentMonster.imageurl.toUri().buildUpon().scheme("https").build()
+        Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
+    }
+
+    private fun setDefeated(defeated : Boolean) {
+        if (defeated) {
             binding.defeatedX.isVisible = true
             binding.defeatedCheckbox.isChecked = true
         } else {
             binding.defeatedX.isVisible = false
             binding.defeatedCheckbox.isChecked = false
         }
-
-        val imageURI = currentMonster.imageurl.toUri().buildUpon().scheme("https").build()
-        Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
     }
 }
 
