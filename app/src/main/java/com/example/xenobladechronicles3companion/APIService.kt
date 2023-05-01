@@ -5,6 +5,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.create
 import retrofit2.http.GET
 
 //https://api.github.com/repos/RingoOrigo/Xenoblade-Chronicles-3-Companion-App/contents/blob/master/app/src/main/res/raw/unique_monsters.json
@@ -27,7 +28,14 @@ object MonsterAPI {
     }
 }
 
+
 interface SideQuestAPIService {
     @GET(SIDE_QUEST_QUERY)
     fun getSideQuests(): Call<SideQuestResponse>
+}
+
+object SideQuestAPI {
+    val sideQuestAPI : SideQuestAPIService by lazy {
+        retrofit.create(SideQuestAPIService::class.java)
+    }
 }

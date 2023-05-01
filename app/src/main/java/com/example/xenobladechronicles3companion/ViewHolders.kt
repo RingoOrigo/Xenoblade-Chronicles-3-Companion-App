@@ -2,12 +2,14 @@ package com.example.xenobladechronicles3companion
 
 import android.content.Intent
 import android.net.Uri
+import android.view.WindowInsets
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
+import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
 
 class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
@@ -46,14 +48,37 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
     }
 
     private fun setDefeated(defeated : Boolean) {
-        if (defeated) {
-            binding.defeatedX.isVisible = true
-            binding.defeatedCheckbox.isChecked = true
-        } else {
-            binding.defeatedX.isVisible = false
-            binding.defeatedCheckbox.isChecked = false
-        }
+        binding.defeatedX.isVisible = defeated
+        binding.defeatedCheckbox.isChecked = defeated
     }
 }
 
-//Make class SideQuestViewHolder
+class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    private lateinit var currentQuest : SideQuest
+
+    fun bindSideQuest(quest : SideQuest) {
+        currentQuest = quest
+
+        binding.sideQuestName.text = currentQuest.questName
+        binding.regionName.text = currentQuest.region
+        binding.locationName.text = currentQuest.location
+        binding.recommendedLevelNumeric.text = currentQuest.recLevel.toString()
+
+        if (currentQuest.reqCharacter == null) {
+            binding.requires.isVisible = false
+            binding.requiredCharacterName.isVisible = false
+        } else {
+            binding.requiredCharacterName.text = currentQuest.reqCharacter
+        }
+
+        setCompleted(currentQuest.completed)
+
+        val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
+        Glide.with(itemView.context).load(imageURI).into(binding.imageView)
+
+    }
+
+    private fun setCompleted(defeated: Boolean) {
+        TODO("Make this work when I  finish the UI for the full side quest layout.")
+    }
+}

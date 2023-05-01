@@ -27,7 +27,7 @@ class MonsterFragment : Fragment() {
     ): View? {
         _binding = FragmentMonsterBinding.inflate(inflater, container, false)
 
-        viewModel.response.observe(viewLifecycleOwner, Observer {
+        viewModel.monsterResponse.observe(viewLifecycleOwner, Observer {
             monsterList : List<Monster> ->
             val mAdapter = MonsterRecyclerViewAdapter(monsterList)
             binding.monsterRecyclerView.adapter = mAdapter

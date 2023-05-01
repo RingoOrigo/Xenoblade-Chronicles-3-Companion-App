@@ -10,9 +10,10 @@ import retrofit2.Response
 
 
 class ViewModel : ViewModel() {
-    private val _response = MutableLiveData<List<Monster>>()
-    val response : LiveData<List<Monster>>
-        get() = _response
+    private val _monsterResponse = MutableLiveData<List<Monster>>()
+    val monsterResponse : LiveData<List<Monster>>
+        get() = _monsterResponse
+
 
     fun getMonsters() {
         val request = MonsterAPI.monsterAPI.getMonsters()
@@ -43,8 +44,12 @@ class ViewModel : ViewModel() {
                     val newMonster = Monster(name, level, location, region, superboss, articleURL, imageURL, defeated)
                     listofMonstersFetched.add(newMonster)
                 }
-                _response.value = listofMonstersFetched
+                _monsterResponse.value = listofMonstersFetched
             }
         })
+    }
+
+    fun getSideQuests() {
+
     }
 }

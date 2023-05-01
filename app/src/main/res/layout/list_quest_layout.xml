@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/side_quest_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/recommended_level"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Side quest names can be long. Account for that." />
+
+    <TextView
+        android:id="@+id/region_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/side_quest_name"
+        app:layout_constraintTop_toBottomOf="@+id/side_quest_name"
+        tools:text="Aetia" />
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/region_name"
+        app:layout_constraintTop_toBottomOf="@+id/region_name"
+        tools:text="Colony 9 (Yzana Plains)" />
+
+    <TextView
+        android:id="@+id/recommended_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:text="@string/level"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/side_quest_name"
+        app:layout_constraintEnd_toStartOf="@+id/recommended_level_numeric"
+        app:layout_constraintStart_toEndOf="@+id/side_quest_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recommended_level_numeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recommended_level"
+        tools:text="80" />
+
+    <TextView
+        android:id="@+id/requires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:text="@string/requires"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/location_name"
+        app:layout_constraintTop_toBottomOf="@+id/location_name" />
+
+    <TextView
+        android:id="@+id/required_character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/helvetica_neue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/requires"
+        app:layout_constraintTop_toTopOf="@+id/requires"
+        tools:text="Alexandra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

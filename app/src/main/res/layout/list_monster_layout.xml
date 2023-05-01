@@ -79,7 +79,6 @@
         android:fontFamily="@font/helvetica_neue"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/defeated_checkbox"
         app:layout_constraintStart_toStartOf="@+id/monster_name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/monster_name_text_view"
