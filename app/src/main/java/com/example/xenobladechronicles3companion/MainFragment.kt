@@ -28,6 +28,11 @@ class MainFragment : Fragment() {
         binding.uniqueMonstersButton.setOnClickListener {
             binding.root.findNavController().navigate(MainFragmentDirections.actionMainFragmentToMonsterFragment())
         }
+
+        binding.sideQuestsButton.setOnClickListener {
+            binding.root.findNavController().navigate(MainFragmentDirections.actionMainFragmentToSideQuestFragment())
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

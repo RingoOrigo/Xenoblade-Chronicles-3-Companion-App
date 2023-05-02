@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 
 class SideQuestResponse {
     @Json (name = "quests")
-    lateinit var sideQuestList : List<SideQuest>
+    lateinit var sideQuestList : List<SideQuestProperties>
 }
 
 class SideQuestProperties {

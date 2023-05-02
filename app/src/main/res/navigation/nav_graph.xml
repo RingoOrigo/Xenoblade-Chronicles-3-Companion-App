@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_monsterFragment"
             app:destination="@id/monsterFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sideQuestFragment"
+            app:destination="@id/sideQuestFragment" />
     </fragment>
     <fragment
         android:id="@+id/monsterFragment"
@@ -29,4 +32,9 @@
         android:name="com.example.xenobladechronicles3companion.AccoladesFragment"
         android:label="fragment_accolades"
         tools:layout="@layout/fragment_accolades" />
+    <fragment
+        android:id="@+id/sideQuestFragment"
+        android:name="com.example.xenobladechronicles3companion.SideQuestFragment"
+        android:label="fragment_side_quest"
+        tools:layout="@layout/fragment_side_quest" />
 </navigation>

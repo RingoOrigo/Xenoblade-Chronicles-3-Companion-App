@@ -8,6 +8,8 @@
     tools:context=".SideQuestFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/side_quest_recycler_view"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

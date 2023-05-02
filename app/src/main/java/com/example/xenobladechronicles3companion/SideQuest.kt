@@ -6,8 +6,8 @@ data class SideQuest (
     val reqCharacter : String?,
     val region : String,
     val location : String,
-    val DLC : Boolean,
-    val heroQuest : Boolean,
+    val DLC : Boolean?,
+    val heroQuest : Boolean?,
     val imageURL : String,
     val articleURL : String,
     val completed : Boolean

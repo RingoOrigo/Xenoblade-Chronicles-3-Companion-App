@@ -64,21 +64,19 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
         binding.locationName.text = currentQuest.location
         binding.recommendedLevelNumeric.text = currentQuest.recLevel.toString()
 
-        if (currentQuest.reqCharacter == null) {
+        if (currentQuest.reqCharacter == "") {
             binding.requires.isVisible = false
             binding.requiredCharacterName.isVisible = false
         } else {
             binding.requiredCharacterName.text = currentQuest.reqCharacter
         }
 
-        setCompleted(currentQuest.completed)
-
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)
 
     }
 
-    private fun setCompleted(defeated: Boolean) {
-        TODO("Make this work when I  finish the UI for the full side quest layout.")
-    }
+//    private fun setCompleted(defeated: Boolean) {
+//        TODO("Make this work when I  finish the UI for the full side quest layout.")
+//    }
 }
