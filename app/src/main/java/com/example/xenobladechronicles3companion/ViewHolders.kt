@@ -71,7 +71,7 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
             binding.requiredCharacterName.text = currentQuest.reqCharacter
         }
 
-        val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
+        val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("http").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)
 
     }
