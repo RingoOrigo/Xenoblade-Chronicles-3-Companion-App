@@ -61,6 +61,9 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
             val intent = Intent(Intent.ACTION_VIEW, questURI)
             itemView.context.startActivity(intent)
         }
+        binding.checkBox.setOnClickListener {
+            setCompleted(binding.checkBox.isChecked)
+        }
     }
 
     fun bindSideQuest(quest : SideQuest) {
@@ -78,12 +81,15 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
             binding.requiredCharacterName.text = currentQuest.reqCharacter
         }
 
+        setCompleted(binding.checkBox.isChecked)
+
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)
 
     }
 
-//    private fun setCompleted(defeated: Boolean) {
-//        TODO("Make this work when I  finish the UI for the full side quest layout.")
-//    }
+    private fun setCompleted(completed: Boolean) {
+        currentQuest.completed = completed
+        binding.completedX.isVisible = completed
+    }
 }

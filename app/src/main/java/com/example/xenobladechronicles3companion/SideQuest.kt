@@ -10,6 +10,6 @@ data class SideQuest (
     val heroQuest : Boolean?,
     val imageURL : String,
     val articleURL : String,
-    val completed : Boolean
+    var completed : Boolean
         ){
 }

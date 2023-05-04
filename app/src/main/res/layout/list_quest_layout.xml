@@ -17,6 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <ImageView
+        android:id="@+id/completed_x"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/x"
+        android:scaleType = "centerCrop"/>
+
     <TextView
         android:id="@+id/side_quest_name"
         android:layout_width="0dp"
@@ -99,6 +110,17 @@
         app:layout_constraintStart_toEndOf="@+id/requires"
         app:layout_constraintTop_toTopOf="@+id/requires"
         tools:text="Alexandra" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completed"
+        app:layout_constraintBottom_toTopOf="@+id/location_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/region_name"
+        app:layout_constraintTop_toBottomOf="@+id/recommended_level" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
