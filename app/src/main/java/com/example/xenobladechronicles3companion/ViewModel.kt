@@ -1,7 +1,6 @@
 package com.example.xenobladechronicles3companion
 
 import android.util.Log
-import android.view.WindowInsets
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -41,8 +40,8 @@ class ViewModel : ViewModel() {
                     val location = monster.location
                     val region = monster.region
                     val superboss = monster.superboss
-                    val articleURL = monster.articleurl
-                    val imageURL = monster.imageurl
+                    val articleURL = monster.articleURL
+                    val imageURL = monster.imageURL
                     val defeated = false
 
                     val newMonster = Monster(name, level, location, region, superboss, articleURL, imageURL, defeated)

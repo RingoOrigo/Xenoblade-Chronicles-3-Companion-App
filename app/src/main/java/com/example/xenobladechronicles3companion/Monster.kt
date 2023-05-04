@@ -10,6 +10,6 @@ data class Monster (
     @Json(name = "location") val location : String,
     @Json(name = "region") val region : String,
     @Json(name = "superboss") val superboss : Boolean,
-    @Json(name = "articleurl") val articleurl : String,
-    @Json(name = "imageurl") val imageurl : String,
+    @Json(name = "articleurl") val articleURL : String,
+    @Json(name = "imageurl") val imageURL : String,
     var defeated : Boolean = false){}

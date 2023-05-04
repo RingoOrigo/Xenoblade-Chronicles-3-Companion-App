@@ -2,7 +2,6 @@ package com.example.xenobladechronicles3companion
 
 import android.content.Intent
 import android.net.Uri
-import android.view.WindowInsets
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
 import androidx.core.view.isVisible
@@ -16,7 +15,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
 
     init {
         binding.root.setOnClickListener {
-            val monsterURI = Uri.parse(currentMonster.articleurl)
+            val monsterURI = Uri.parse(currentMonster.articleURL)
             val intent = Intent(Intent.ACTION_VIEW, monsterURI)
             itemView.context.startActivity(intent)
         }
@@ -43,7 +42,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
 
         setDefeated(currentMonster.defeated)
 
-        val imageURI = currentMonster.imageurl.toUri().buildUpon().scheme("https").build()
+        val imageURI = currentMonster.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
     }
 
@@ -55,6 +54,14 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
 
 class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentQuest : SideQuest
+
+    init {
+        binding.root.setOnClickListener {
+            val questURI = Uri.parse(currentQuest.articleURL)
+            val intent = Intent(Intent.ACTION_VIEW, questURI)
+            itemView.context.startActivity(intent)
+        }
+    }
 
     fun bindSideQuest(quest : SideQuest) {
         currentQuest = quest

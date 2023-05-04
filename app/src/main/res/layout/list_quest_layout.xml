@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
 
     <ImageView
         android:id="@+id/imageView"
@@ -20,14 +22,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/helvetica_neue"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/recommended_level"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
         tools:text="Side quest names" />
 
     <TextView
@@ -38,7 +39,7 @@
         android:fontFamily="@font/helvetica_neue"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/side_quest_name"
-        app:layout_constraintTop_toBottomOf="@+id/side_quest_name"
+        app:layout_constraintTop_toBottomOf="@id/requires"
         tools:text="Aetia" />
 
     <TextView
@@ -65,7 +66,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/side_quest_name"
         app:layout_constraintEnd_toStartOf="@+id/recommended_level_numeric"
         app:layout_constraintStart_toEndOf="@+id/side_quest_name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/recommended_level_numeric"
@@ -82,13 +83,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="@font/helvetica_neue"
         android:text="@string/requires"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/location_name"
-        app:layout_constraintTop_toBottomOf="@+id/location_name" />
+        app:layout_constraintTop_toBottomOf="@id/side_quest_name" />
 
     <TextView
         android:id="@+id/required_character_name"
@@ -100,5 +99,6 @@
         app:layout_constraintStart_toEndOf="@+id/requires"
         app:layout_constraintTop_toTopOf="@+id/requires"
         tools:text="Alexandra" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
