@@ -81,6 +81,12 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
             binding.requiredCharacterName.text = currentQuest.reqCharacter
         }
 
+        if (currentQuest.heroQuest == true) {
+            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
+        } else if (currentQuest.DLC == true) {
+            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
+        } else binding.sideQuestName.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
+
         setCompleted(binding.checkBox.isChecked)
 
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
