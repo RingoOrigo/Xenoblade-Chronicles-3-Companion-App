@@ -1140,46 +1140,6 @@
     "required_character" : "Melia",
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Colony_9%27s_Backup",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/f5/XC3_Colony_9%27s_Backup.jpg/revision/latest/scale-to-width-down/350?cb=20221226054727"
-  }, {
-    "quest_name" : "",
-    "location" :  "",
-    "region" :  "",
-    "recommended_level" : 33,
-    "required_character" : "",
-    "articleurl" :  "",
-    "imageurl" : ""
-  }, {
-    "quest_name" : "",
-    "location" :  "",
-    "region" :  "",
-    "recommended_level" : 33,
-    "required_character" : "",
-    "articleurl" :  "",
-    "imageurl" : ""
-  }, {
-    "quest_name" : "",
-    "location" :  "",
-    "region" :  "",
-    "recommended_level" : 33,
-    "required_character" : "",
-    "articleurl" :  "",
-    "imageurl" : ""
-  }, {
-    "quest_name" : "",
-    "location" :  "",
-    "region" :  "",
-    "recommended_level" : 33,
-    "required_character" : "",
-    "articleurl" :  "",
-    "imageurl" : ""
-  }, {
-    "quest_name" : "",
-    "location" :  "",
-    "region" :  "",
-    "recommended_level" : 33,
-    "required_character" : "",
-    "articleurl" :  "",
-    "imageurl" : ""
   }
   ]
 }
