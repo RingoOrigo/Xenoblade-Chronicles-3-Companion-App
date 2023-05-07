@@ -48,7 +48,7 @@
     "recommended_level" : 13,
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Collapsed_Traderpon",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/56/XC3_Collapsed_Traderpon.jpg/revision/latest/scale-to-width-down/350?cb=20221224001142"
-  }, {
+  },{
     "quest_name" : "Helping Out",
     "location" :  "Colony 4 Canteen (Eagus Wilderness)",
     "region" :  "Fornis",
@@ -56,12 +56,29 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Helping_Out",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/40/XC3_Helping_Out.jpg/revision/latest/scale-to-width-down/350?cb=20221209004758"
   }, {
+    "quest_name" : "No Want of Courage",
+    "location" : "Colony 4 Canteen (Eagus Wilderness)",
+    "region" : "Fornis",
+    "recomended_level" : 17,
+    "hero_quest" : true,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/No_Want_of_Courage",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/c5/No_Want_of_Courage.jpg/revision/latest/scale-to-width-down/350?cb=20220902155231"
+  }, {
     "quest_name" : "Charity and Hypocrisy",
     "location" :  "Colony 4 Canteen (Eagus Wilderness)",
     "region" :  "Fornis",
     "recommended_level" : 18,
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Charity_and_Hypocrisy",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/ff/XC3_Charity_and_Hypocrisy.jpg/revision/latest/scale-to-width-down/350?cb=20221229043917"
+  }, {
+    "quest_name" : "Champion of the Nopon",
+    "location" : "Great Idalla Ravine (Dannagh Desert)",
+    "region" : "Fornis",
+    "recomended_level" : 19,
+    "dlc" : true,
+    "hero_quest" : true,
+    "articleurl" : "https://xenoblade.fandom.com/wiki/Champion_of_the_Nopon",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/39/Champion_of_the_Nopon.jpg/revision/latest/scale-to-width-down/350?cb=20221014025632"
   }, {
     "quest_name" : "Dorin and Bambam",
     "location" :  "Colony 4 (Eagus Wilderness)",
@@ -101,6 +118,14 @@
     "recommended_level" : 20,
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Melody_of_Mourning",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6b/XC3_Melody_of_Mourning.jpg/revision/latest/scale-to-width-down/350?cb=20221229044354"
+  },{
+    "quest_name" : "The Kind Right Hand",
+    "location" :  "Precipice of Judgement (Ribbi Flats)",
+    "region" :  "Fornis",
+    "recommended_level" : 20,
+    "hero_quest" : true,
+    "articleurl" :  "https://xenoblade.fandom.com/wiki/The_Kind_Right_Hand",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/b5/The_Kind_Right_Hand.jpg/revision/latest/scale-to-width-down/350?cb=20221106031724"
   }, {
     "quest_name" : "Serene Melody",
     "location" :  "Colony 30 Maintenance Bay (Ribbi Flats)",
@@ -116,6 +141,15 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/The_Tableland_Hulk",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a6/XC3_The_Tableland_Hulk.jpg/revision/latest/scale-to-width-down/350?cb=20221216180746"
   }, {
+    "quest_name" : "Where The Heart Is",
+    "location" :  "Colony 4 (Eagus Wilderness)",
+    "region" :  "Fornis",
+    "recommended_level" : 22,
+    "hero_quest" : true,
+    "articleurl" :  "https://xenoblade.fandom.com/wiki/Where_The_heart_Is",
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/4/4a/Where_The_Heart_Is.jpg/revision/latest/scale-to-width-down/350?cb=20220918150521"
+  },
+    {
     "quest_name" : "The Missing Squad",
     "location" :  "Colony 30 Maintenance Bay (Ribbi Flats)",
     "region" :  "Fornis",
@@ -130,20 +164,36 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Exhausted_Supplies",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/a/a2/XC3_Exhausted_Supplies.jpg/revision/latest/scale-to-width-down/350?cb=20230108222649"
   }, {
-    "quest_name" : "Wish Upon a Clover",
-    "location" :  "Colony 30 (Ribbi Flats)",
-    "region" :  "Fornis",
-    "recommended_level" : 24,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Wish_Upon_a_Clover",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/22/XC3_Wish_Upon_a_Clover.jpg/revision/latest/scale-to-width-down/350?cb=20230108222922"
-  }, {
-    "quest_name" : "Fear of the Unknown",
-    "location" :  "Seilas Terrace Camp (Rae-Bel Tableland)",
-    "region" :  "Fornis",
-    "recommended_level" : 25,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Fear_of_the_Unknown",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/81/XC3_Fear_of_the_Unknown.jpg/revision/latest/scale-to-width-down/350?cb=20230108223152"
-  }, {
+      "quest_name" : "A Nopon's Counsel",
+      "location" :  "Garf Mine Track (Urayan Tunnels)",
+      "region" :  "Pentelas",
+      "recommended_level" : 24,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/A_Nopon%27s_Counsel",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d8/XC3_A_Nopon%27s_Counsel.jpg/revision/latest/scale-to-width-down/350?cb=20221208231052"
+    }, {
+      "quest_name" : "Wish Upon a Clover",
+      "location" :  "Colony 30 (Ribbi Flats)",
+      "region" :  "Fornis",
+      "recommended_level" : 24,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Wish_Upon_a_Clover",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/22/XC3_Wish_Upon_a_Clover.jpg/revision/latest/scale-to-width-down/350?cb=20230108222922"
+    }, {
+      "quest_name" : "Fear of the Unknown",
+      "location" :  "Seilas Terrace Camp (Rae-Bel Tableland)",
+      "region" :  "Fornis",
+      "recommended_level" : 25,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Fear_of_the_Unknown",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/8/81/XC3_Fear_of_the_Unknown.jpg/revision/latest/scale-to-width-down/350?cb=20230108223152"
+    },{
+      "quest_name" : "Going Beyond Power",
+      "location" :  "Volff Lair (Alfeto Valley)",
+      "region" :  "Aetia",
+      "recommended_level" : 25,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Going_Beyond_Power",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/91/Going_Beyond_Power.jpg/revision/latest/scale-to-width-down/350?cb=20220918150331"
+    }, {
     "quest_name" : "The Thrill of the Hunt!",
     "location" :  "Sage's Domicile (Dannagh Desert)",
     "region" :  "Fornis",
@@ -158,14 +208,22 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/An_Off-Seer%27s_Anguish",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/7f/XC3_An_Off-Seer%27s_Anguish.jpg/revision/latest/scale-to-width-down/350?cb=20230111032755"
   }, {
-    "quest_name" : "Big Friendly Friend",
-    "location" :  "Colony 30 Maintenance Bay (Ribbi Flats)",
-    "region" :  "Fornis",
-    "recommended_level" : 26,
-    "required_character" : "Valdi",
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Big_Friendly_Friend",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/58/XC3_Big_Friendly_Friend.jpg/revision/latest/scale-to-width-down/350?cb=20230111033405"
-  }, {
+      "quest_name" : "A Gray Matter",
+      "location" :  "Murmur Rise (Millick Meadows)",
+      "region" :  "Aetia",
+      "recommended_level" : 26,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/A_Gray_Matter",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/cc/XC3_A_Gray_Matter.jpg/revision/latest/scale-to-width-down/350?cb=20221208231336"
+    }, {
+      "quest_name" : "Big Friendly Friend",
+      "location" :  "Colony 30 Maintenance Bay (Ribbi Flats)",
+      "region" :  "Fornis",
+      "recommended_level" : 26,
+      "required_character" : "Valdi",
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Big_Friendly_Friend",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/58/XC3_Big_Friendly_Friend.jpg/revision/latest/scale-to-width-down/350?cb=20230111033405"
+    }, {
     "quest_name" : "Harvest Day",
     "location" :  "Colony Iota (Elaice Highway)",
     "region" :  "Fornis",
@@ -188,13 +246,21 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Live_Combat_Training",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/63/XC3_Live_Combat_Training.jpg/revision/latest/scale-to-width-down/350?cb=20230111033624"
   }, {
-    "quest_name" : "Lambda's Problem",
-    "location" :  "Colony Lambda (Great Cotte Falls)",
-    "region" :  "Pentelas",
-    "recommended_level" : 27,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Lambda%27s_Problem",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/06/XC3_Lambda%27s_Problem.jpg/revision/latest/scale-to-width-down/350?cb=20230113035715"
-  }, {
+      "quest_name" : "Lambda's Problem",
+      "location" :  "Colony Lambda (Great Cotte Falls)",
+      "region" :  "Pentelas",
+      "recommended_level" : 27,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Lambda%27s_Problem",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/06/XC3_Lambda%27s_Problem.jpg/revision/latest/scale-to-width-down/350?cb=20230113035715"
+    }, {
+      "quest_name" : "Unwavering Resolve",
+      "location" :  "Clearwater Shelf (Great Cotte Falls)",
+      "region" :  "Pentelas",
+      "recommended_level" : 27,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Unwavering_Resolve",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/65/Unwavering_Resolve.jpg/revision/latest/scale-to-width-down/350?cb=20220930065055"
+    }, {
     "quest_name" : "Forgotten Supplies",
     "location" :  "Yzana Plains",
     "region" :  "Aetia",
@@ -272,13 +338,21 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/The_Cascade_Hulk",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/f/fa/XC3_The_Cascade_Hulk.jpg/revision/latest/scale-to-width-down/350?cb=20221216180929"
   }, {
-    "quest_name" : "Restart",
-    "location" :  "Colony Lambda (Great Cotte Falls)",
-    "region" :  "Pentelas",
-    "recommended_level" : 31,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Restart",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/ca/XC3_Restart.jpg/revision/latest/scale-to-width-down/350?cb=20230117024141"
-  }, {
+      "quest_name" : "Natural Selection",
+      "location" :  "Vista of Rhonnar (High Maktha Wildwood)",
+      "region" :  "Pentelas",
+      "recommended_level" : 31,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Natural_Selection",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/ce/XC3_Natural_Selection.jpg/revision/latest/scale-to-width-down/350?cb=20221208231552"
+    },  {
+      "quest_name" : "Restart",
+      "location" :  "Colony Lambda (Great Cotte Falls)",
+      "region" :  "Pentelas",
+      "recommended_level" : 31,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Restart",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/c/ca/XC3_Restart.jpg/revision/latest/scale-to-width-down/350?cb=20230117024141"
+    }, {
     "quest_name" : "The True Culprit?",
     "location" :  "Colony 30 (Ribbi Flats)",
     "region" :  "Fornis",
@@ -337,13 +411,21 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/A_More_Balanced_Recipe",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/6a/XC3_A_More_Balanced_Recipe.jpg/revision/latest/scale-to-width-down/350?cb=20230119030202"
   }, {
-    "quest_name" : "Severed Connection",
-    "location" :  "Colony 4 (Eagus Wilderness)",
-    "region" :  "Fornis",
-    "recommended_level" : 36,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Severed_Connection",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3a/XC3_Severed_Connection.jpg/revision/latest/scale-to-width-down/350?cb=20230119030912"
-  }, {
+      "quest_name" : "Severed Connection",
+      "location" :  "Colony 4 (Eagus Wilderness)",
+      "region" :  "Fornis",
+      "recommended_level" : 36,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Severed_Connection",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3a/XC3_Severed_Connection.jpg/revision/latest/scale-to-width-down/350?cb=20230119030912"
+    }, {
+      "quest_name" : "The Wrath of Ashera",
+      "location" :  "Syra Hovering Reefs",
+      "region" :  "Keves Castle",
+      "recommended_level" : 36,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/The_Wrath_of_Ashera",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/62/The_Wrath_of_Ashera.jpg/revision/latest/scale-to-width-down/350?cb=20221002062101"
+    }, {
     "quest_name" : "The Hunter",
     "location" :  "Colony Tau (High Maktha Wildwood)",
     "region" :  "Pentelas",
@@ -439,13 +521,30 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Counterpoint",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/d/d9/XC3_Counterpoint.jpg/revision/latest/scale-to-width-down/350?cb=20230210235930"
   }, {
-    "quest_name" : "A Burning Curiosity",
-    "location" :  "Colony 4 Ferronis Hatch (Eagus Wilderness)",
-    "region" :  "Fornis",
-    "recommended_level" : 43,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/A_Burning_Curiosity",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3c/XC3_A_Burning_Curiosity.jpg/revision/latest/scale-to-width-down/350?cb=20230211000140"
-  }, {
+      "quest_name" : "A Burning Curiosity",
+      "location" :  "Colony 4 Ferronis Hatch (Eagus Wilderness)",
+      "region" :  "Fornis",
+      "recommended_level" : 43,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/A_Burning_Curiosity",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/3/3c/XC3_A_Burning_Curiosity.jpg/revision/latest/scale-to-width-down/350?cb=20230211000140"
+    },  {
+      "quest_name" : "Lapidarist Extraordinaire",
+      "location" :  "Serene Square",
+      "region" :  "City",
+      "recommended_level" : 43,
+      "dlc" : true,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Lapidarist_Extraordinaire",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5c/Lapidarist_Extraordinaire.png/revision/latest/scale-to-width-down/350?cb=20230216150551"
+    },{
+      "quest_name" : "Vandham's Heir",
+      "location" :  "City",
+      "region" :  "City",
+      "recommended_level" : 43,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Vandham%27s_Heir",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/07/Vandham%27s_Heir.jpg/revision/latest/scale-to-width-down/350?cb=20221010052914"
+    }, {
     "quest_name" : "The Scavenger Force",
     "location" :  "City",
     "region" :  "City",
@@ -489,6 +588,13 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Lost_Friend",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/2/2b/XC3_Lost_Friend.jpg/revision/latest/scale-to-width-down/350?cb=20230211000412"
   }, {
+      "quest_name" : "Missing Luggage",
+      "location" :  "Anu Shoals Camp (Erythia Sea)",
+      "region" :  "Cadensia",
+      "recommended_level" : 45,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Missing_Luggage",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5b/XC3_Missing_Luggage.jpg/revision/latest/scale-to-width-down/350?cb=20230212015507"
+    },{
     "quest_name" : "Romero and Joulietta",
     "location" :  "Mitia Lookout",
     "region" :  "City",
@@ -496,13 +602,22 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Romero_and_Joulietta",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/74/XC3_Romero_and_Joulietta.jpg/revision/latest/scale-to-width-down/350?cb=20230212015650"
   }, {
-    "quest_name" : "Missing Luggage",
-    "location" :  "Anu Shoals Camp (Erythia Sea)",
-    "region" :  "Cadensia",
-    "recommended_level" : 45,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Missing_Luggage",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/5/5b/XC3_Missing_Luggage.jpg/revision/latest/scale-to-width-down/350?cb=20230212015507"
-  }, {
+      "quest_name" : "Transparent Dreams",
+      "location" :  "Migrow's Rosary (Erythia Sea)",
+      "region" :  "Cadensia",
+      "recommended_level" : 45,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Transparent_Dreams",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/b/bf/XC3_Transparent_Dreams.jpg/revision/latest/scale-to-width-down/350?cb=20221208231815"
+    },{
+      "quest_name" : "Doing It My Way",
+      "location" :  "Hargan Point (Erythia Sea)",
+      "region" :  "Cadensia",
+      "recommended_level" : 46,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Doing_It_My_Way",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/e/eb/Doing_It_My_Way.jpg/revision/latest/scale-to-width-down/350?cb=20221012052846"
+    },{
     "quest_name" : "The Atoll Hulk",
     "location" :  "Baldotas Atoll (Erythia Sea)",
     "region" :  "Cadensia",
@@ -693,13 +808,21 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/New_Developments",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/91/New_Developments.jpg/revision/latest/scale-to-width-down/350?cb=20230314184232"
   }, {
-    "quest_name" : "Seeker's True Intent",
-    "location" :  "Ascension Grounds",
-    "region" :  "Agnus Castle",
-    "recommended_level" : 52,
-    "articleurl" :  "https://xenoblade.fandom.com/wiki/Seeker%27s_True_Intent",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/62/Seeker%27s_True_Intent.jpg/revision/latest/scale-to-width-down/350?cb=20230313192351"
-  }, {
+      "quest_name" : "A Twist of Fate",
+      "location" :  "Colony Omega (Captocorn Peak)",
+      "region" :  "Upper Aetia",
+      "recommended_level" : 52,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/A_Twist_of_Fate",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/7/74/A_Twist_of_Fate.jpg/revision/latest/scale-to-width-down/350?cb=20220918152932"
+    },{
+      "quest_name" : "Seeker's True Intent",
+      "location" :  "Ascension Grounds",
+      "region" :  "Agnus Castle",
+      "recommended_level" : 52,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Seeker%27s_True_Intent",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/6/62/Seeker%27s_True_Intent.jpg/revision/latest/scale-to-width-down/350?cb=20230313192351"
+    }, {
     "quest_name" : "Water of Rhonnar",
     "location" :  "Colony Tau (High Maktha Wildwood)",
     "region" :  "Pentelas",
@@ -834,6 +957,14 @@
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Merciless_Pursuit",
     "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/1/1c/XC3_Merciless_Pursuit.jpg/revision/latest/scale-to-width-down/350?cb=20230315094354"
   }, {
+      "quest_name" : "Inhumanity",
+      "location" :  "Nocclia Mire (Captocorn Peak)",
+      "region" :  "Upper Aetia",
+      "recommended_level" : 56,
+      "hero_quest" : true,
+      "articleurl" :  "https://xenoblade.fandom.com/wiki/Inhumanity",
+      "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/9/9f/Inhumanity.jpg/revision/latest/scale-to-width-down/350?cb=20220901184448"
+    },{
     "quest_name" : "Unspeakable Being",
     "location" :  "Predator's Paw (Erythia Sea)",
     "region" :  "Cadensia",
@@ -1031,7 +1162,7 @@
     "region" :  "Cadensia",
     "recommended_level" : 64,
     "articleurl" :  "https://xenoblade.fandom.com/wiki/Uniting_the_Seven_Nopon",
-    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/0d/Uniting_the_Seven_Nopon.jpg/revision/latest/sacle-to-width-down/350?cb=20230116142558"
+    "imageurl" : "https://static.wikia.nocookie.net/xenoblade/images/0/0d/Uniting_the_Seven_Nopon.jpg/revision/latest/scale-to-width-down/350?cb=20230116142558"
   }, {
     "quest_name" : "The Castle Guard",
     "location" :  "Fort O'Virbus (Syra Hovering Reefs)",
