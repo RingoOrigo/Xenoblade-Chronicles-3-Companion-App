@@ -16,7 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/a_preview_image_of_a_quest_that_matches_the_preview_image_of_said_quest_from_in_game_xenoblade_chronicles_3" />
 
     <ImageView
         android:id="@+id/completed_x"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/x" />
+        app:srcCompat="@drawable/x"
+        android:contentDescription="@string/a_red_x_that_signifies_a_quest_has_been_completed" />
 
     <TextView
         android:id="@+id/side_quest_name"

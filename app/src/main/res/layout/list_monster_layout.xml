@@ -26,7 +26,8 @@
         app:layout_constraintStart_toStartOf="@+id/monster_image_view"
         app:layout_constraintTop_toTopOf="@+id/monster_image_view"
         app:srcCompat="@drawable/x"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/a_red_x_to_signify_that_the_monster_has_been_defeated" />
 
     <TextView
         android:id="@+id/monster_name_text_view"

@@ -24,4 +24,7 @@
     <string name="about_side_quests">Side quests are littered throughout every corner of Aionis for you to complete. They are entirely optional, but greatly recommended to get the full experience the world has to offer.\n\nThere are over 190 side quests, with each one being detailed in the <i>Side Quest</i> menu.\n\nThe special Hero Quests are included in this number and offer more special rewards for their completion. Hero Quests are featured in gold with an additional indicator on their entries.</string>
     <string name="characters_header">About Characters</string>
     <string name="about_characters">Xenoblade Chronicles 3 consists of a character-driven story, with over 30 memorable characters important to the overarching plot.\n\nCharacters that are the most integral to the plot <i>(party members, heroes, and enemies)</i> are all detailed in the <i>Characters</i> Menu. There you will find a small picture, the name, class, and affiliation of each character prominent to the history of Aionios.</string>
+    <string name="a_red_x_that_signifies_a_quest_has_been_completed">A red X that signifies a quest has been completed.</string>
+    <string name="a_preview_image_of_a_quest_that_matches_the_preview_image_of_said_quest_from_in_game_xenoblade_chronicles_3">A preview image of a quest that matches the preview image of said quest from in-game Xenoblade Chronicles 3</string>
+    <string name="a_red_x_to_signify_that_the_monster_has_been_defeated">A red X to signify that the monster has been defeated.</string>
 </resources>
