@@ -2,50 +2,50 @@
   "characters" : [
     {
       "name" : "Noah",
-      "affiliation" : "Keves",
+      "kevesi" :  true,
       "class" : "Swordfighter",
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Noah",
+      "article_url": "https://xenoblade.fandom.com/wiki/Noah",
       "image_url": "https://static.wikia.nocookie.net/xenoblade/images/1/11/Noah_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311145826"
     }, {
       "name" : "Mio",
-      "affiliation": "Agnus",
+      "agnian" : true,
       "class" : "Zephyr",
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Mio",
+      "article_url": "https://xenoblade.fandom.com/wiki/Mio",
       "image_url": "https://static.wikia.nocookie.net/xenoblade/images/2/28/Mio_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311141656"
     }, {
       "name" : "Lanz",
-      "affiliation" : "Keves",
+      "kevesi" :  true,
       "class" : "Heavy Guard",
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Lanz",
+      "article_url": "https://xenoblade.fandom.com/wiki/Lanz",
       "image_url": "https://static.wikia.nocookie.net/xenoblade/images/a/a2/Lanz_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311144523"
     }, {
       "name" : "Sena",
-      "affiliation" : "Agnus",
+      "agnian" : true,
       "class" : "Ogre",
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Sena",
+      "article_url": "https://xenoblade.fandom.com/wiki/Sena",
       "image_url" : "https://static.wikia.nocookie.net/xenoblade/images/2/25/Sena_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311145032"
     }, {
       "name" : "Eunie",
-      "affiliation" : "Keves",
+      "kevesi" :  true,
       "class" : "Medic Gunner",
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Eunie",
+      "article_url": "https://xenoblade.fandom.com/wiki/Eunie",
       "image_url" : "https://static.wikia.nocookie.net/xenoblade/images/3/39/Eunie_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311144723"
     }, {
       "name" : "Taion",
-      "affiliation" : "Agnus",
+      "agnian" : true,
       "party_member" : true,
       "ouroboros" : true,
-      "aricle_url": "https://xenoblade.fandom.com/wiki/Taion",
+      "article_url": "https://xenoblade.fandom.com/wiki/Taion",
       "image_url" : "https://static.wikia.nocookie.net/xenoblade/images/7/7f/Taion_portrait.png/revision/latest/scale-to-width-down.350?cb=20220311145308"
     }
   ]

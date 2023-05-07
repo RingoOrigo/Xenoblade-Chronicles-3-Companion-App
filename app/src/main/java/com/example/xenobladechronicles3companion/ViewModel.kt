@@ -75,7 +75,7 @@ class ViewModel : ViewModel() {
                     val reqCharacter = quest.reqCharacter ?: ""
                     val region = quest.region
                     val location = quest.location
-                    val DLC = quest.dlc ?: false
+                    val DLC = quest.DLC ?: false
                     val heroQuest = quest.heroQuest ?: false
                     val imageURL = quest.imageURL
                     val articleURL = quest.articleURL

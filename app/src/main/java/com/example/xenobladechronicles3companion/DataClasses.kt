@@ -1,8 +1,6 @@
 package com.example.xenobladechronicles3companion
 
 import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
-
 
 data class Monster (
     @Json(name = "name") val name : String,
@@ -15,15 +13,27 @@ data class Monster (
     var defeated : Boolean = false){}
 
 data class SideQuest (
-    val questName : String,
-    val recLevel : Long,
-    val reqCharacter : String?,
-    val region : String,
-    val location : String,
+    @Json(name = "quest_name") val questName : String,
+    @Json(name = "recommended_level") val recLevel : Long,
+    @Json(name = "required_character") val reqCharacter : String?,
+    @Json(name = "region") val region : String,
+    @Json(name = "location") val location : String,
+    @Json(name = "dlc") val DLC : Boolean?,
+    @Json(name = "hero_quest") val heroQuest : Boolean?,
+    @Json(name = "imageurl") val imageURL : String,
+    @Json(name = "articleurl") val articleURL : String,
+    var completed : Boolean){}
+
+data class Character (
+    val name : String,
+    val kevesi : Boolean?,
+    val agnian : Boolean?,
+    val moebius : Boolean?,
+    val ouroboros : Boolean?,
+    val startingClass : String?,
+    val hero : Boolean?,
+    val playable : Boolean?,
     val DLC : Boolean?,
-    val heroQuest : Boolean?,
-    val imageURL : String,
     val articleURL : String,
-    var completed : Boolean
-){
-}
+    val imageURL : String
+        ){}
