@@ -11,7 +11,8 @@
         android:layout_height="125dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/an_image_of_the_specified_character_from_xenoblade_chronicles_3" />
 
     <TextView
         android:id="@+id/character_name_text"
@@ -25,22 +26,45 @@
         app:layout_constraintTop_toTopOf="@+id/character_image"
         tools:text="Noah" />
 
-    <ImageView
-        android:id="@+id/ouroboros_logo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/character_name_text"
-        app:srcCompat="@drawable/ouroboros" />
-
-    <ImageView
-        android:id="@+id/moebius_logo"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ouroboros_logo"
-        app:layout_constraintEnd_toEndOf="@+id/ouroboros_logo"
-        app:layout_constraintStart_toStartOf="@+id/ouroboros_logo"
-        app:layout_constraintTop_toTopOf="@+id/ouroboros_logo"
-        app:srcCompat="@drawable/moebius" />
-<!--    put in logos for Keves and Agnus affiliation as well. Would be neat for heroes.-->
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/character_name_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/character_name_text">
+
+        <ImageView
+            android:id="@+id/ouroboros_logo"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/the_ouroboros_symbol_from_xenoblade_chronicles_3"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ouroboros" />
+
+        <ImageView
+            android:id="@+id/moebius_logo"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/the_moebius_symbol_from_xenoblade_chronicles_3"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/moebius" />
+
+        <ImageView
+            android:id="@+id/kevesi_symbol"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/the_keves_castle_symbol_from_xenoblade_chronicles_3"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/kevesi_symbol" />
+
+        <ImageView
+            android:id="@+id/agnian_symbol"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/the_agnian_castle_symbol_from_xenoblade_chronicles_3"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/agnian_symbol" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

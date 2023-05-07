@@ -19,12 +19,12 @@ private const val CHARACTER_QUERY = "RingoOrigo/Xenoblade-Chronicles-3-Companion
 private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
 private val retrofit = Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(MoshiConverterFactory.create(moshi)).build()
 
+//Since this file contains a lot of classes that aren't necessarily linked together, classes will start on the same line that related classes are ended. There will be gaps between unrelated classes.
+
 interface MonsterAPIService {
     @GET(MONSTER_QUERY)
     fun getMonsters(): Call<MonstersResponse>
-}
-
-object MonsterAPI {
+} object MonsterAPI {
     val monsterAPI : MonsterAPIService by lazy {
         retrofit.create(MonsterAPIService::class.java)
     }
@@ -33,9 +33,7 @@ object MonsterAPI {
 interface SideQuestAPIService {
     @GET(SIDE_QUEST_QUERY)
     fun getSideQuests(): Call<SideQuestResponse>
-}
-
-object SideQuestAPI {
+} object SideQuestAPI {
     val sideQuestAPI : SideQuestAPIService by lazy {
         retrofit.create(SideQuestAPIService::class.java)
     }
@@ -44,4 +42,8 @@ object SideQuestAPI {
 interface CharacterAPIService {
     @GET(CHARACTER_QUERY)
     fun getCharacters(): Call<CharacterResponse>
+} object CharacterAPI {
+    val characterAPI : CharacterAPIService by lazy {
+        retrofit.create(CharacterAPIService::class.java)
+    }
 }

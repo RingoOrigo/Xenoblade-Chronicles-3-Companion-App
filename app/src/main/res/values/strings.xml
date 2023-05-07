@@ -27,4 +27,9 @@
     <string name="a_red_x_that_signifies_a_quest_has_been_completed">A red X that signifies a quest has been completed.</string>
     <string name="a_preview_image_of_a_quest_that_matches_the_preview_image_of_said_quest_from_in_game_xenoblade_chronicles_3">A preview image of a quest that matches the preview image of said quest from in-game Xenoblade Chronicles 3</string>
     <string name="a_red_x_to_signify_that_the_monster_has_been_defeated">A red X to signify that the monster has been defeated.</string>
+    <string name="the_ouroboros_symbol_from_xenoblade_chronicles_3">The Ouroboros Symbol from Xenoblade Chronicles 3</string>
+    <string name="the_moebius_symbol_from_xenoblade_chronicles_3">The Moebius Symbol from Xenoblade Chronicles 3</string>
+    <string name="the_keves_castle_symbol_from_xenoblade_chronicles_3">The Keves Castle symbol from Xenoblade Chronicles 3</string>
+    <string name="the_agnian_castle_symbol_from_xenoblade_chronicles_3">The Agnian Castle symbol from Xenoblade Chronicles 3</string>
+    <string name="an_image_of_the_specified_character_from_xenoblade_chronicles_3">An image of the specified character from Xenoblade Chronicles 3</string>
 </resources>

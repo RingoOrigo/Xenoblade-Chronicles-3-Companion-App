@@ -3,6 +3,7 @@ package com.example.xenobladechronicles3companion
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
 
@@ -36,6 +37,22 @@ class SideQuestRecyclerViewAdapter (val sideQuestList : List<SideQuest>) : Recyc
 
     override fun getItemCount(): Int {
         return sideQuestList.size
+    }
+}
+
+class CharacterRecyclerViewAdapter (val characterList : List<Character>) : RecyclerView.Adapter<CharacterViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
+        val binding = ListCharacterLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return CharacterViewHolder(binding)
+    }
+
+    override fun getItemCount(): Int {
+        return characterList.size
+    }
+
+    override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
+        val currentCharacter = characterList[position]
+        holder.bindCharacter(currentCharacter)
     }
 
 }

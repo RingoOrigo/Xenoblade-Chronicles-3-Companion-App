@@ -11,9 +11,7 @@ class MonstersResponse {
 class SideQuestResponse {
     @Json (name = "quests")
     lateinit var sideQuestList : List<SideQuestProperties>
-}
-
-class SideQuestProperties {
+} class SideQuestProperties {
     @Json (name = "quest_name")
     var questName : String = ""
 
@@ -40,4 +38,42 @@ class SideQuestProperties {
 
     @Json (name = "articleurl")
     var articleURL : String = ""
+}
+
+class CharacterResponse {
+    @Json (name="characters")
+    lateinit var characterList : List<CharacterProperties>
+} class CharacterProperties {
+    @Json (name = "name")
+    var name : String = ""
+
+    @Json (name = "kevesi")
+    var kevesi : Boolean? = false
+
+    @Json (name = "agnian")
+    var agnian : Boolean? = false
+
+    @Json (name = "moebius")
+    var moebius : Boolean? = false
+
+    @Json (name = "ouroboros")
+    var ouroboros : Boolean? = false
+
+    @Json (name = "hero")
+    var hero : Boolean? = false
+
+    @Json (name = "party_member")
+    var playable : Boolean? = false
+
+    @Json (name = "dlc")
+    var DLC : Boolean? = false
+
+    @Json (name = "class")
+    var startingClass : String? = ""
+
+    @Json (name = "articleurl")
+    var articleURL : String = ""
+
+    @Json (name = "imageurl")
+    var imageURL : String = ""
 }

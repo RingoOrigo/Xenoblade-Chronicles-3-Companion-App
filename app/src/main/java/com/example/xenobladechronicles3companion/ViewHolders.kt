@@ -7,6 +7,7 @@ import androidx.core.net.toUri
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
 
@@ -100,4 +101,17 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
         currentQuest.completed = completed
         binding.completedX.isVisible = completed
     }
+}
+
+class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+ private lateinit var currentCharacter : Character
+
+ fun bindCharacter(character : Character) {
+     currentCharacter = character
+
+     binding.characterNameText.text = currentCharacter.name
+
+
+     TODO("Finish UI for list of characters, then bind it here.")
+ }
 }

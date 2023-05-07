@@ -1,6 +1,7 @@
 package com.example.xenobladechronicles3companion
 
 import android.util.Log
+import android.view.WindowInsets.Side
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -17,6 +18,10 @@ class ViewModel : ViewModel() {
     private val _sideQuestResponse = MutableLiveData<List<SideQuest>>()
     val sideQuestResponse: LiveData<List<SideQuest>>
         get() = _sideQuestResponse
+
+    private val _characterResponse = MutableLiveData<List<Character>>()
+    val characterResposne: LiveData<List<Character>>
+        get() = _characterResponse
 
     fun getMonsters() {
         val request = MonsterAPI.monsterAPI.getMonsters()
@@ -85,6 +90,41 @@ class ViewModel : ViewModel() {
                     listOfQuestsFetched.add(newQuest)
                 }
                 _sideQuestResponse.value = listOfQuestsFetched
+            }
+        })
+    }
+
+    fun getCharacters() {
+        val request = CharacterAPI.characterAPI.getCharacters()
+
+        request.enqueue(object : Callback<CharacterResponse> {
+            override fun onFailure(call: Call<CharacterResponse>, t: Throwable) {
+                Log.d("RESPONSE", "FAILURE: " + t.message)
+            }
+
+            override fun onResponse(call: Call<CharacterResponse>, response: Response<CharacterResponse>) {
+                val listOfCharactersFetched = mutableListOf<Character>()
+
+                val characterResponse : CharacterResponse? = response.body()
+                val characterList = characterResponse?.characterList ?: listOf()
+
+                for (character in characterList) {
+                    val name = character.name
+                    val kevesi = character.kevesi?: false
+                    val agnian = character.agnian?: false
+                    val moebius = character.moebius?: false
+                    val ouroboros = character.ouroboros?: false
+                    val startingClass = character.startingClass
+                    val hero = character.hero?: false
+                    val playable = character.playable?: false
+                    val DLC = character.DLC?: false
+                    val articleURL = character.articleURL
+                    val imageURL = character.imageURL
+
+                    val newCharacter = Character(name, kevesi, agnian, moebius, ouroboros, startingClass, hero, playable, DLC, articleURL, imageURL)
+                    listOfCharactersFetched.add(newCharacter)
+                }
+                _characterResponse.value = listOfCharactersFetched
             }
         })
     }
