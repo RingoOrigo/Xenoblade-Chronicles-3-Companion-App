@@ -74,24 +74,26 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
         binding.locationName.text = currentQuest.location
         binding.recommendedLevelNumeric.text = currentQuest.recLevel.toString()
 
-        if (currentQuest.reqCharacter == "") {
-            binding.requires.isVisible = false
-            binding.requiredCharacterName.isVisible = false
-        } else {
-            binding.requiredCharacterName.text = currentQuest.reqCharacter
-        }
-
-        if (currentQuest.heroQuest == true) {
-            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
-        } else if (currentQuest.DLC == true) {
-            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
-        } else binding.sideQuestName.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
-
+        setQuestColor(currentQuest)
+        setReqCharacter(currentQuest.reqCharacter!!)
         setCompleted(binding.checkBox.isChecked)
 
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)
 
+    }
+
+    private fun setReqCharacter (reqChar : String) {
+        binding.requiredCharacterName.text = reqChar
+        binding.requiredCharacterName.isVisible = (reqChar != "")
+        binding.requires.isVisible = (reqChar != "")
+    }
+    private fun setQuestColor(quest : SideQuest) {
+        if (quest.heroQuest!!) {
+            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
+        } else if (quest.DLC!!) {
+            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
+        } else binding.sideQuestName.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
     }
 
     private fun setCompleted(completed: Boolean) {

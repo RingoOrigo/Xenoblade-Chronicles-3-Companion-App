@@ -9,7 +9,7 @@ import retrofit2.create
 import retrofit2.http.GET
 
 //https://api.github.com/repos/RingoOrigo/Xenoblade-Chronicles-3-Companion-App/contents/blob/master/app/src/main/res/raw/unique_monsters.json
-//https://raw.githubusercontent.com/RingoOrigo/Xenoblade-Chronicles-3-Companion-App/master/app/src/main/res/raw/unique_monsters.json
+//https://raw.githubusercontent.com/RingoOrigo/Xenoblade-Chronicles-3-Companion-App/master/app/src/main/res/raw/side_quests.json
 //https://raw.githubusercontent.com/RingoOrigo/Xenoblade-Chronicles-3-Companion-App/master/app/src/main/res/raw/characters.json
 private const val BASE_URL = "https://raw.githubusercontent.com/"
 private const val MONSTER_QUERY = "RingoOrigo/Xenoblade-Chronicles-3-Companion-App/master/app/src/main/res/raw/unique_monsters.json"
