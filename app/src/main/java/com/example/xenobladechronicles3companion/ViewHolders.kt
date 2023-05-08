@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
+import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -90,10 +91,10 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
         binding.requires.isVisible = (reqChar != "")
     }
     private fun setQuestColor(quest : SideQuest) {
-        if (quest.heroQuest!!) {
-            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
-        } else if (quest.DLC!!) {
+        if (quest.DLC!!) {
             binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
+        } else if (quest.heroQuest!!) {
+            binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
         } else binding.sideQuestName.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
     }
 
@@ -110,8 +111,25 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
      currentCharacter = character
 
      binding.characterNameText.text = currentCharacter.name
+     binding.classText.text = currentCharacter.startingClass
 
+     setPlayable(currentCharacter)
+     showIcons(currentCharacter)
 
-     TODO("Finish UI for list of characters, then bind it here.")
+     val imageURI = currentCharacter.imageURL.toUri().buildUpon().scheme("https").build()
+     Glide.with(itemView.context).load(imageURI).into(binding.characterImage)
  }
+    private fun showIcons(char : Character) {
+        binding.agnianSymbol.isGone = char.kevesi!!
+        binding.kevesiSymbol.isGone = char.agnian!! // I know it's weird, but it's basically just:
+        binding.moebiusLogo.isGone = char.ouroboros!! //If Agnian, do not show Kevesi Symbol
+        binding.ouroborosLogo.isGone = char.moebius!!
+    }
+    private fun setPlayable(char : Character) {
+        if (char.playable!!) {
+            binding.playableText.text = "Party Member"
+        } else if (char.hero!!) {
+            binding.playableText.text = "Hero"
+        } else binding.playableText.text = "Antagonist"
+    }
 }

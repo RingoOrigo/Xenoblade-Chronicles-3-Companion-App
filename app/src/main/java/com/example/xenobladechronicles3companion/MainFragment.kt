@@ -33,6 +33,10 @@ class MainFragment : Fragment() {
             binding.root.findNavController().navigate(MainFragmentDirections.actionMainFragmentToSideQuestFragment())
         }
 
+        binding.charactersButton.setOnClickListener {
+            binding.root.findNavController().navigate(MainFragmentDirections.actionMainFragmentToCharacterFragment())
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

@@ -32,4 +32,7 @@
     <string name="the_keves_castle_symbol_from_xenoblade_chronicles_3">The Keves Castle symbol from Xenoblade Chronicles 3</string>
     <string name="the_agnian_castle_symbol_from_xenoblade_chronicles_3">The Agnian Castle symbol from Xenoblade Chronicles 3</string>
     <string name="an_image_of_the_specified_character_from_xenoblade_chronicles_3">An image of the specified character from Xenoblade Chronicles 3</string>
+    <string name="party_member">Party Member</string>
+    <string name="hero">Hero</string>
+    <string name="antagonist">Antagonist</string>
 </resources>

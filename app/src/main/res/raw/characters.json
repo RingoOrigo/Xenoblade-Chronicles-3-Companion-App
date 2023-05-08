@@ -7,7 +7,7 @@
       "party_member" : true,
       "ouroboros" : true,
       "article_url": "https://xenoblade.fandom.com/wiki/Noah",
-      "image_url": "https://static.wikia.nocookie.net/xenoblade/images/1/11/Noah_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311145826"
+      "image_url": "https://static.wikia.nocookie.net/xenoblade/images/1/11/Noah_portrait.png/revision/latest?cb=20220311145826"
     }, {
       "name" : "Mio",
       "agnian" : true,
@@ -42,6 +42,7 @@
       "image_url" : "https://static.wikia.nocookie.net/xenoblade/images/3/39/Eunie_portrait.png/revision/latest/scale-to-width-down/350?cb=20220311144723"
     }, {
       "name" : "Taion",
+      "class" : "Tactician",
       "agnian" : true,
       "party_member" : true,
       "ouroboros" : true,

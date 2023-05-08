@@ -3,16 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
 
     <ImageView
         android:id="@+id/character_image"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/an_image_of_the_specified_character_from_xenoblade_chronicles_3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/an_image_of_the_specified_character_from_xenoblade_chronicles_3" />
+        android:scaleType = "center"/>
 
     <TextView
         android:id="@+id/character_name_text"
@@ -25,6 +29,29 @@
         app:layout_constraintStart_toEndOf="@+id/character_image"
         app:layout_constraintTop_toTopOf="@+id/character_image"
         tools:text="Noah" />
+
+    <TextView
+        android:id="@+id/class_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="@+id/character_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/character_name_text"
+        tools:text="Swordfighter" />
+
+    <TextView
+        android:id="@+id/playable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="@+id/character_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/class_text"
+        tools:text="Party Member" />
 
     <LinearLayout
         android:layout_width="wrap_content"
