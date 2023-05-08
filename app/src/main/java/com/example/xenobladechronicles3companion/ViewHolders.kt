@@ -107,6 +107,14 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
 class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
  private lateinit var currentCharacter : Character
 
+ init {
+     binding.root.setOnClickListener {
+         val characterURI = Uri.parse(currentCharacter.articleURL)
+         val intent = Intent(Intent.ACTION_VIEW, characterURI)
+         itemView.context.startActivity(intent)
+     }
+ }
+
  fun bindCharacter(character : Character) {
      currentCharacter = character
 
@@ -115,6 +123,7 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
 
      setPlayable(currentCharacter)
      showIcons(currentCharacter)
+     setColours(currentCharacter)
 
      val imageURI = currentCharacter.imageURL.toUri().buildUpon().scheme("https").build()
      Glide.with(itemView.context).load(imageURI).into(binding.characterImage)
@@ -131,5 +140,12 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
         } else if (char.hero!!) {
             binding.playableText.text = "Hero"
         } else binding.playableText.text = "Antagonist"
+    }
+    private fun setColours(char : Character) {
+        if (char.DLC!!) {
+            binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
+        } else if (char.hero!!) {
+            binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
+        } else binding.characterNameText.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
     }
 }

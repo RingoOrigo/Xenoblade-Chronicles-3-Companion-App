@@ -71,9 +71,9 @@ class CharacterResponse {
     @Json (name = "class")
     var startingClass : String? = ""
 
-    @Json (name = "articleurl")
+    @Json (name = "article_url")
     var articleURL : String = ""
 
-    @Json (name = "imageurl")
+    @Json (name = "image_url")
     var imageURL : String = ""
 }
