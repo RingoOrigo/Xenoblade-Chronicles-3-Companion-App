@@ -11,9 +11,16 @@ import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
+import com.google.firebase.annotations.DeferredApi
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import com.squareup.moshi.Json
 
 class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
+    private lateinit var dbref : DatabaseReference
+    private lateinit var defeatedMonsters : MutableList<Monster>
 
     init {
         binding.root.setOnClickListener {
@@ -23,12 +30,30 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         }
 
         binding.defeatedCheckbox.setOnClickListener {
+            dbref = Firebase.database.reference
+
+            //In Theory : Connect to Firebase to upload the monster if it is defeated. Can be checked later.
+            if (binding.defeatedCheckbox.isChecked){
+                val name = currentMonster.name
+                val level = currentMonster.level
+                val location = currentMonster.location
+                val region = currentMonster.region
+                val superboss = currentMonster.superboss
+                val articleURL = currentMonster.articleURL
+                val imageURL = currentMonster.imageURL
+                val defeated = binding.defeatedCheckbox.isChecked
+
+                dbref.child("defeatedMonsters").push().setValue(Monster(name, level, location, region, superboss, articleURL, imageURL, defeated))
+            }
+
             setDefeated(binding.defeatedCheckbox.isChecked)
         }
 
     }
 
     fun bindMonster(monster : Monster) {
+        dbref = Firebase.database.reference
+
         currentMonster = monster
 
         binding.monsterNameTextView.text = monster.name
@@ -41,6 +66,10 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         } else {
             binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
         }
+
+        //TODO("Make connection with firebase.
+        //  If the monster is in the database at this point, it was defeated.
+        //  Set currentMonster.defeated to true and then run setDefeated.")
 
         setDefeated(currentMonster.defeated)
 
@@ -141,6 +170,7 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
             binding.playableText.text = "Hero"
         } else binding.playableText.text = "Antagonist"
     }
+
     private fun setColours(char : Character) {
         if (char.DLC!!) {
             binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))

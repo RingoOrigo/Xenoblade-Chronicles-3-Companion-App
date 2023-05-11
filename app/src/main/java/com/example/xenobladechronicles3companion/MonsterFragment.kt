@@ -35,6 +35,8 @@ class MonsterFragment : Fragment() {
 
         viewModel.getMonsters()
 
+
+
         dbref = Firebase.database.reference
 
         return binding.root
