@@ -165,10 +165,10 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
     }
     private fun setPlayable(char : Character) {
         if (char.playable!!) {
-            binding.playableText.text = "Party Member"
+            binding.playableText.text = itemView.context.resources.getString(R.string.party_member)
         } else if (char.hero!!) {
-            binding.playableText.text = "Hero"
-        } else binding.playableText.text = "Antagonist"
+            binding.playableText.text = itemView.context.resources.getString(R.string.hero)
+        } else binding.playableText.text = itemView.context.resources.getString(R.string.antagonist)
     }
 
     private fun setColours(char : Character) {
