@@ -35,5 +35,4 @@ data class Character (
     val playable : Boolean?,
     val DLC : Boolean?,
     val articleURL : String,
-    val imageURL : String
-        ){}
+    val imageURL : String){}

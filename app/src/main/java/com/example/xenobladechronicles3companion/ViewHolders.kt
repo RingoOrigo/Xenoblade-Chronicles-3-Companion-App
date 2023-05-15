@@ -2,6 +2,7 @@ package com.example.xenobladechronicles3companion
 
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
 import androidx.core.view.isGone
@@ -11,13 +12,13 @@ import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
-import com.google.firebase.annotations.DeferredApi
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import com.squareup.moshi.Json
 
-class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+
+
+class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val deviceID : String) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
     private lateinit var dbref : DatabaseReference
     private lateinit var defeatedMonsters : MutableList<Monster>
@@ -43,7 +44,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
                 val imageURL = currentMonster.imageURL
                 val defeated = binding.defeatedCheckbox.isChecked
 
-                dbref.child("defeatedMonsters").push().setValue(Monster(name, level, location, region, superboss, articleURL, imageURL, defeated))
+                dbref.child(deviceID).child("defeatedMonsters").push().setValue(Monster(name, level, location, region, superboss, articleURL, imageURL, defeated))
             }
 
             setDefeated(binding.defeatedCheckbox.isChecked)
@@ -71,7 +72,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding) : Recyc
         //  If the monster is in the database at this point, it was defeated.
         //  Set currentMonster.defeated to true and then run setDefeated.")
 
-        setDefeated(currentMonster.defeated)
+        setDefeated(false)
 
         val imageURI = currentMonster.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
