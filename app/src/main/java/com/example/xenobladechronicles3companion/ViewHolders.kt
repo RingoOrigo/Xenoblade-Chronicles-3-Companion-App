@@ -18,10 +18,9 @@ import com.google.firebase.ktx.Firebase
 
 
 
-class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val deviceID : String) : RecyclerView.ViewHolder(binding.root) {
+class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val deviceID : String, private val defeatedMonsterNames : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
     private lateinit var dbref : DatabaseReference
-    private lateinit var defeatedMonsters : MutableList<Monster>
 
     init {
         binding.root.setOnClickListener {
@@ -32,19 +31,13 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
 
         binding.defeatedCheckbox.setOnClickListener {
             dbref = Firebase.database.reference
+            val path = dbref.child(deviceID).child("defeatedMonsters").child(currentMonster.name)
 
-            //In Theory : Connect to Firebase to upload the monster if it is defeated. Can be checked later.
+            currentMonster.defeated = binding.defeatedCheckbox.isChecked
             if (binding.defeatedCheckbox.isChecked){
-                val name = currentMonster.name
-                val level = currentMonster.level
-                val location = currentMonster.location
-                val region = currentMonster.region
-                val superboss = currentMonster.superboss
-                val articleURL = currentMonster.articleURL
-                val imageURL = currentMonster.imageURL
-                val defeated = binding.defeatedCheckbox.isChecked
-
-                dbref.child(deviceID).child("defeatedMonsters").push().setValue(Monster(name, level, location, region, superboss, articleURL, imageURL, defeated))
+                path.push().setValue(currentMonster) //Uploads defeated monsters to firebase.
+            } else {
+                path.removeValue() //Removes monsters from firebase if not defeated.
             }
 
             setDefeated(binding.defeatedCheckbox.isChecked)
@@ -68,11 +61,12 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
             binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
         }
 
-        //TODO("Make connection with firebase.
-        //  If the monster is in the database at this point, it was defeated.
-        //  Set currentMonster.defeated to true and then run setDefeated.")
-
-        setDefeated(false)
+        if(currentMonster.name in defeatedMonsterNames) {
+            binding.defeatedCheckbox.isChecked = true
+            setDefeated(true)
+        } else {
+            setDefeated(false)
+        }
 
         val imageURI = currentMonster.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.monsterImageView)
