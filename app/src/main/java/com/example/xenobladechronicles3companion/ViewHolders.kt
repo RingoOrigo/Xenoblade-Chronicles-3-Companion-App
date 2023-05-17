@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
+import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
@@ -34,7 +35,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
             val path = dbref.child(deviceID).child("defeatedMonsters").child(currentMonster.name)
 
             currentMonster.defeated = binding.defeatedCheckbox.isChecked
-            if (binding.defeatedCheckbox.isChecked){
+            if (currentMonster.defeated){
                 path.push().setValue(currentMonster) //Uploads defeated monsters to firebase.
             } else {
                 path.removeValue() //Removes monsters from firebase if not defeated.
@@ -78,8 +79,9 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     }
 }
 
-class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private val deviceID: String, private val completedQuests : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentQuest : SideQuest
+    private lateinit var dbref : DatabaseReference
 
     init {
         binding.root.setOnClickListener {
@@ -88,6 +90,16 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
             itemView.context.startActivity(intent)
         }
         binding.checkBox.setOnClickListener {
+            dbref = Firebase.database.reference
+            val path = dbref.child(deviceID).child("completedSideQuests").child(currentQuest.questName)
+
+            currentQuest.completed = binding.checkBox.isChecked
+            if (currentQuest.completed){
+                path.push().setValue(currentQuest)
+            } else {
+                path.removeValue()
+            }
+
             setCompleted(binding.checkBox.isChecked)
         }
     }
@@ -102,7 +114,13 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding) : Recycl
 
         setQuestColor(currentQuest)
         setReqCharacter(currentQuest.reqCharacter!!)
-        setCompleted(binding.checkBox.isChecked)
+
+        if (currentQuest.questName in completedQuests) {
+            binding.checkBox.isChecked = true
+            setCompleted(true)
+        } else {
+            setCompleted(false)
+        }
 
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)

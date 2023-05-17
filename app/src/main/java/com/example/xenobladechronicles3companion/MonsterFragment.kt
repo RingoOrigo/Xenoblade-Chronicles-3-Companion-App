@@ -54,10 +54,7 @@ class MonsterFragment : Fragment() {
                 for (allMonsters in allEntries) {
                     for (singleMonsterEntry in allMonsters.children) {
                         numOfMonstersAdded++
-
-                        val monsterName = singleMonsterEntry.toString()
-
-                        defeatedMonsterNames.add(monsterName)
+                        defeatedMonsterNames.add(singleMonsterEntry.key.toString())
                     }
                 }
             }
@@ -70,7 +67,6 @@ class MonsterFragment : Fragment() {
 
         viewModel.monsterResponse.observe(viewLifecycleOwner, Observer {
             monsterList : List<Monster> ->
-
             val mAdapter = MonsterRecyclerViewAdapter(monsterList, deviceID, defeatedMonsterNames)
             binding.monsterRecyclerView.adapter = mAdapter
         })

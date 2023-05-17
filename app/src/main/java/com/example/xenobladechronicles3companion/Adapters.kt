@@ -24,10 +24,10 @@ class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val deviceID 
     }
 }
 
-class SideQuestRecyclerViewAdapter (val sideQuestList : List<SideQuest>) : RecyclerView.Adapter<SideQuestViewHolder>() {
+class SideQuestRecyclerViewAdapter (val sideQuestList : List<SideQuest>, val deviceID: String, val completedQuests : MutableList<String>) : RecyclerView.Adapter<SideQuestViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SideQuestViewHolder {
         val binding = ListQuestLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return SideQuestViewHolder(binding)
+        return SideQuestViewHolder(binding, deviceID, completedQuests)
     }
 
     override fun onBindViewHolder(holder: SideQuestViewHolder, position: Int) {
