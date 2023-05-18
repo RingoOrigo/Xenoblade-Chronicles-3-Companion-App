@@ -2,12 +2,10 @@ package com.example.xenobladechronicles3companion
 
 import android.content.Intent
 import android.net.Uri
-import android.util.Log
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.net.toUri
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.ListCharacterLayoutBinding
@@ -36,8 +34,18 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
 
             currentMonster.defeated = binding.defeatedCheckbox.isChecked
             if (currentMonster.defeated){
+                viewModel.numOfDefeatedMonsters.value!!.plus(1)
+
+                if (currentMonster.superboss) {
+                    viewModel.numOfDefeatedSuperbosses.value!!.plus(1)
+                }
                 path.push().setValue(currentMonster) //Uploads defeated monsters to firebase.
             } else {
+                viewModel.numOfDefeatedMonsters.value!!.minus(1)
+
+                if (currentMonster.superboss) {
+                    viewModel.numOfDefeatedSuperbosses.value!!.minus(1)
+                }
                 path.removeValue() //Removes monsters from firebase if not defeated.
             }
 
@@ -79,18 +87,40 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     }
 }
 
-class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private val deviceID: String, private val completedQuests : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
+class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val viewModel: ViewModel, private val completedQuests : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentQuest : SideQuest
     private lateinit var dbref : DatabaseReference
 
     init {
+        dbref = Firebase.database.reference
+
         binding.root.setOnClickListener {
             val questURI = Uri.parse(currentQuest.articleURL)
             val intent = Intent(Intent.ACTION_VIEW, questURI)
             itemView.context.startActivity(intent)
         }
-        binding.checkBox.setOnClickListener {
-            setCompleted(binding.checkBox.isChecked)
+
+        binding.completedCheckBox.setOnClickListener {
+            val path = dbref.child(viewModel.deviceID.value!!).child("completedSideQuests").child(currentQuest.questName)
+
+            currentQuest.completed = binding.completedCheckBox.isChecked
+            if (currentQuest.completed){
+                viewModel.numOfCompletedQuests.value!!.plus(1)
+
+                if (currentQuest.heroQuest!!) {
+                    viewModel.numOfCompletedHeroQuests.value!!.plus(1)
+                }
+                path.push().setValue(currentQuest) //Uploads defeated monsters to firebase.
+            } else {
+                viewModel.numOfCompletedQuests.value!!.minus(1)
+
+                if (currentQuest.heroQuest!!) {
+                    viewModel.numOfCompletedHeroQuests.value!!.minus(1)
+                }
+                path.removeValue() //Removes monsters from firebase if not defeated.
+            }
+
+            setCompleted(binding.completedCheckBox.isChecked)
         }
     }
 
@@ -106,7 +136,7 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private 
         setReqCharacter(currentQuest.reqCharacter!!)
 
         if (currentQuest.questName in completedQuests) {
-            binding.checkBox.isChecked = true
+            binding.completedCheckBox.isChecked = true
             setCompleted(true)
         } else {
             setCompleted(false)

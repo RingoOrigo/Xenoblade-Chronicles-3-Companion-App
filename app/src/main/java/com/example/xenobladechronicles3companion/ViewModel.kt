@@ -1,13 +1,9 @@
 package com.example.xenobladechronicles3companion
 
 import android.util.Log
-import android.view.WindowInsets.Side
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.installations.FirebaseInstallations
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,6 +26,24 @@ class ViewModel : ViewModel() {
     private val _deviceID = MutableLiveData<String>()
     val deviceID : LiveData<String>
         get() = _deviceID
+
+    private val _numOfDefeatedMonsters = MutableLiveData<Int>(0)
+    val numOfDefeatedMonsters : LiveData<Int>
+        get() = _numOfDefeatedMonsters
+
+    private val _numOfDefeatedSuperbosses = MutableLiveData<Int>(0)
+    val numOfDefeatedSuperbosses : LiveData<Int>
+        get() = _numOfDefeatedSuperbosses
+
+    private val _numOfCompletedQuests = MutableLiveData<Int>(0)
+    val numOfCompletedQuests : LiveData<Int>
+        get() = _numOfCompletedQuests
+
+    private val _numOfCompletedHeroQuests = MutableLiveData<Int>(0)
+    val numOfCompletedHeroQuests : LiveData<Int>
+        get() = _numOfCompletedHeroQuests
+
+
 
     fun getMonsters() {
         val request = MonsterAPI.monsterAPI.getMonsters()

@@ -115,7 +115,7 @@
         tools:text="Alexandra" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/completedCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/completed"
