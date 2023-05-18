@@ -34,8 +34,6 @@ class MonsterFragment : Fragment() {
         dbref = Firebase.database.reference
         defeatedMonsterNames = mutableListOf()
 
-
-//        For some reason, ERRROR: deviceID not initialized
         dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters").addValueEventListener(object:ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
@@ -60,8 +58,6 @@ class MonsterFragment : Fragment() {
         })
 
         viewModel.getMonsters()
-
-        Thread.sleep(200)
 
         return binding.root
     }

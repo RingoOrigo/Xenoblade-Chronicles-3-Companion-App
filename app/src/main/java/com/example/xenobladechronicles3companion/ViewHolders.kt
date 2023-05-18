@@ -52,7 +52,6 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
 
             setDefeated(binding.defeatedCheckbox.isChecked)
         }
-
     }
 
     fun bindMonster(monster : Monster) {
@@ -64,11 +63,9 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         binding.locationTextView.text = monster.location
 
         if(currentMonster.name in defeatedMonsterNames) {
-            binding.defeatedCheckbox.isChecked = true
-            setDefeated(true)
-        } else {
-            setDefeated(false)
+            currentMonster.defeated = true
         }
+        setDefeated(currentMonster.defeated)
 
         if (currentMonster.superboss) {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
@@ -81,7 +78,8 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     }
 
     private fun setDefeated(defeated : Boolean) {
-        binding.defeatedX.isVisible = defeated
+        currentMonster.defeated = defeated
+        binding.defeatedX.isGone = !defeated
         binding.defeatedCheckbox.isChecked = defeated
     }
 }
@@ -136,15 +134,12 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
         setReqCharacter(currentQuest.reqCharacter!!)
 
         if (currentQuest.questName in completedQuests) {
-            binding.completedCheckBox.isChecked = true
-            setCompleted(true)
-        } else {
-            setCompleted(false)
+            currentQuest.completed = true
         }
+        setCompleted(currentQuest.completed)
 
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
         Glide.with(itemView.context).load(imageURI).into(binding.imageView)
-
     }
 
     private fun setReqCharacter (reqChar : String) {
@@ -161,6 +156,7 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
     }
 
     private fun setCompleted(completed: Boolean) {
+        binding.completedCheckBox.isChecked = completed
         currentQuest.completed = completed
         binding.completedX.isVisible = completed
     }
