@@ -22,6 +22,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     private lateinit var dbref : DatabaseReference
 
     init {
+
         binding.root.setOnClickListener {
             val monsterURI = Uri.parse(currentMonster.articleURL)
             val intent = Intent(Intent.ACTION_VIEW, monsterURI)
@@ -55,8 +56,6 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     }
 
     fun bindMonster(monster : Monster) {
-        dbref = Firebase.database.reference
-
         currentMonster = monster
 
         binding.monsterNameTextView.text = monster.name
@@ -64,17 +63,17 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         binding.areaTextView.text = monster.region
         binding.locationTextView.text = monster.location
 
-        if (currentMonster.superboss) {
-            binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
-        } else {
-            binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
-        }
-
         if(currentMonster.name in defeatedMonsterNames) {
             binding.defeatedCheckbox.isChecked = true
             setDefeated(true)
         } else {
             setDefeated(false)
+        }
+
+        if (currentMonster.superboss) {
+            binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
+        } else {
+            binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
         }
 
         val imageURI = currentMonster.imageURL.toUri().buildUpon().scheme("https").build()
@@ -92,7 +91,6 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
     private lateinit var dbref : DatabaseReference
 
     init {
-        dbref = Firebase.database.reference
 
         binding.root.setOnClickListener {
             val questURI = Uri.parse(currentQuest.articleURL)
@@ -101,6 +99,8 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
         }
 
         binding.completedCheckBox.setOnClickListener {
+            dbref = Firebase.database.reference
+
             val path = dbref.child(viewModel.deviceID.value!!).child("completedSideQuests").child(currentQuest.questName)
 
             currentQuest.completed = binding.completedCheckBox.isChecked

@@ -59,6 +59,8 @@ class SideQuestFragment : Fragment() {
 
         viewModel.getSideQuests()
 
+        Thread.sleep(200)
+
         return binding.root
     }
 

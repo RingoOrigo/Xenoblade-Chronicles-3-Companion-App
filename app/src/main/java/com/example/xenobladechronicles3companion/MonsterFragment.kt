@@ -14,7 +14,6 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
-import com.google.firebase.installations.FirebaseInstallations
 import com.google.firebase.ktx.Firebase
 
 class MonsterFragment : Fragment() {
@@ -61,6 +60,8 @@ class MonsterFragment : Fragment() {
         })
 
         viewModel.getMonsters()
+
+        Thread.sleep(200)
 
         return binding.root
     }
