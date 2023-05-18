@@ -22,20 +22,9 @@ class MonsterFragment : Fragment() {
     private var _binding : FragmentMonsterBinding? = null
     private val binding get() = _binding!!
 
-    lateinit var dbref : DatabaseReference
+    private var dbref : DatabaseReference = Firebase.database.reference
     private val viewModel : ViewModel by activityViewModels()
-    private lateinit var deviceID : String
-    private lateinit var defeatedMonsterNames : MutableList<String>
-
-    init { //Run as soon as fragment is initialized, this will allow dbref to pull data.
-        FirebaseInstallations.getInstance().id.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                deviceID = task.result //Generate unique installation-specific, ID for the user. Will save data between sessions as long as app isn't reinstalled. Persists past updates
-            } else {
-                Log.e("Installations", "Unable to get Installation ID")
-            }
-        }
-    }
+    private var defeatedMonsterNames : MutableList<String> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,16 +35,16 @@ class MonsterFragment : Fragment() {
         dbref = Firebase.database.reference
         defeatedMonsterNames = mutableListOf()
 
-        dbref.child(deviceID).addValueEventListener(object:ValueEventListener {
+
+//        For some reason, ERRROR: deviceID not initialized
+        dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters").addValueEventListener(object:ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
                 var numOfMonstersAdded = 0
 
-                for (allMonsters in allEntries) {
-                    for (singleMonsterEntry in allMonsters.children) {
-                        numOfMonstersAdded++
-                        defeatedMonsterNames.add(singleMonsterEntry.key.toString())
-                    }
+                for (entry in allEntries) {
+                    numOfMonstersAdded++
+                    defeatedMonsterNames.add(entry.key.toString())
                 }
             }
 
@@ -67,7 +56,7 @@ class MonsterFragment : Fragment() {
 
         viewModel.monsterResponse.observe(viewLifecycleOwner, Observer {
             monsterList : List<Monster> ->
-            val mAdapter = MonsterRecyclerViewAdapter(monsterList, deviceID, defeatedMonsterNames)
+            val mAdapter = MonsterRecyclerViewAdapter(monsterList, viewModel, defeatedMonsterNames)
             binding.monsterRecyclerView.adapter = mAdapter
         })
 

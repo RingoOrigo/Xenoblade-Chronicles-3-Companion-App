@@ -47,24 +47,24 @@ class SideQuestFragment : Fragment() {
         dbref = Firebase.database.reference
         completedQuests = mutableListOf()
 
-        dbref.child(deviceID).addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val allEntries = snapshot.children
-                var numOfQuestsAdded = 0
-
-                for (quests in allEntries) {
-                    for (singleQuest in quests.children) {
-                        numOfQuestsAdded++
-                        completedQuests.add(singleQuest.key.toString())
-                    }
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.w("MainFragment", "Failed to read value.", error.toException())
-            }
-
-        })
+//        dbref.child(deviceID).addValueEventListener(object: ValueEventListener {
+//            override fun onDataChange(snapshot: DataSnapshot) {
+//                val allEntries = snapshot.children
+//                var numOfQuestsAdded = 0
+//
+//                for (quests in allEntries) {
+//                    for (singleQuest in quests.children) {
+//                        numOfQuestsAdded++
+//                        completedQuests.add(singleQuest.key.toString())
+//                    }
+//                }
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                Log.w("MainFragment", "Failed to read value.", error.toException())
+//            }
+//
+//        })
 
         viewModel.sideQuestResponse.observe(viewLifecycleOwner, Observer {
             sideQuestList : List<SideQuest> ->

@@ -19,7 +19,7 @@ import com.google.firebase.ktx.Firebase
 
 
 
-class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val deviceID : String, private val defeatedMonsterNames : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
+class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val viewModel: ViewModel, private val defeatedMonsterNames : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
     private lateinit var dbref : DatabaseReference
 
@@ -32,7 +32,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
 
         binding.defeatedCheckbox.setOnClickListener {
             dbref = Firebase.database.reference
-            val path = dbref.child(deviceID).child("defeatedMonsters").child(currentMonster.name)
+            val path = dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters").child(currentMonster.name)
 
             currentMonster.defeated = binding.defeatedCheckbox.isChecked
             if (currentMonster.defeated){
@@ -90,16 +90,6 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private 
             itemView.context.startActivity(intent)
         }
         binding.checkBox.setOnClickListener {
-            dbref = Firebase.database.reference
-            val path = dbref.child(deviceID).child("completedSideQuests").child(currentQuest.questName)
-
-            currentQuest.completed = binding.checkBox.isChecked
-            if (currentQuest.completed){
-                path.push().setValue(currentQuest)
-            } else {
-                path.removeValue()
-            }
-
             setCompleted(binding.checkBox.isChecked)
         }
     }

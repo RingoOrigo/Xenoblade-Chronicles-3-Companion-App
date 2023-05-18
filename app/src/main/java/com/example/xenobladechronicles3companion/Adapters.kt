@@ -7,11 +7,11 @@ import com.example.xenobladechronicles3companion.databinding.ListCharacterLayout
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
 
-class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val deviceID : String, val defeatedMonsterNames : MutableList<String>) : RecyclerView.Adapter<MonsterViewHolder>() {
+class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val viewModel: ViewModel, val defeatedMonsterNames : MutableList<String>) : RecyclerView.Adapter<MonsterViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonsterViewHolder {
         val binding =
             ListMonsterLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MonsterViewHolder(binding, deviceID, defeatedMonsterNames)
+        return MonsterViewHolder(binding, viewModel, defeatedMonsterNames)
     }
 
     override fun getItemCount(): Int {

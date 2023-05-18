@@ -5,6 +5,10 @@ import android.view.WindowInsets.Side
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.installations.FirebaseInstallations
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -20,8 +24,12 @@ class ViewModel : ViewModel() {
         get() = _sideQuestResponse
 
     private val _characterResponse = MutableLiveData<List<Character>>()
-    val characterResposne: LiveData<List<Character>>
+    val characterResponse: LiveData<List<Character>>
         get() = _characterResponse
+
+    private val _deviceID = MutableLiveData<String>()
+    val deviceID : LiveData<String>
+        get() = _deviceID
 
     fun getMonsters() {
         val request = MonsterAPI.monsterAPI.getMonsters()
@@ -127,5 +135,15 @@ class ViewModel : ViewModel() {
                 _characterResponse.value = listOfCharactersFetched
             }
         })
+    }
+
+    fun generateID() {
+        FirebaseInstallations.getInstance().id.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                _deviceID.value = task.result
+            } else {
+                Log.e("Installations", "Unable to get Installation ID")
+            }
+        }
     }
 }

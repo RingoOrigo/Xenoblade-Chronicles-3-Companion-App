@@ -22,7 +22,7 @@ class CharacterFragment : Fragment() {
     ): View? {
         _binding = FragmentCharacterBinding.inflate(layoutInflater, container, false)
 
-        viewModel.characterResposne.observe(viewLifecycleOwner, Observer {
+        viewModel.characterResponse.observe(viewLifecycleOwner, Observer {
                 characterList : List<Character> ->
             val adapter = CharacterRecyclerViewAdapter(characterList)
             binding.characterRecyclerView.adapter = adapter
