@@ -22,7 +22,6 @@ class SideQuestFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel : ViewModel by activityViewModels()
-    private lateinit var dbref : DatabaseReference
     private lateinit var completedQuests : MutableList<String>
 
     override fun onCreateView(
@@ -31,32 +30,13 @@ class SideQuestFragment : Fragment() {
     ): View? {
         _binding = FragmentSideQuestBinding.inflate(inflater, container, false)
 
-        dbref = Firebase.database.reference
-        completedQuests = mutableListOf()
-
-        dbref.child(viewModel.deviceID.value!!).child("completedSideQuests").addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val allEntries = snapshot.children
-                var numOfQuestsAdded = 0
-
-                for (entry in allEntries) {
-                        numOfQuestsAdded++
-                        completedQuests.add(entry.key.toString())
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.w("MainFragment", "Failed to read value.", error.toException())
-            }
-
-        })
-
         viewModel.sideQuestResponse.observe(viewLifecycleOwner, Observer {
             sideQuestList : List<SideQuest> ->
             val adapter = SideQuestRecyclerViewAdapter(sideQuestList, viewModel, completedQuests)
             binding.sideQuestRecyclerView.adapter = adapter
         })
 
+        viewModel.getCompletedSideQuests()
         viewModel.getSideQuests()
 
         return binding.root

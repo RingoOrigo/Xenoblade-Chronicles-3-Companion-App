@@ -34,19 +34,10 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
             val path = dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters").child(currentMonster.name)
 
             currentMonster.defeated = binding.defeatedCheckbox.isChecked
-            if (currentMonster.defeated){
-                viewModel.numOfDefeatedMonsters.value!!.plus(1)
 
-                if (currentMonster.superboss) {
-                    viewModel.numOfDefeatedSuperbosses.value!!.plus(1)
-                }
+            if (currentMonster.defeated){
                 path.push().setValue(currentMonster) //Uploads defeated monsters to firebase.
             } else {
-                viewModel.numOfDefeatedMonsters.value!!.minus(1)
-
-                if (currentMonster.superboss) {
-                    viewModel.numOfDefeatedSuperbosses.value!!.minus(1)
-                }
                 path.removeValue() //Removes monsters from firebase if not defeated.
             }
 
@@ -62,9 +53,6 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         binding.areaTextView.text = monster.region
         binding.locationTextView.text = monster.location
 
-        if(currentMonster.name in defeatedMonsterNames) {
-            currentMonster.defeated = true
-        }
         setDefeated(currentMonster.defeated)
 
         if (currentMonster.superboss) {
@@ -81,6 +69,18 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         currentMonster.defeated = defeated
         binding.defeatedX.isGone = !defeated
         binding.defeatedCheckbox.isChecked = defeated
+
+        if (defeated) {
+            viewModel.numOfDefeatedMonsters.value!!.plus(1)
+            if (currentMonster.superboss) {
+                viewModel.numOfDefeatedSuperbosses.value!!.plus(1)
+            }
+        } else {
+            viewModel.numOfDefeatedMonsters.value!!.minus(1)
+            if (currentMonster.superboss) {
+                viewModel.numOfDefeatedSuperbosses.value!!.minus(1)
+            }
+        }
     }
 }
 
@@ -102,19 +102,10 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
             val path = dbref.child(viewModel.deviceID.value!!).child("completedSideQuests").child(currentQuest.questName)
 
             currentQuest.completed = binding.completedCheckBox.isChecked
-            if (currentQuest.completed){
-                viewModel.numOfCompletedQuests.value!!.plus(1)
 
-                if (currentQuest.heroQuest!!) {
-                    viewModel.numOfCompletedHeroQuests.value!!.plus(1)
-                }
+            if (currentQuest.completed){
                 path.push().setValue(currentQuest) //Uploads defeated monsters to firebase.
             } else {
-                viewModel.numOfCompletedQuests.value!!.minus(1)
-
-                if (currentQuest.heroQuest!!) {
-                    viewModel.numOfCompletedHeroQuests.value!!.minus(1)
-                }
                 path.removeValue() //Removes monsters from firebase if not defeated.
             }
 
@@ -132,10 +123,6 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
 
         setQuestColor(currentQuest)
         setReqCharacter(currentQuest.reqCharacter!!)
-
-        if (currentQuest.questName in completedQuests) {
-            currentQuest.completed = true
-        }
         setCompleted(currentQuest.completed)
 
         val imageURI = currentQuest.imageURL.toUri().buildUpon().scheme("https").build()
@@ -159,6 +146,20 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
         binding.completedCheckBox.isChecked = completed
         currentQuest.completed = completed
         binding.completedX.isVisible = completed
+
+        if (completed) {
+            viewModel.numOfCompletedQuests.value!!.plus(1)
+
+            if (currentQuest.heroQuest!!) {
+                viewModel.numOfCompletedHeroQuests.value!!.plus(1)
+            }
+        } else {
+            viewModel.numOfCompletedQuests.value!!.minus(1)
+
+            if (currentQuest.heroQuest!!) {
+                viewModel.numOfCompletedHeroQuests.value!!.minus(1)
+            }
+        }
     }
 }
 

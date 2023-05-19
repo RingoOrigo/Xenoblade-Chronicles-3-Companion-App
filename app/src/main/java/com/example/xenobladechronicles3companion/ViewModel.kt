@@ -4,7 +4,12 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
 import com.google.firebase.installations.FirebaseInstallations
+import com.google.firebase.ktx.Firebase
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,6 +31,14 @@ class ViewModel : ViewModel() {
     private val _deviceID = MutableLiveData<String>()
     val deviceID : LiveData<String>
         get() = _deviceID
+
+    private val _defeatedMonsterNames = MutableLiveData<List<String>>()
+    val defeatedMonsterNames : LiveData<List<String>>
+        get() = _defeatedMonsterNames
+
+    private val _completedSideQuestNames = MutableLiveData<List<String>>()
+    val completedSideQuestNames : LiveData<List<String>>
+        get() = _completedSideQuestNames
 
     private val _numOfDefeatedMonsters = MutableLiveData<Int>(0)
     val numOfDefeatedMonsters : LiveData<Int>
@@ -69,7 +82,7 @@ class ViewModel : ViewModel() {
                     val superboss = monster.superboss
                     val articleURL = monster.articleURL
                     val imageURL = monster.imageURL
-                    val defeated = false
+                    val defeated = (monster.name in (defeatedMonsterNames.value ?: mutableListOf()))
 
                     val newMonster = Monster(name, level, location, region, superboss, articleURL, imageURL, defeated)
                     listofMonstersFetched.add(newMonster)
@@ -106,7 +119,7 @@ class ViewModel : ViewModel() {
                     val heroQuest = quest.heroQuest ?: false
                     val imageURL = quest.imageURL
                     val articleURL = quest.articleURL
-                    val completed = false
+                    val completed = (quest.questName in (completedSideQuestNames.value ?: mutableListOf()))
 
                     val newQuest = SideQuest(name, recLevel, reqCharacter, region, location, DLC, heroQuest, imageURL, articleURL, completed)
                     listOfQuestsFetched.add(newQuest)
@@ -159,5 +172,49 @@ class ViewModel : ViewModel() {
                 Log.e("Installations", "Unable to get Installation ID")
             }
         }
+    }
+
+    fun getDefeatedMonsters() {
+        val dbref = Firebase.database.reference
+        val defeatedMonsters : MutableList<String> = mutableListOf()
+
+        dbref.child(deviceID.value!!).child("defeatedMonsters").addValueEventListener(object:
+            ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val allEntries = snapshot.children
+                var numOfMonstersAdded = 0
+
+                for (entry in allEntries) {
+                    numOfMonstersAdded++
+                    defeatedMonsters.add(entry.key.toString())
+                }
+                _defeatedMonsterNames.value = defeatedMonsters
+            }
+            override fun onCancelled(error: DatabaseError) {
+                Log.w("MainFragment", "Failed to read value.", error.toException())
+            }
+        })
+    }
+
+    fun getCompletedSideQuests() {
+        val dbref = Firebase.database.reference
+        val completedQuests : MutableList<String> = mutableListOf()
+
+        dbref.child(deviceID.value!!).child("completedSideQuests").addValueEventListener(object: ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val allEntries = snapshot.children
+                var numOfQuestsAdded = 0
+
+                for (entry in allEntries) {
+                    numOfQuestsAdded++
+                    completedQuests.add(entry.key.toString())
+                }
+
+                _completedSideQuestNames.value = completedQuests
+            }
+            override fun onCancelled(error: DatabaseError) {
+                Log.w("MainFragment", "Failed to read value.", error.toException())
+            }
+        })
     }
 }

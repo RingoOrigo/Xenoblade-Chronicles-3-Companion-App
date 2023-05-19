@@ -21,7 +21,6 @@ class MonsterFragment : Fragment() {
     private var _binding : FragmentMonsterBinding? = null
     private val binding get() = _binding!!
 
-    private var dbref : DatabaseReference = Firebase.database.reference
     private val viewModel : ViewModel by activityViewModels()
     private var defeatedMonsterNames : MutableList<String> = mutableListOf()
 
@@ -31,32 +30,13 @@ class MonsterFragment : Fragment() {
     ): View? {
         _binding = FragmentMonsterBinding.inflate(inflater, container, false)
 
-        dbref = Firebase.database.reference
-        defeatedMonsterNames = mutableListOf()
-
-        dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters").addValueEventListener(object:ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val allEntries = snapshot.children
-                var numOfMonstersAdded = 0
-
-                for (entry in allEntries) {
-                    numOfMonstersAdded++
-                    defeatedMonsterNames.add(entry.key.toString())
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.w("MainFragment", "Failed to read value.", error.toException())
-            }
-
-        })
-
         viewModel.monsterResponse.observe(viewLifecycleOwner, Observer {
             monsterList : List<Monster> ->
             val mAdapter = MonsterRecyclerViewAdapter(monsterList, viewModel, defeatedMonsterNames)
             binding.monsterRecyclerView.adapter = mAdapter
         })
 
+        viewModel.getDefeatedMonsters()
         viewModel.getMonsters()
 
         return binding.root
