@@ -22,7 +22,7 @@ class SideQuestFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel : ViewModel by activityViewModels()
-    private lateinit var completedQuests : MutableList<String>
+    private var completedQuests : MutableList<String> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
