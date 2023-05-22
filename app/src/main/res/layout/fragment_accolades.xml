@@ -1,14 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AccoladesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/progress_text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track the progress of your journey through Aionios!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/monsters_completion_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/unique_monster_completion_label"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_text_label" />
+
+    <TextView
+        android:id="@+id/monsters_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/percent_0"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="@+id/monsters_completion_label"
+        app:layout_constraintTop_toBottomOf="@+id/monsters_completion_label" />
+
+    <ProgressBar
+        android:id="@+id/monsters_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters_0_percent"
+        app:layout_constraintEnd_toStartOf="@+id/monsters_100_percent"
+        app:layout_constraintStart_toEndOf="@+id/monsters_0_percent"
+        app:layout_constraintTop_toTopOf="@+id/monsters_0_percent" />
+
+    <TextView
+        android:id="@+id/monsters_100_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_100"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/monsters_progress_bar" />
+
+    <TextView
+        android:id="@+id/superboss_completion_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/superboss_completion_label"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintTop_toBottomOf="@+id/monsters_progress_bar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/superboss_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/percent_0"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/superboss_completion_label" />
+
+    <ProgressBar
+        android:id="@+id/superboss_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/superboss_0_percent"
+        app:layout_constraintEnd_toStartOf="@+id/superboss_100_percent"
+        app:layout_constraintStart_toEndOf="@+id/superboss_0_percent"
+        app:layout_constraintTop_toTopOf="@+id/superboss_0_percent" />
+
+    <TextView
+        android:id="@+id/superboss_100_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_100"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/superboss_0_percent" />
+
+    <TextView
+        android:id="@+id/side_quest_completion_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/side_quest_completion_label"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintTop_toBottomOf="@+id/superboss_progress_bar"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/side_quest_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/percent_0"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/side_quest_completion_label" />
+
+    <ProgressBar
+        android:id="@+id/side_quest_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/side_quest_0_percent"
+        app:layout_constraintEnd_toStartOf="@+id/side_quest_100_percent"
+        app:layout_constraintStart_toEndOf="@+id/side_quest_0_percent"
+        app:layout_constraintTop_toTopOf="@+id/side_quest_0_percent" />
+
+    <TextView
+        android:id="@+id/side_quest_100_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_100"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/side_quest_0_percent" />
+
+    <TextView
+        android:id="@+id/hero_quest_completion_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hero_quest_completion_label"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintTop_toBottomOf="@+id/side_quest_progress_bar"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/hero_quest_100_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_100"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hero_quest_0_percent" />
+
+    <TextView
+        android:id="@+id/hero_quest_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/percent_0"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hero_quest_completion_label" />
+
+    <ProgressBar
+        android:id="@+id/hero_quest_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="348dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/hero_quest_100_percent"
+        app:layout_constraintStart_toEndOf="@+id/hero_quest_0_percent"
+        app:layout_constraintTop_toTopOf="@+id/hero_quest_0_percent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

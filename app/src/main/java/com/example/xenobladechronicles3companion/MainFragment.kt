@@ -23,6 +23,7 @@ class MainFragment : Fragment() {
         
         setNavClickListeners()
         setHasOptionsMenu(true)
+
         viewModel.generateID()
 
         return binding.root

@@ -17,7 +17,7 @@ import com.google.firebase.ktx.Firebase
 
 
 
-class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val viewModel: ViewModel, private val defeatedMonsterNames : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
+class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private val viewModel: ViewModel) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentMonster : Monster
     private lateinit var dbref : DatabaseReference
 
@@ -84,12 +84,11 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
     }
 }
 
-class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val viewModel: ViewModel, private val completedQuests : MutableList<String>) : RecyclerView.ViewHolder(binding.root) {
+class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private val viewModel: ViewModel) : RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentQuest : SideQuest
     private lateinit var dbref : DatabaseReference
 
     init {
-
         binding.root.setOnClickListener {
             val questURI = Uri.parse(currentQuest.articleURL)
             val intent = Intent(Intent.ACTION_VIEW, questURI)
@@ -145,7 +144,7 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, val view
     private fun setCompleted(completed: Boolean) {
         binding.completedCheckBox.isChecked = completed
         currentQuest.completed = completed
-        binding.completedX.isVisible = completed
+        binding.completedX.isGone = !completed
 
         if (completed) {
             viewModel.numOfCompletedQuests.value!!.plus(1)

@@ -7,11 +7,11 @@ import com.example.xenobladechronicles3companion.databinding.ListCharacterLayout
 import com.example.xenobladechronicles3companion.databinding.ListMonsterLayoutBinding
 import com.example.xenobladechronicles3companion.databinding.ListQuestLayoutBinding
 
-class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val viewModel: ViewModel, val defeatedMonsterNames : MutableList<String>) : RecyclerView.Adapter<MonsterViewHolder>() {
+class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val viewModel: ViewModel) : RecyclerView.Adapter<MonsterViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonsterViewHolder {
         val binding =
             ListMonsterLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MonsterViewHolder(binding, viewModel, defeatedMonsterNames)
+        return MonsterViewHolder(binding, viewModel)
     }
 
     override fun getItemCount(): Int {
@@ -24,10 +24,10 @@ class MonsterRecyclerViewAdapter (val monsterList : List<Monster>, val viewModel
     }
 }
 
-class SideQuestRecyclerViewAdapter (val sideQuestList : List<SideQuest>, val viewModel: ViewModel, val completedQuests : MutableList<String>) : RecyclerView.Adapter<SideQuestViewHolder>() {
+class SideQuestRecyclerViewAdapter (val sideQuestList : List<SideQuest>, val viewModel: ViewModel) : RecyclerView.Adapter<SideQuestViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SideQuestViewHolder {
         val binding = ListQuestLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return SideQuestViewHolder(binding, viewModel, completedQuests)
+        return SideQuestViewHolder(binding, viewModel)
     }
 
     override fun onBindViewHolder(holder: SideQuestViewHolder, position: Int) {

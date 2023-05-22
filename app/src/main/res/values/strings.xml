@@ -35,4 +35,11 @@
     <string name="party_member">Party Member</string>
     <string name="hero">Hero</string>
     <string name="antagonist">Antagonist</string>
+    <string name="unique_monster_completion_label">Unique Monster Completion:</string>
+    <string name="superboss_completion_label">Superboss Completion:</string>
+    <string name="side_quest_completion_label">Side Quest Completion:</string>
+    <string name="hero_quest_completion_label">Hero Quest Completion:</string>
+    <string name="overall_completion_label">Overall Completion:</string>
+    <string name="percent_0">0%</string>
+    <string name="percent_100">100%</string>
 </resources>
