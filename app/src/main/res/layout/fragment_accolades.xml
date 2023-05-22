@@ -185,12 +185,58 @@
     <ProgressBar
         android:id="@+id/hero_quest_progress_bar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="348dp"
-        android:layout_height="19dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hero_quest_0_percent"
         app:layout_constraintEnd_toStartOf="@+id/hero_quest_100_percent"
         app:layout_constraintStart_toEndOf="@+id/hero_quest_0_percent"
         app:layout_constraintTop_toTopOf="@+id/hero_quest_0_percent" />
+
+    <TextView
+        android:id="@+id/overall_completion_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/overall_completion_label"
+        android:textSize="20sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintTop_toBottomOf="@+id/hero_quest_progress_bar"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <ProgressBar
+        android:id="@+id/overall_completion_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/overall_0_percent"
+        app:layout_constraintEnd_toStartOf="@+id/overall_100_percent"
+        app:layout_constraintStart_toEndOf="@+id/overall_0_percent"
+        app:layout_constraintTop_toTopOf="@+id/overall_0_percent" />
+
+    <TextView
+        android:id="@+id/overall_100_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percent_100"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/overall_0_percent" />
+
+    <TextView
+        android:id="@+id/overall_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/percent_0"
+        android:textSize="16sp"
+        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overall_completion_label" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

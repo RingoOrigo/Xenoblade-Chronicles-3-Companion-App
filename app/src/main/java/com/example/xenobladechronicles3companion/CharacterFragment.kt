@@ -30,8 +30,6 @@ class CharacterFragment : Fragment() {
 
         viewModel.getCharacters()
 
-        Thread.sleep(200)
-
         return binding.root
     }
 }

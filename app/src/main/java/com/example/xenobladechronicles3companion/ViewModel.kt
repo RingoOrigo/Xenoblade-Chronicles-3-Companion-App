@@ -40,19 +40,19 @@ class ViewModel : ViewModel() {
     val completedSideQuestNames : LiveData<List<String>>
         get() = _completedSideQuestNames
 
-    private val _numOfDefeatedMonsters = MutableLiveData<Int>(0)
+    private val _numOfDefeatedMonsters = MutableLiveData(0)
     val numOfDefeatedMonsters : LiveData<Int>
         get() = _numOfDefeatedMonsters
 
-    private val _numOfDefeatedSuperbosses = MutableLiveData<Int>(0)
+    private val _numOfDefeatedSuperbosses = MutableLiveData(0)
     val numOfDefeatedSuperbosses : LiveData<Int>
         get() = _numOfDefeatedSuperbosses
 
-    private val _numOfCompletedQuests = MutableLiveData<Int>(0)
+    private val _numOfCompletedQuests = MutableLiveData(0)
     val numOfCompletedQuests : LiveData<Int>
         get() = _numOfCompletedQuests
 
-    private val _numOfCompletedHeroQuests = MutableLiveData<Int>(0)
+    private val _numOfCompletedHeroQuests = MutableLiveData(0)
     val numOfCompletedHeroQuests : LiveData<Int>
         get() = _numOfCompletedHeroQuests
 
@@ -173,7 +173,6 @@ class ViewModel : ViewModel() {
             }
         }
     }
-
     fun getDefeatedMonsters() {
         val dbref = Firebase.database.reference
         val defeatedMonsters : MutableList<String> = mutableListOf()
@@ -189,6 +188,7 @@ class ViewModel : ViewModel() {
                     defeatedMonsters.add(entry.key.toString())
                 }
                 _defeatedMonsterNames.value = defeatedMonsters
+                _numOfDefeatedMonsters.value = numOfMonstersAdded
             }
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
@@ -211,10 +211,12 @@ class ViewModel : ViewModel() {
                 }
 
                 _completedSideQuestNames.value = completedQuests
+                _numOfCompletedQuests.value = numOfQuestsAdded
             }
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
             }
         })
     }
+
 }
