@@ -16,8 +16,8 @@ const val TOTAL_OBJECTIVES = TOTAL_HERO_QUESTS + TOTAL_SIDE_QUESTS + TOTAL_SUPER
 
 class AccoladesFragment : Fragment() {
 
-    var _binding : FragmentAccoladesBinding? = null
-    val binding get() = _binding!!
+    private var _binding : FragmentAccoladesBinding? = null
+    private val binding get() = _binding!!
     private val viewModel : ViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -25,14 +25,13 @@ class AccoladesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentAccoladesBinding.inflate(inflater, container, false)
-
         val totalCompletion = (viewModel.numOfDefeatedMonsters.value!!  + viewModel.numOfDefeatedSuperbosses.value!! + viewModel.numOfCompletedQuests.value!! + viewModel.numOfCompletedHeroQuests.value!!)
 
-        binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! / TOTAL_MONSTERS) * 100
-        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! / TOTAL_SUPERBOSSES) * 100
-        binding.sideQuestProgressBar.progress = (viewModel.numOfCompletedQuests.value!! / TOTAL_SIDE_QUESTS) * 100
-        binding.heroQuestProgressBar.progress = (viewModel.numOfCompletedHeroQuests.value!! / TOTAL_HERO_QUESTS) * 100
-        binding.overallCompletionProgressBar.progress = (totalCompletion / TOTAL_OBJECTIVES) * 100
+        binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / TOTAL_MONSTERS)
+        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! * 100 / TOTAL_SUPERBOSSES)
+        binding.sideQuestProgressBar.progress = (viewModel.numOfCompletedQuests.value!! * 100 / TOTAL_SIDE_QUESTS)
+        binding.heroQuestProgressBar.progress = (viewModel.numOfCompletedHeroQuests.value!! * 100 / TOTAL_HERO_QUESTS)
+        binding.overallCompletionProgressBar.progress = (totalCompletion * 100 / TOTAL_OBJECTIVES)
 
         return binding.root
     }

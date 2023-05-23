@@ -71,7 +71,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         binding.defeatedCheckbox.isChecked = defeated
 
         if (defeated) {
-            viewModel.numOfDefeatedMonsters.value!!.plus(1)
+            viewModel.numOfDefeatedMonsters.value!!.plus(1) //Implement method into viewModel to increment counter by 1.
             if (currentMonster.superboss) {
                 viewModel.numOfDefeatedSuperbosses.value!!.plus(1)
             }

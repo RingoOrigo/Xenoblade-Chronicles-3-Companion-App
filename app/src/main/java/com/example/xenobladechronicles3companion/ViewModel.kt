@@ -168,11 +168,14 @@ class ViewModel : ViewModel() {
         FirebaseInstallations.getInstance().id.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 _deviceID.value = task.result
+                getDefeatedMonsters()
+                getCompletedSideQuests()
             } else {
                 Log.e("Installations", "Unable to get Installation ID")
             }
         }
     }
+
     fun getDefeatedMonsters() {
         val dbref = Firebase.database.reference
         val defeatedMonsters : MutableList<String> = mutableListOf()
@@ -181,14 +184,11 @@ class ViewModel : ViewModel() {
             ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
-                var numOfMonstersAdded = 0
 
                 for (entry in allEntries) {
-                    numOfMonstersAdded++
                     defeatedMonsters.add(entry.key.toString())
                 }
                 _defeatedMonsterNames.value = defeatedMonsters
-                _numOfDefeatedMonsters.value = numOfMonstersAdded
             }
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
@@ -203,15 +203,12 @@ class ViewModel : ViewModel() {
         dbref.child(deviceID.value!!).child("completedSideQuests").addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
-                var numOfQuestsAdded = 0
 
                 for (entry in allEntries) {
-                    numOfQuestsAdded++
                     completedQuests.add(entry.key.toString())
                 }
 
                 _completedSideQuestNames.value = completedQuests
-                _numOfCompletedQuests.value = numOfQuestsAdded
             }
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
@@ -219,4 +216,9 @@ class ViewModel : ViewModel() {
         })
     }
 
+//    fun updateNumOfDefeatedMonsters (increasing : Boolean, superboss : Boolean) {
+//        if (increasing) {
+//            _numOfDefeatedMonsters.value = numOfDefeatedMonsters.value!!.plus(1)
+//        }
+//    }
 }
