@@ -36,7 +36,6 @@ class SideQuestFragment : Fragment() {
 
         setHasOptionsMenu(true)
 
-        viewModel.getCompletedSideQuests()
         viewModel.getSideQuests()
 
         return binding.root

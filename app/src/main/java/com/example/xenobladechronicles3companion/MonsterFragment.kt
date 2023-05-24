@@ -36,7 +36,6 @@ class MonsterFragment : Fragment() {
 
         setHasOptionsMenu(true)
 
-        viewModel.getDefeatedMonsters()
         viewModel.getMonsters()
 
         return binding.root

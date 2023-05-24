@@ -14,7 +14,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class ViewModel : ViewModel() {
     private val _monsterResponse = MutableLiveData<List<Monster>>()
     val monsterResponse: LiveData<List<Monster>>
@@ -168,6 +167,10 @@ class ViewModel : ViewModel() {
         FirebaseInstallations.getInstance().id.addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 _deviceID.value = task.result
+
+                getMonsters()
+                getSideQuests()
+
                 getDefeatedMonsters()
                 getCompletedSideQuests()
             } else {
@@ -188,7 +191,7 @@ class ViewModel : ViewModel() {
                 for (entry in allEntries) {
                     defeatedMonsters.add(entry.key.toString())
                 }
-                _defeatedMonsterNames.value = defeatedMonsters
+                    _defeatedMonsterNames.value = defeatedMonsters
             }
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
@@ -198,27 +201,51 @@ class ViewModel : ViewModel() {
 
     fun getCompletedSideQuests() {
         val dbref = Firebase.database.reference
-        val completedQuests : MutableList<String> = mutableListOf()
+        val completedQuests: MutableList<String> = mutableListOf()
 
-        dbref.child(deviceID.value!!).child("completedSideQuests").addValueEventListener(object: ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val allEntries = snapshot.children
+        dbref.child(deviceID.value!!).child("completedSideQuests")
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val allEntries = snapshot.children
+                    for (entry in allEntries) {
+                        completedQuests.add(entry.key.toString())
+                    }
 
-                for (entry in allEntries) {
-                    completedQuests.add(entry.key.toString())
+                    _completedSideQuestNames.value = completedQuests
                 }
 
-                _completedSideQuestNames.value = completedQuests
-            }
-            override fun onCancelled(error: DatabaseError) {
-                Log.w("MainFragment", "Failed to read value.", error.toException())
-            }
-        })
+                override fun onCancelled(error: DatabaseError) {
+                    Log.w("MainFragment", "Failed to read value.", error.toException())
+                }
+            })
     }
 
-//    fun updateNumOfDefeatedMonsters (increasing : Boolean, superboss : Boolean) {
-//        if (increasing) {
-//            _numOfDefeatedMonsters.value = numOfDefeatedMonsters.value!!.plus(1)
-//        }
-//    }
+    fun setNumOfCompletedSideQuests() {
+        var completedQuestNum = 0
+        var completedHeroQuestNum = 0
+
+        for (quest in _sideQuestResponse.value!!) {
+            if (quest.questName in _completedSideQuestNames.value!!) {
+                completedQuestNum++
+                if (quest.heroQuest == true) completedHeroQuestNum++
+            }
+        }
+
+        _numOfCompletedQuests.value = completedQuestNum
+        _numOfCompletedHeroQuests.value = completedHeroQuestNum
+    }
+
+    fun setNumOfDefeatedMonsters() {
+        var defeatedMonstersNum = 0
+        var defeatedSuperbossesNum = 0
+
+        for (monster in _monsterResponse.value!!) {
+            if (monster.name in _defeatedMonsterNames.value!!) {
+                defeatedMonstersNum++
+                if (monster.superboss) defeatedSuperbossesNum++
+            }
+        }
+        _numOfDefeatedMonsters.value = defeatedMonstersNum
+        _numOfDefeatedSuperbosses.value = defeatedSuperbossesNum
+    }
 }

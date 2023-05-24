@@ -25,6 +25,10 @@ class AccoladesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentAccoladesBinding.inflate(inflater, container, false)
+
+        viewModel.setNumOfDefeatedMonsters()
+        viewModel.setNumOfCompletedSideQuests()
+
         val totalCompletion = (viewModel.numOfDefeatedMonsters.value!!  + viewModel.numOfDefeatedSuperbosses.value!! + viewModel.numOfCompletedQuests.value!! + viewModel.numOfCompletedHeroQuests.value!!)
 
         binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / TOTAL_MONSTERS)
