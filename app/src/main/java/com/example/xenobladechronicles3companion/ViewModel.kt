@@ -179,7 +179,7 @@ class ViewModel : ViewModel() {
         }
     }
 
-    fun getDefeatedMonsters() {
+    private fun getDefeatedMonsters() {
         val dbref = Firebase.database.reference
         val defeatedMonsters : MutableList<String> = mutableListOf()
 
@@ -199,7 +199,7 @@ class ViewModel : ViewModel() {
         })
     }
 
-    fun getCompletedSideQuests() {
+    private fun getCompletedSideQuests() {
         val dbref = Firebase.database.reference
         val completedQuests: MutableList<String> = mutableListOf()
 
