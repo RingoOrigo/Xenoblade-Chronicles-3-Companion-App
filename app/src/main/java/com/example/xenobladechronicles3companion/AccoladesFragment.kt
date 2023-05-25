@@ -9,12 +9,6 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.example.xenobladechronicles3companion.databinding.FragmentAccoladesBinding
 
-const val TOTAL_MONSTERS = 141
-const val TOTAL_SUPERBOSSES = 6
-const val TOTAL_SIDE_QUESTS = 197
-const val TOTAL_HERO_QUESTS = 41
-const val TOTAL_OBJECTIVES = TOTAL_HERO_QUESTS + TOTAL_SIDE_QUESTS + TOTAL_SUPERBOSSES + TOTAL_MONSTERS
-
 class AccoladesFragment : Fragment() {
 
     private var _binding : FragmentAccoladesBinding? = null
@@ -33,12 +27,13 @@ class AccoladesFragment : Fragment() {
         setClickListeners()
 
         val totalCompletion = (viewModel.numOfDefeatedMonsters.value!!  + viewModel.numOfDefeatedSuperbosses.value!! + viewModel.numOfCompletedQuests.value!! + viewModel.numOfCompletedHeroQuests.value!!)
+        val totalObjectives = (141 + 7 + 197 + 41)
 
-        binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / TOTAL_MONSTERS)
-        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! * 100 / TOTAL_SUPERBOSSES)
-        binding.sideQuestProgressBar.progress = (viewModel.numOfCompletedQuests.value!! * 100 / TOTAL_SIDE_QUESTS)
-        binding.heroQuestProgressBar.progress = (viewModel.numOfCompletedHeroQuests.value!! * 100 / TOTAL_HERO_QUESTS)
-        binding.overallCompletionProgressBar.progress = (totalCompletion * 100 / TOTAL_OBJECTIVES)
+        binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / 141)
+        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! * 100 / 7)
+        binding.sideQuestProgressBar.progress = (viewModel.numOfCompletedQuests.value!! * 100 / 197)
+        binding.heroQuestProgressBar.progress = (viewModel.numOfCompletedHeroQuests.value!! * 100 / 41)
+        binding.overallCompletionProgressBar.progress = (totalCompletion * 100 / totalObjectives)
 
         return binding.root
     }

@@ -38,84 +38,59 @@
 
             <TextView
                 android:id="@+id/about_text_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style = "@style/about_text"
                 android:text="@string/about_intro"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                app:fontFamily="@font/helvetica_neue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/xenoblade_3_logo_view" />
 
             <TextView
                 android:id="@+id/unique_monsters_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style = "@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/unique_monsters_header"
-                android:textSize="28sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/about_text_view" />
 
             <TextView
                 android:id="@+id/about_unique_monsters_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style = "@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_unique_monsters"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                app:fontFamily="@font/helvetica_neue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/unique_monsters_header" />
 
             <TextView
                 android:id="@+id/side_quests_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style = "@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/side_quests_header"
-                android:textSize="28sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/about_unique_monsters_view" />
 
             <TextView
                 android:id="@+id/about_side_quests_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style = "@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_side_quests"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                app:fontFamily="@font/helvetica_neue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/side_quests_header" />
 
             <TextView
                 android:id="@+id/characters_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style = "@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/characters_header"
-                android:textSize="28sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/about_side_quests_view" />
 
             <TextView
                 android:id="@+id/about_characters_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style = "@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_characters"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                app:fontFamily="@font/helvetica_neue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/characters_header" />

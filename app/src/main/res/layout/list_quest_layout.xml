@@ -43,22 +43,17 @@
 
     <TextView
         android:id="@+id/region_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style = "@style/info_text_16sp"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/side_quest_name"
         app:layout_constraintTop_toBottomOf="@id/requires"
         tools:text="Aetia" />
 
     <TextView
         android:id="@+id/location_name"
+        style = "@style/info_text_16sp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/region_name"
@@ -67,10 +62,10 @@
 
     <TextView
         android:id="@+id/recommended_level"
-        style = "@style/sub_heading_20_sp"
+        style="@style/sub_heading_20_sp"
         android:layout_marginEnd="4dp"
         android:fontFamily="@font/helvetica_neue"
-        android:text="@string/level"
+        android:text="@string/separation_dot"
         app:layout_constraintBottom_toBottomOf="@+id/side_quest_name"
         app:layout_constraintEnd_toStartOf="@+id/recommended_level_numeric"
         app:layout_constraintStart_toEndOf="@+id/side_quest_name"
@@ -85,22 +80,16 @@
 
     <TextView
         android:id="@+id/requires"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/sub_heading_20_sp"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_neue"
         android:text="@string/requires"
-        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/location_name"
         app:layout_constraintTop_toBottomOf="@id/side_quest_name" />
 
     <TextView
         android:id="@+id/required_character_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/sub_heading_20_sp"
         android:layout_marginStart="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/requires"
         app:layout_constraintTop_toTopOf="@+id/requires"
         tools:text="Alexandra" />

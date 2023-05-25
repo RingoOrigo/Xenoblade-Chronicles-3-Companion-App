@@ -8,9 +8,8 @@
 
     <TextView
         android:id="@+id/xenoblade_chronicles_3_text_view"
+        style = "@style/custom_app_text"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica_neue"
         android:text="@string/xenoblade_chronicles_3"
         android:textAlignment="center"
         android:textSize="40sp"
@@ -21,9 +20,8 @@
 
     <TextView
         android:id="@+id/companion_text_view"
+        style = "@style/custom_app_text"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/helvetica_neue"
         android:text="@string/companion"
         android:textAlignment="center"
         android:textSize="36sp"

@@ -64,11 +64,9 @@
 
     <TextView
         android:id="@+id/area_text_view"
+        style="@style/sub_heading_20_sp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
         app:layout_constraintEnd_toStartOf="@+id/defeated_checkbox"
         app:layout_constraintStart_toStartOf="@+id/monster_name_text_view"
@@ -77,11 +75,9 @@
 
     <TextView
         android:id="@+id/location_text_view"
+        style="@style/info_text_16sp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/monster_image_view"
         app:layout_constraintEnd_toEndOf="parent"
