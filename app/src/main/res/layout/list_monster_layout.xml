@@ -31,12 +31,8 @@
 
     <TextView
         android:id="@+id/monster_name_text_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        style="@style/name_header_text"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/area_text_view"
         app:layout_constraintEnd_toStartOf="@+id/separation_dot"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,12 +44,9 @@
 
     <TextView
         android:id="@+id/separation_dot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/sub_heading_24_sp"
         android:layout_marginStart="8dp"
         android:text="@string/separation_dot"
-        android:textSize="24sp"
-        app:fontFamily="@font/helvetica_neue"
         app:layout_constraintBottom_toBottomOf="@+id/level_numeric_text_view"
         app:layout_constraintEnd_toStartOf="@id/level_numeric_text_view"
         app:layout_constraintStart_toEndOf="@+id/monster_name_text_view"
@@ -61,11 +54,8 @@
 
     <TextView
         android:id="@+id/level_numeric_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+       style="@style/sub_heading_24_sp"
         android:layout_marginStart="4dp"
-        android:fontFamily="@font/helvetica_neue"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/separation_dot"

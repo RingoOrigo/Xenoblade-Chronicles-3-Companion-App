@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="custom_app_text">
+        <item name="android:fontFamily">@font/helvetica_neue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="name_header_text" parent = "custom_app_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="sub_heading_24_sp" parent = "custom_app_text">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="sub_heading_20_sp" parent = "custom_app_text">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

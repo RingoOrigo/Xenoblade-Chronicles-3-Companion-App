@@ -20,40 +20,34 @@
 
     <TextView
         android:id="@+id/character_name_text"
+        style = "@style/name_header_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/helvetica_neue"
         app:layout_constraintStart_toEndOf="@+id/character_image"
         app:layout_constraintTop_toTopOf="@+id/character_image"
         tools:text="Noah" />
 
     <TextView
         android:id="@+id/class_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style = "@style/sub_heading_20_sp"
         android:layout_marginTop="4dp"
-        android:textSize="20sp"
-        app:fontFamily="@font/helvetica_neue"
         app:layout_constraintStart_toStartOf="@+id/character_name_text"
         app:layout_constraintTop_toBottomOf="@+id/character_name_text"
         tools:text="Swordfighter" />
 
     <TextView
         android:id="@+id/playable_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/sub_heading_20_sp"
+        android:layout_width="0dp"
         android:layout_marginTop="4dp"
-        android:textSize="20sp"
         android:textStyle="italic"
-        app:fontFamily="@font/helvetica_neue"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/character_name_text"
         app:layout_constraintTop_toBottomOf="@+id/class_text"
         tools:text="Party Member" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="horizontal"

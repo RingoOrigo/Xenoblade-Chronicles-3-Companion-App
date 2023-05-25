@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.example.xenobladechronicles3companion.databinding.FragmentAccoladesBinding
 
@@ -29,6 +30,8 @@ class AccoladesFragment : Fragment() {
         viewModel.setNumOfDefeatedMonsters()
         viewModel.setNumOfCompletedSideQuests()
 
+        setClickListeners()
+
         val totalCompletion = (viewModel.numOfDefeatedMonsters.value!!  + viewModel.numOfDefeatedSuperbosses.value!! + viewModel.numOfCompletedQuests.value!! + viewModel.numOfCompletedHeroQuests.value!!)
 
         binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / TOTAL_MONSTERS)
@@ -38,6 +41,23 @@ class AccoladesFragment : Fragment() {
         binding.overallCompletionProgressBar.progress = (totalCompletion * 100 / TOTAL_OBJECTIVES)
 
         return binding.root
+    }
+    fun setClickListeners() {
+        val progressListener : View.OnClickListener = View.OnClickListener { view ->
+            when (view) {
+                binding.monstersProgressBar -> Toast.makeText(requireActivity(), binding.monstersProgressBar.progress.toString() + getString(R.string.percent_complete), Toast.LENGTH_SHORT).show()
+                binding.superbossProgressBar -> Toast.makeText(requireActivity(), binding.superbossProgressBar.progress.toString() + getString(R.string.percent_complete), Toast.LENGTH_SHORT).show()
+                binding.sideQuestProgressBar -> Toast.makeText(requireActivity(), binding.sideQuestProgressBar.progress.toString() + getString(R.string.percent_complete), Toast.LENGTH_SHORT).show()
+                binding.heroQuestProgressBar -> Toast.makeText(requireActivity(), binding.heroQuestProgressBar.progress.toString() + getString(R.string.percent_complete), Toast.LENGTH_SHORT).show()
+                binding.overallCompletionProgressBar -> Toast.makeText(requireActivity(), binding.overallCompletionProgressBar.progress.toString() + getString(R.string.percent_complete), Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        binding.monstersProgressBar.setOnClickListener(progressListener)
+        binding.superbossProgressBar.setOnClickListener(progressListener)
+        binding.sideQuestProgressBar.setOnClickListener(progressListener)
+        binding.heroQuestProgressBar.setOnClickListener(progressListener)
+        binding.overallCompletionProgressBar.setOnClickListener(progressListener)
     }
 
 }
