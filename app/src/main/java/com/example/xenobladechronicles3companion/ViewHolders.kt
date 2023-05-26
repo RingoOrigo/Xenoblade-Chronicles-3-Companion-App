@@ -58,7 +58,7 @@ class MonsterViewHolder (private val binding : ListMonsterLayoutBinding, private
         if (currentMonster.superboss) {
             binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.flute_red))
         } else {
-            binding.monsterNameTextView.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
+            binding.monsterNameTextView.setTextColor(getColor(this.itemView.context, R.color.greyple))
         }
 
         val imageURI = currentMonster.imageURL.toUri().buildUpon().scheme("https").build()
@@ -126,7 +126,7 @@ class SideQuestViewHolder(private val binding : ListQuestLayoutBinding, private 
             binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
         } else if (quest.heroQuest!!) {
             binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
-        } else binding.sideQuestName.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
+        } else binding.sideQuestName.setTextColor(getColor(this.itemView.context, R.color.greyple))
     }
 
     private fun setCompleted(completed: Boolean) {
@@ -193,6 +193,6 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
             binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.dlc_blue))
         } else if (char.hero!!) {
             binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.agnian_gold))
-        } else binding.characterNameText.setTextColor(R.style.Theme_XenobladeChronicles3Companion)
+        } else binding.characterNameText.setTextColor(getColor(this.itemView.context, R.color.greyple))
     }
 }
