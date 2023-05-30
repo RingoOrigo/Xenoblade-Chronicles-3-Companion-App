@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.XenobladeChronicles3Companion" parent="Theme.MaterialComponents.DayNight">
+    <style name="Theme.XenobladeChronicles3Companion" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/flute_red</item>
         <item name="colorPrimaryVariant">@color/agnian_gold</item>
@@ -13,5 +13,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
 </resources>

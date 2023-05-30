@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.168" />
+        <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/layout-land/fragment_accolades.xml" value="0.2296875" />
+        <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/layout-land/fragment_main.xml" value="0.2296875" />
         <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/layout/activity_main.xml" value="0.2703125" />
         <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/layout/fragment_about.xml" value="0.2703125" />
         <entry key="..\:/Users/waskon23/AndroidStudioProjects/Xenoblade-Chronicles-3-Companion-App/app/src/main/res/layout/fragment_accolades.xml" value="0.33" />

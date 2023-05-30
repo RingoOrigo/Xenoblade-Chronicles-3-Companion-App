@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/progress_text_label"
-        style = "@style/sub_heading_20_sp"
-        android:text="Track the progress of your journey through Aionios!"
+        style="@style/sub_heading_20_sp"
+        android:text="@string/track_your_progress"
         android:textAlignment="center"
         android:textSize="20sp"
         app:fontFamily="@font/helvetica_neue"
