@@ -175,10 +175,10 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
      Glide.with(itemView.context).load(imageURI).into(binding.characterImage)
  }
     private fun showIcons(char : Character) {
-        binding.agnianSymbol.isGone = char.kevesi!!
-        binding.kevesiSymbol.isGone = char.agnian!! // I know it's weird, but it's basically just:
-        binding.moebiusLogo.isGone = char.ouroboros!! //If Agnian, do not show Kevesi Symbol
-        binding.ouroborosLogo.isGone = char.moebius!!
+        binding.agnianSymbol.isVisible = char.agnian!!
+        binding.kevesiSymbol.isVisible = char.kevesi!! // I know it's weird, but it's basically just:
+        binding.moebiusLogo.isVisible = char.moebius!! //If Agnian, do not show Kevesi Symbol
+        binding.ouroborosLogo.isVisible = char.ouroboros!!
     }
     private fun setPlayable(char : Character) {
         if (char.playable!!) {
