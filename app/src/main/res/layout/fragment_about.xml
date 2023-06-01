@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".AboutFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -38,7 +38,7 @@
 
             <TextView
                 android:id="@+id/about_text_view"
-                style = "@style/about_text"
+                style="@style/about_text"
                 android:text="@string/about_intro"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
 
             <TextView
                 android:id="@+id/unique_monsters_header"
-                style = "@style/about_heading"
+                style="@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/unique_monsters_header"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
 
             <TextView
                 android:id="@+id/about_unique_monsters_view"
-                style = "@style/about_text"
+                style="@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_unique_monsters"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
 
             <TextView
                 android:id="@+id/side_quests_header"
-                style = "@style/about_heading"
+                style="@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/side_quests_header"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
 
             <TextView
                 android:id="@+id/about_side_quests_view"
-                style = "@style/about_text"
+                style="@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_side_quests"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
 
             <TextView
                 android:id="@+id/characters_header"
-                style = "@style/about_heading"
+                style="@style/about_heading"
                 android:layout_marginTop="16dp"
                 android:text="@string/characters_header"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
 
             <TextView
                 android:id="@+id/about_characters_view"
-                style = "@style/about_text"
+                style="@style/about_text"
                 android:layout_marginTop="4dp"
                 android:text="@string/about_characters"
                 app:layout_constraintEnd_toEndOf="parent"

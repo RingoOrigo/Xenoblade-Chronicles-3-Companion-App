@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@color/transparent_black_background"
+    android:paddingBottom="4dp">
 
     <ImageView
         android:id="@+id/monster_image_view"
@@ -87,10 +90,8 @@
 
     <CheckBox
         android:id="@+id/defeated_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style = "@style/custom_app_text"
         android:text="@string/defeated"
-        android:fontFamily = "@font/helvetica_neue"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/level_numeric_text_view" />

@@ -4,32 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/transparent_black_background"
     android:paddingBottom="4dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:contentDescription="@string/a_preview_image_of_a_quest_that_matches_the_preview_image_of_said_quest_from_in_game_xenoblade_chronicles_3"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/a_preview_image_of_a_quest_that_matches_the_preview_image_of_said_quest_from_in_game_xenoblade_chronicles_3" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/completed_x"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/a_red_x_that_signifies_a_quest_has_been_completed"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/x"
-        android:contentDescription="@string/a_red_x_that_signifies_a_quest_has_been_completed" />
+        app:srcCompat="@drawable/x" />
 
     <TextView
         android:id="@+id/side_quest_name"
@@ -43,7 +44,7 @@
 
     <TextView
         android:id="@+id/region_name"
-        style = "@style/info_text_16sp"
+        style="@style/info_text_16sp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="@+id/side_quest_name"
         app:layout_constraintTop_toBottomOf="@id/requires"
@@ -51,7 +52,7 @@
 
     <TextView
         android:id="@+id/location_name"
-        style = "@style/info_text_16sp"
+        style="@style/info_text_16sp"
         android:layout_width="0dp"
         android:layout_marginTop="4dp"
         android:textStyle="italic"
@@ -73,7 +74,7 @@
 
     <TextView
         android:id="@+id/recommended_level_numeric"
-        style = "@style/sub_heading_20_sp"
+        style="@style/sub_heading_20_sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/recommended_level"
         tools:text="80" />
@@ -96,8 +97,7 @@
 
     <CheckBox
         android:id="@+id/completedCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style = "@style/custom_app_text"
         android:text="@string/completed"
         app:layout_constraintBottom_toTopOf="@+id/location_name"
         app:layout_constraintEnd_toEndOf="parent"

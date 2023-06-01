@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".AccoladesFragment">
 
+    <ImageView
+        android:id="@+id/main_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType = "centerCrop"
+        app:tint="@color/bg_black_tint"
+        app:tintMode="src_atop"/>
+
     <TextView
         android:id="@+id/progress_text_label"
         style = "@style/sub_heading_20_sp"

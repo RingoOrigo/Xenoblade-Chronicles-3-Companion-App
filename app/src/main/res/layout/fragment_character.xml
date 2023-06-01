@@ -5,9 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CharacterFragment">
+    tools:context=".CharacterFragment"
+    >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/char_bg"
+        app:tint="@color/bg_black_tint"
+        app:tintMode="src_atop"
+        android:id = "@+id/char_bg"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:padding="16dp"
         android:id = "@+id/character_recycler_view"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:nestedScrollingEnabled="true"
