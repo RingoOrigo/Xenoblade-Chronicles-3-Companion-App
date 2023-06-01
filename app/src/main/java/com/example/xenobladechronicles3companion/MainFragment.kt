@@ -2,10 +2,12 @@ package com.example.xenobladechronicles3companion
 
 import android.os.Bundle
 import android.view.*
+import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -29,7 +31,7 @@ class MainFragment : Fragment() {
 
         return binding.root
     }
-    
+
     private fun setNavClickListeners() {
         binding.uniqueMonstersButton.setOnClickListener {
             binding.root.findNavController().navigate(MainFragmentDirections.actionMainFragmentToMonsterFragment())

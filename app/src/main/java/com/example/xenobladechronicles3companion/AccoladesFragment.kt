@@ -30,7 +30,7 @@ class AccoladesFragment : Fragment() {
         val totalObjectives = (141 + 7 + 197 + 41)
 
         binding.monstersProgressBar.progress = (viewModel.numOfDefeatedMonsters.value!! * 100 / 141)
-        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! * 100 / 7)
+        binding.superbossProgressBar.progress = (viewModel.numOfDefeatedSuperbosses.value!! * 100 / 6)
         binding.sideQuestProgressBar.progress = (viewModel.numOfCompletedQuests.value!! * 100 / 197)
         binding.heroQuestProgressBar.progress = (viewModel.numOfCompletedHeroQuests.value!! * 100 / 41)
         binding.overallCompletionProgressBar.progress = (totalCompletion * 100 / totalObjectives)
