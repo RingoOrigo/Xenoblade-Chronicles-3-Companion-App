@@ -91,6 +91,7 @@
     <CheckBox
         android:id="@+id/defeated_checkbox"
         style = "@style/custom_app_text"
+        android:checked = "true"
         android:text="@string/defeated"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
         app:layout_constraintEnd_toEndOf="parent"
