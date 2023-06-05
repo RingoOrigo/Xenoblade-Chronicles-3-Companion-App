@@ -8,21 +8,18 @@
 
     <ImageView
         android:id="@+id/main_bg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        style="@style/bg_image"
         android:src="@drawable/main_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:scaleType = "centerCrop"
-        app:tint="@color/bg_black_tint"
-        app:tintMode="src_atop"/>
+        android:contentDescription="@string/the_app_s_background_image_the_urayan_titan_with_the_mechonis_s_sword_through_it_in_front_of_the_night_sky" />
 
     <TextView
         android:id="@+id/progress_text_label"
-        style = "@style/sub_heading_20_sp"
-        android:text="Track the progress of your journey through Aionios!"
+        style="@style/sub_heading_20_sp"
+        android:text="@string/track_the_progress_of_your_journey_through_aionios"
         android:textAlignment="center"
         android:textSize="20sp"
         app:fontFamily="@font/helvetica_neue"

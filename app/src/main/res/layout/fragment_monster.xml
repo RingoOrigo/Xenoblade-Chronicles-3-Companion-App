@@ -8,16 +8,13 @@
 
     <ImageView
         android:id="@+id/monst_bg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/bg_image"
         android:src="@drawable/monst_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/bg_black_tint"
-        app:tintMode="src_atop" />
+        android:contentDescription="@string/two_armu_in_front_of_the_setting_sun" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/monster_recycler_view"

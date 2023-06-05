@@ -8,16 +8,13 @@
 
     <ImageView
         android:id="@+id/quest_bg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        style="@style/bg_image"
         android:src="@drawable/quest_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/bg_black_tint"
-        app:tintMode="src_atop" />
+        android:contentDescription="@string/noah_and_mio_exchanging_flutes" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/side_quest_recycler_view"
