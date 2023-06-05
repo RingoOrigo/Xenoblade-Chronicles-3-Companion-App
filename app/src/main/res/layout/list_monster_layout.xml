@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="4dp"
-    android:background="@color/transparent_black_background"
-    android:paddingBottom="4dp">
+    android:layout_marginTop="8dp"
+    android:background="@color/transparent_black_background">
 
     <ImageView
         android:id="@+id/monster_image_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
         android:contentDescription="@string/small_art_of_monster"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -57,8 +55,9 @@
 
     <TextView
         android:id="@+id/level_numeric_text_view"
-       style="@style/sub_heading_24_sp"
+        style="@style/sub_heading_24_sp"
         android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/monster_name_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/separation_dot"
@@ -90,11 +89,11 @@
 
     <CheckBox
         android:id="@+id/defeated_checkbox"
-        style = "@style/custom_app_text"
-        android:checked = "true"
+        style="@style/custom_app_text"
+        android:checked="true"
         android:text="@string/defeated"
         app:layout_constraintBottom_toTopOf="@+id/location_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/level_numeric_text_view"
         app:layout_constraintTop_toBottomOf="@+id/level_numeric_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

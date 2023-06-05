@@ -146,6 +146,7 @@ class ViewModel : ViewModel() {
                     val name = character.name
                     val kevesi = character.kevesi?: false
                     val agnian = character.agnian?: false
+                    val city = character.city?: false
                     val moebius = character.moebius?: false
                     val ouroboros = character.ouroboros?: false
                     val startingClass = character.startingClass
@@ -155,7 +156,7 @@ class ViewModel : ViewModel() {
                     val articleURL = character.articleURL
                     val imageURL = character.imageURL
 
-                    val newCharacter = Character(name, kevesi, agnian, moebius, ouroboros, startingClass, hero, playable, DLC, articleURL, imageURL)
+                    val newCharacter = Character(name, kevesi, agnian, city, moebius, ouroboros, startingClass, hero, playable, DLC, articleURL, imageURL)
                     listOfCharactersFetched.add(newCharacter)
                 }
                 _characterResponse.value = listOfCharactersFetched

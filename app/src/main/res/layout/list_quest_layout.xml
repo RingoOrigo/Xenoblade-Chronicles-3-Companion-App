@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="4dp"
-    android:background="@color/transparent_black_background"
-    android:paddingBottom="4dp">
+    android:layout_marginTop="8dp"
+    android:background="@color/transparent_black_background">
 
     <ImageView
         android:id="@+id/imageView"
@@ -75,6 +74,7 @@
     <TextView
         android:id="@+id/recommended_level_numeric"
         style="@style/sub_heading_20_sp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/recommended_level"
         tools:text="80" />
@@ -97,10 +97,10 @@
 
     <CheckBox
         android:id="@+id/completedCheckBox"
-        style = "@style/custom_app_text"
+        style="@style/custom_app_text"
         android:text="@string/completed"
         app:layout_constraintBottom_toTopOf="@+id/location_name"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/recommended_level_numeric"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/region_name"
         app:layout_constraintTop_toBottomOf="@+id/recommended_level" />

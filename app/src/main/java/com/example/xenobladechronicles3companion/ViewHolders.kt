@@ -179,6 +179,7 @@ class CharacterViewHolder(private val binding : ListCharacterLayoutBinding) : Re
         binding.kevesiSymbol.isVisible = char.kevesi!! // I know it's weird, but it's basically just:
         binding.moebiusLogo.isVisible = char.moebius!! //If Agnian, do not show Kevesi Symbol
         binding.ouroborosLogo.isVisible = char.ouroboros!!
+        binding.citySymbol.isVisible = char.city!!
     }
     private fun setPlayable(char : Character) {
         if (char.playable!!) {

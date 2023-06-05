@@ -28,6 +28,7 @@ data class Character (
     val name : String,
     val kevesi : Boolean?,
     val agnian : Boolean?,
+    val city : Boolean?,
     val moebius : Boolean?,
     val ouroboros : Boolean?,
     val startingClass : String?,

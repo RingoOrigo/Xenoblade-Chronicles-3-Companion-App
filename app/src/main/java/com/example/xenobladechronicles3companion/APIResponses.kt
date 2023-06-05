@@ -53,6 +53,9 @@ class CharacterResponse {
     @Json (name = "agnian")
     var agnian : Boolean? = false
 
+    @Json(name = "city")
+    var city : Boolean? = false
+
     @Json (name = "moebius")
     var moebius : Boolean? = false
 
