@@ -17,4 +17,5 @@
     <color name="greyple">#8a81af</color>
     <color name="transparent_black_background">#45000000</color>
     <color name="bg_black_tint">#4D000000</color>
+    <color name="hint_white">#70FFFFFF</color>
 </resources>

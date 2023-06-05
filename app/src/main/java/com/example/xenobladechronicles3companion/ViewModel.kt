@@ -4,11 +4,11 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
-import com.google.firebase.installations.FirebaseInstallations
 import com.google.firebase.ktx.Firebase
 import retrofit2.Call
 import retrofit2.Callback
@@ -27,9 +27,13 @@ class ViewModel : ViewModel() {
     val characterResponse: LiveData<List<Character>>
         get() = _characterResponse
 
-    private val _deviceID = MutableLiveData<String>()
-    val deviceID: LiveData<String>
-        get() = _deviceID
+    private val _userID = MutableLiveData<String>()
+    val userID: LiveData<String>
+        get() = _userID
+
+    private val _auth = MutableLiveData<FirebaseAuth>()
+    val auth : LiveData<FirebaseAuth>
+        get() = _auth
 
     private val _defeatedMonsterNames = MutableLiveData<List<String>>()
     val defeatedMonsterNames: LiveData<List<String>>
@@ -56,6 +60,14 @@ class ViewModel : ViewModel() {
         get() = _numOfCompletedHeroQuests
 
 
+
+    fun setAuth() {
+        _auth.value = FirebaseAuth.getInstance()
+    }
+
+    fun setUserID() {
+        _userID.value = auth.value!!.currentUser!!.uid
+    }
 
     fun getMonsters() {
         val request = MonsterAPI.monsterAPI.getMonsters()
@@ -165,27 +177,16 @@ class ViewModel : ViewModel() {
         })
     }
 
-    fun generateID() {
-        FirebaseInstallations.getInstance().id.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                _deviceID.value = task.result
-
-                getMonsters()
-                getSideQuests()
-
-                getDefeatedMonsters()
-                getCompletedSideQuests()
-            } else {
-                Log.e("Installations", "Unable to get Installation ID")
-            }
-        }
+    fun getCompletedContent() {
+        getDefeatedMonsters()
+        getCompletedSideQuests()
     }
 
     private fun getDefeatedMonsters() {
         val dbref = Firebase.database.reference
         val defeatedMonsters: MutableList<String> = mutableListOf()
 
-        dbref.child(deviceID.value!!).child("defeatedMonsters").addValueEventListener(object :
+        dbref.child(userID.value!!).child("defeatedMonsters").addValueEventListener(object:
             ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
@@ -199,6 +200,7 @@ class ViewModel : ViewModel() {
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
             }
+
         })
     }
 
@@ -206,8 +208,8 @@ class ViewModel : ViewModel() {
         val dbref = Firebase.database.reference
         val completedQuests: MutableList<String> = mutableListOf()
 
-        dbref.child(deviceID.value!!).child("completedSideQuests")
-            .addValueEventListener(object : ValueEventListener {
+        dbref.child(userID.value!!).child("completedSideQuests").addValueEventListener(object :
+            ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val allEntries = snapshot.children
                     for (entry in allEntries) {

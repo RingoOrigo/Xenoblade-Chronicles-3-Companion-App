@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/login_bg"
+        style="@style/bg_image"
+        android:contentDescription="@string/the_app_s_background_image_the_urayan_titan_with_the_mechonis_s_sword_through_it_in_front_of_the_night_sky"
+        android:src="@drawable/main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        style="@style/about_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/welcome_to_aionios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_input_field"
+        style="@style/custom_app_text"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="emailAddress"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/enter_your_email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/hint_white"
+        app:layout_constraintBottom_toTopOf="@+id/password_input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guide" />
+
+    <EditText
+        android:id="@+id/password_input_field"
+        style="@style/custom_app_text"
+        android:layout_height="48dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/hint_white"
+        app:layout_constraintEnd_toEndOf="@+id/email_input_field"
+        app:layout_constraintStart_toStartOf="@+id/email_input_field"
+        app:layout_constraintTop_toBottomOf="@+id/email_input_field" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        style="@style/sub_heading_20_sp"
+        android:text="@string/sign_in"
+        android:padding="1dp"
+        app:layout_constraintStart_toStartOf="@+id/password_input_field"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_field" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        style="@style/sub_heading_20_sp"
+        android:text="@string/sign_up"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_input_field"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

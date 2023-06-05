@@ -33,7 +33,7 @@ class MonsterViewHolder(
 
         binding.defeatedCheckbox.setOnClickListener {
             dbref = Firebase.database.reference
-            val path = dbref.child(viewModel.deviceID.value!!).child("defeatedMonsters")
+            val path = dbref.child(viewModel.userID.value!!).child("defeatedMonsters")
                 .child(currentMonster.name)
 
             currentMonster.defeated = binding.defeatedCheckbox.isChecked
@@ -102,7 +102,7 @@ class SideQuestViewHolder(
         binding.completedCheckBox.setOnClickListener {
             dbref = Firebase.database.reference
 
-            val path = dbref.child(viewModel.deviceID.value!!).child("completedSideQuests")
+            val path = dbref.child(viewModel.userID.value!!).child("completedSideQuests")
                 .child(currentQuest.questName)
 
             currentQuest.completed = binding.completedCheckBox.isChecked

@@ -2,12 +2,10 @@ package com.example.xenobladechronicles3companion
 
 import android.os.Bundle
 import android.view.*
-import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.bumptech.glide.Glide
 import com.example.xenobladechronicles3companion.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -27,7 +25,7 @@ class MainFragment : Fragment() {
         setNavClickListeners()
         setHasOptionsMenu(true)
 
-        viewModel.generateID()
+        viewModel.getCompletedContent()
 
         return binding.root
     }
@@ -55,5 +53,10 @@ class MainFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController()) ||
             super.onOptionsItemSelected(item)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

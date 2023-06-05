@@ -55,4 +55,9 @@ class AccoladesFragment : Fragment() {
         binding.overallCompletionProgressBar.setOnClickListener(progressListener)
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }

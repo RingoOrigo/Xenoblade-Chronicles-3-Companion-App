@@ -49,4 +49,11 @@
     <string name="noah_and_mio_exchanging_flutes">Noah and Mio exchanging flutes.</string>
     <string name="noah_character_art_from_xenoblade_chronicles_3">Noah character art from Xenoblade Chronicles 3.</string>
     <string name="two_armu_in_front_of_the_setting_sun">Two armu in front of the setting sun.</string>
+    <string name="account_create_failure">Failed to create user account.</string>
+    <string name="sign_in_failure">Failed to sign into account.</string>
+    <string name="welcome_to_aionios">Welcome to Aionios!</string>
+    <string name="enter_your_email_address">Enter your email address.</string>
+    <string name="enter_your_password">Enter your password.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
