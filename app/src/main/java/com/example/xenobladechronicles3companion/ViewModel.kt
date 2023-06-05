@@ -28,31 +28,31 @@ class ViewModel : ViewModel() {
         get() = _characterResponse
 
     private val _deviceID = MutableLiveData<String>()
-    val deviceID : LiveData<String>
+    val deviceID: LiveData<String>
         get() = _deviceID
 
     private val _defeatedMonsterNames = MutableLiveData<List<String>>()
-    val defeatedMonsterNames : LiveData<List<String>>
+    val defeatedMonsterNames: LiveData<List<String>>
         get() = _defeatedMonsterNames
 
     private val _completedSideQuestNames = MutableLiveData<List<String>>()
-    val completedSideQuestNames : LiveData<List<String>>
+    val completedSideQuestNames: LiveData<List<String>>
         get() = _completedSideQuestNames
 
     private val _numOfDefeatedMonsters = MutableLiveData(0)
-    val numOfDefeatedMonsters : LiveData<Int>
+    val numOfDefeatedMonsters: LiveData<Int>
         get() = _numOfDefeatedMonsters
 
     private val _numOfDefeatedSuperbosses = MutableLiveData(0)
-    val numOfDefeatedSuperbosses : LiveData<Int>
+    val numOfDefeatedSuperbosses: LiveData<Int>
         get() = _numOfDefeatedSuperbosses
 
     private val _numOfCompletedQuests = MutableLiveData(0)
-    val numOfCompletedQuests : LiveData<Int>
+    val numOfCompletedQuests: LiveData<Int>
         get() = _numOfCompletedQuests
 
     private val _numOfCompletedHeroQuests = MutableLiveData(0)
-    val numOfCompletedHeroQuests : LiveData<Int>
+    val numOfCompletedHeroQuests: LiveData<Int>
         get() = _numOfCompletedHeroQuests
 
 
@@ -147,6 +147,7 @@ class ViewModel : ViewModel() {
                     val kevesi = character.kevesi?: false
                     val agnian = character.agnian?: false
                     val city = character.city?: false
+                    val nopon = character.nopon?: false
                     val moebius = character.moebius?: false
                     val ouroboros = character.ouroboros?: false
                     val startingClass = character.startingClass
@@ -156,7 +157,7 @@ class ViewModel : ViewModel() {
                     val articleURL = character.articleURL
                     val imageURL = character.imageURL
 
-                    val newCharacter = Character(name, kevesi, agnian, city, moebius, ouroboros, startingClass, hero, playable, DLC, articleURL, imageURL)
+                    val newCharacter = Character(name, kevesi, agnian, city, nopon, moebius, ouroboros, startingClass, hero, playable, DLC, articleURL, imageURL)
                     listOfCharactersFetched.add(newCharacter)
                 }
                 _characterResponse.value = listOfCharactersFetched
@@ -182,9 +183,9 @@ class ViewModel : ViewModel() {
 
     private fun getDefeatedMonsters() {
         val dbref = Firebase.database.reference
-        val defeatedMonsters : MutableList<String> = mutableListOf()
+        val defeatedMonsters: MutableList<String> = mutableListOf()
 
-        dbref.child(deviceID.value!!).child("defeatedMonsters").addValueEventListener(object:
+        dbref.child(deviceID.value!!).child("defeatedMonsters").addValueEventListener(object :
             ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val allEntries = snapshot.children
@@ -192,8 +193,9 @@ class ViewModel : ViewModel() {
                 for (entry in allEntries) {
                     defeatedMonsters.add(entry.key.toString())
                 }
-                    _defeatedMonsterNames.value = defeatedMonsters
+                _defeatedMonsterNames.value = defeatedMonsters
             }
+
             override fun onCancelled(error: DatabaseError) {
                 Log.w("MainFragment", "Failed to read value.", error.toException())
             }

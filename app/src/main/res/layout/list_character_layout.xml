@@ -94,6 +94,14 @@
             android:contentDescription="@string/the_agnian_castle_symbol_from_xenoblade_chronicles_3"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/city_symbol" />
+
+        <ImageView
+            android:id="@+id/nopon_symbol"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/the_agnian_castle_symbol_from_xenoblade_chronicles_3"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/nopon_symbol" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
