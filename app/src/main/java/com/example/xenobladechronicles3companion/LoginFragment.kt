@@ -26,11 +26,13 @@ class LoginFragment : Fragment() {
         viewModel.setAuth()
 
         binding.signUpButton.setOnClickListener {
-            createAccount(binding.emailInputField.text.toString(), binding.passwordInputField.text.toString())
+            if (binding.emailInputField.text.toString() != "" && binding.passwordInputField.text.toString() != "")
+                createAccount(binding.emailInputField.text.toString(), binding.passwordInputField.text.toString())
         }
 
         binding.signInButton.setOnClickListener {
-            signIn(binding.emailInputField.text.toString(), binding.passwordInputField.text.toString())
+            if (binding.emailInputField.text.toString() != "" && binding.passwordInputField.text.toString() != "")
+                signIn(binding.emailInputField.text.toString(), binding.passwordInputField.text.toString())
         }
 
         return binding.root

@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Xenoblade Chronicles 3 Companion</string>
-    <string name="app_name_short">XC3C</string>
+    <string name="app_name">XC3C</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="xenoblade_chronicles_3">Xenoblade Chronicles 3</string>

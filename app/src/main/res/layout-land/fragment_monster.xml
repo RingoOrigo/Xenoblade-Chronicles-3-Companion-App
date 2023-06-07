@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/monst_bg_land"
         style="@style/bg_image"
-        android:src="@drawable/monst_bg_land"
+        android:src="@drawable/monst_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
