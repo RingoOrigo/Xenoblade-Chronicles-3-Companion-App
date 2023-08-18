@@ -20,7 +20,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         viewModel.setAuth()
@@ -41,8 +41,7 @@ class LoginFragment : Fragment() {
     private fun createAccount (email : String, password : String) {
         viewModel.auth.value!!.createUserWithEmailAndPassword(email, password).addOnCompleteListener() { task ->
             if (task.isSuccessful) {
-                viewModel.setUserID()
-                binding.root.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToMainFragment())
+                navToMainFragment()
             } else {
                 Toast.makeText(requireActivity(), R.string.account_create_failure, Toast.LENGTH_SHORT).show()
             }
@@ -52,12 +51,19 @@ class LoginFragment : Fragment() {
     private fun signIn (email : String, password : String) {
         viewModel.auth.value!!.signInWithEmailAndPassword(email, password).addOnCompleteListener() {task ->
              if (task.isSuccessful) {
-                 viewModel.setUserID()
-                 binding.root.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToMainFragment())
+                 navToMainFragment()
              } else {
                  Toast.makeText(requireActivity(), R.string.sign_in_failure, Toast.LENGTH_SHORT).show()
              }
         }
+    }
+
+    private fun navToMainFragment() {
+        viewModel.setUserID()
+        //Show advert screen before completing navigation. This will be the only time that ads are present.
+        // 70% of the time, show a skippable advertisement. 30% of the time, show a self-promotion screen.  Access self-promo banner from separate source so it can be updated on the fly.
+
+        binding.root.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToMainFragment())
     }
 
     override fun onDestroyView() {
